@@ -1,12 +1,16 @@
+import Reviews from '@/components/shared/Reviews';
 import TourCardLarge from '@/components/shared/TourCardLarge';
 import TourCardSmall from '@/components/shared/TourCardSmall';
+import Footer from '@/layout/Footer';
 import React from 'react'
+import ReviewCard from '@/components/shared/ReviewCard';
+
 
 function Page() {
-
+    
     return (
         <>
-            <TourCardLarge
+            {/* <TourCardLarge
                 title="Northern Pakistan Tour"
                 content="Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!"
                 bookSpot="2 out of 12 spots booked"
@@ -18,7 +22,12 @@ function Page() {
                 bookSpot="2 out of 12 spots booked"
                 location="Skardu"
                 days="Nov 08 — Nov 17, 2024 (10 days)"
-            />
+            /> */}
+
+            {/* <Footer /> */}
+
+            <Reviews />
+
         </>
     )
 }
