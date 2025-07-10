@@ -4,10 +4,10 @@ import TourCardSmall from '@/components/shared/TourCardSmall';
 import Footer from '@/layout/Footer';
 import React from 'react'
 import ReviewCard from '@/components/shared/ReviewCard';
-
+import HeaderPrimary from '@/layout/HeaderPrimary';
 
 function Page() {
-    
+
     return (
         <>
             {/* <TourCardLarge
@@ -25,9 +25,8 @@ function Page() {
             /> */}
 
             {/* <Footer /> */}
-
-            <Reviews />
-
+            {/* <Reviews /> */}
+            <HeaderPrimary />
         </>
     )
 }
