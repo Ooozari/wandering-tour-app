@@ -1,0 +1,1 @@
+export { default as ReserveNow } from './shared/ReserveNow';

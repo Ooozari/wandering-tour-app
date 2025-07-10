@@ -4,7 +4,7 @@ function LandingPage() {
     return (
         // here i will combine all components for home Page
         <>
-            hehe
+            hello from view landing page
         </>
     )
 }
