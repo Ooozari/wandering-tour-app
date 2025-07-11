@@ -3,6 +3,7 @@ import PastTourHeroSection from '@/assets/PastTour-HeroSection.png'
 import Image from 'next/image'
 import pastTourBanner from '@/assets/pastTourBanner.png'
 import { pastTourImages } from '@/assets/pastTours';
+import Reviews from '@/components/shared/Reviews'
 function PastTours() {
 
     return (
@@ -57,6 +58,10 @@ function PastTours() {
                     src={pastTourBanner}
                     alt='past Tour Banner Large'
                 />
+            </div>
+
+            <div className='mt-4'>
+                <Reviews />
             </div>
         </>
     )
