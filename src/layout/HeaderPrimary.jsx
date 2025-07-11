@@ -53,7 +53,7 @@ function HeaderPrimary() {
                         <Link href="/private-tours">PRIVATE TOURS</Link>
                     </li>
                     <li className={getLinkClasses('/past-tours')}>
-                        <Link href="/past-tours">PAST TOURS</Link>
+                        <Link href="/past-tour">PAST TOURS</Link>
                     </li>
                     <li className={getLinkClasses('/contact-us')}>
                         <Link href="/contact-us">CONTACT US</Link>
