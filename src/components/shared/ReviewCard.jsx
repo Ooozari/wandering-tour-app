@@ -4,15 +4,16 @@ import { Review, Location } from '@/svgs/Icons'
 
 function ReviewCard({ msg, name, location }) {
     return (
-        <div className="flex max-w-md flex-col bg-White rounded-3xl shadow-lg px-10 py-[30px]">
+        <div className="flex flex-col bg-White rounded-3xl shadow-lg px-10 py-[20px] md:py-[30px] h-full">
             {/* Icon */}
             <div className="flex justify-center mb-4">
                 <Review />
             </div>
 
-            {/* Message (Centered Horizontally & Vertically) */}
-            <div className="flex flex-1 items-center justify-center text-center mb-6">
-                <p className="text-Black text-sm">{msg}</p>
+            {/* Spacer + Message */}
+            <div className="flex-1 flex flex-col justify-end">
+                <div className="flex-1" /> {/* Spacer to push content down */}
+                <p className="text-Black text-sm text-center mb-6">{msg}</p>
             </div>
 
             {/* Name */}
@@ -27,6 +28,8 @@ function ReviewCard({ msg, name, location }) {
                 <span className="text-lightGrey text-sm font-normal">{location}</span>
             </p>
         </div>
+
+
     )
 }
 

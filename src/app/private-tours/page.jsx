@@ -1,9 +1,9 @@
 import React from 'react'
-
+import PrivateTours from '@/views/PrivateTours'
 function Contact() {
     return (
         <>
-            <div>Private Tour page</div>
+            <PrivateTours />
         </>
     )
 }

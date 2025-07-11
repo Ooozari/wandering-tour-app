@@ -95,16 +95,16 @@ function Reviews() {
                 }}
             >
                 {reviewsUser.map((review, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="h-full flex flex-col justify-between items-center ">
+                    <SwiperSlide key={index} className="h-full">
+                        <div className="h-full flex">
                             <ReviewCard
                                 msg={review.reviewMsg}
                                 name={review.name}
                                 location={review.location}
                             />
                         </div>
-
                     </SwiperSlide>
+
                 ))}
             </Swiper>
         </>

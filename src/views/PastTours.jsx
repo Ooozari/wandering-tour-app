@@ -5,7 +5,7 @@ import pastTourBanner from '@/assets/pastTourBanner.png'
 import { pastTourImages } from '@/assets/pastTours';
 import Reviews from '@/components/shared/Reviews'
 import ContactForm from '@/components/shared/ContactForm'
-import {Button} from '@/components/ui/Button'
+import { Button } from '@/components/ui/Button'
 function PastTours() {
 
     return (
@@ -55,31 +55,44 @@ function PastTours() {
                 ))}
             </div>
 
-            <div className='gird'>
+            <div className='gird pb-3'>
                 <Image
                     src={pastTourBanner}
                     alt='past Tour Banner Large'
                 />
             </div>
 
-            <div className='mt-4'>
-                <Reviews />
+            <div className="relative w-full mt-4 ">
+                {/* Gradient Background Behind All Cards */}
+                <div
+                    className="absolute inset-0 h-[300px] md:h-[400px] -z-10"
+                    style={{
+                        background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                    }}
+                ></div>
+
+                {/* Review Section */}
+                <div className='px-5 md:px-10 lg:px-20'>
+                    <Reviews />
+                </div>
+
             </div>
+
+
 
             <div className='bg-Primary'>
                 {/* Heading */}
                 <div>
                     <h2 className='text-White
-                    font-extrabold
-                    text-xl md:text-2xl lg:text-4xl text-center'>IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE’RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY.</h2>
+                    font-extrabold px-5 md:px-10 lg:px-20 text-lg md:text-2xl lg:text-4xl text-center pb-10 pt-10'>IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE’RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY.</h2>
                 </div>
 
                 {/* Form */}
                 <div className='text-White'>
-                    <ContactForm />
+                    <ContactForm inputBorder='border-White/24'/>
                 </div>
                 {/* Submit Button */}
-                <div className='text-center mb-10 mt-6'>
+                <div className='text-center pb-10 pt-6'>
                     <Button variant='secondary' size='lg'>Submit</Button>
                 </div>
             </div>
