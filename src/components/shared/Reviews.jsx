@@ -59,18 +59,18 @@ function Reviews() {
             {/* Top Header + Navigation */}
             <div className="flex justify-between items-center mb-6">
                 {/* Headings */}
-                <div className="text-2xl md:text-3xl lg:text-4xl font-extrabold">
+                <div className="text-xl md:text-2xl lg:text-4xl font-extrabold">
                     <h2 className="text-Black">WHAT OUR CLIENTS SAY</h2>
                     <h2 className="text-Secondary">ABOUT US</h2>
                 </div>
 
                 {/* Nav Buttons */}
                 <div className="flex gap-2">
-                    <Button id="prevBtn">
-                        <SmallerThan />
+                    <Button variant='outlineCircle' size='circle' id="prevBtn">
+                        <SmallerThan color='White' />
                     </Button>
-                    <Button id="nextBtn">
-                        <GreaterThan />
+                    <Button variant='circle' id="nextBtn">
+                        <GreaterThan color='Secondary' />
                     </Button>
                 </div>
             </div>
@@ -96,11 +96,14 @@ function Reviews() {
             >
                 {reviewsUser.map((review, index) => (
                     <SwiperSlide key={index}>
-                        <ReviewCard
-                            msg={review.reviewMsg}
-                            name={review.name}
-                            location={review.location}
-                        />
+                        <div className="h-full flex flex-col justify-between items-center ">
+                            <ReviewCard
+                                msg={review.reviewMsg}
+                                name={review.name}
+                                location={review.location}
+                            />
+                        </div>
+
                     </SwiperSlide>
                 ))}
             </Swiper>

@@ -4,6 +4,8 @@ import Image from 'next/image'
 import pastTourBanner from '@/assets/pastTourBanner.png'
 import { pastTourImages } from '@/assets/pastTours';
 import Reviews from '@/components/shared/Reviews'
+import ContactForm from '@/components/shared/ContactForm'
+import {Button} from '@/components/ui/Button'
 function PastTours() {
 
     return (
@@ -63,6 +65,25 @@ function PastTours() {
             <div className='mt-4'>
                 <Reviews />
             </div>
+
+            <div className='bg-Primary'>
+                {/* Heading */}
+                <div>
+                    <h2 className='text-White
+                    font-extrabold
+                    text-xl md:text-2xl lg:text-4xl text-center'>IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE’RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY.</h2>
+                </div>
+
+                {/* Form */}
+                <div className='text-White'>
+                    <ContactForm />
+                </div>
+                {/* Submit Button */}
+                <div className='text-center mb-10 mt-6'>
+                    <Button variant='secondary' size='lg'>Submit</Button>
+                </div>
+            </div>
+
         </>
     )
 }
