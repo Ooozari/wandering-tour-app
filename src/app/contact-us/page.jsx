@@ -33,7 +33,7 @@ function Contact() {
 
             {/* Gradient continuation after hero image */}
             <div
-                className="w-full h-[100px]" // Adjust height as needed
+                className="w-full h-[50px] md:h-[100px] " // Adjust height as needed
                 style={{
                     background:
                         "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
@@ -47,7 +47,7 @@ function Contact() {
                 <p className='px-2 text-darkGrey text-sm md:text-md'>We’re here to help. If you have any questions or simply want to chat, let us know below. We’ll always reply quickly!</p>
             </div>
             {/* Form */}
-            <div className='flex flex-col mx-auto gap-4 w-[70%]'>
+            <div className='flex flex-col mx-auto gap-4 w-[80%]'>
                 <div className='flex flex-col gap-3 sm:flex-row'>
                     <div className='w-full flex flex-col gap-1 md:gap-2'>
                         <label >First Name</label>
