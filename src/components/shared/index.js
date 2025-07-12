@@ -7,3 +7,4 @@ export { default as Reviews } from './Reviews';
 export { default as Tab } from './Tab';
 export { default as TourCardLarge } from './TourCardLarge';
 export { default as TourCardSmall } from './TourCardSmall';
+export {default as HeroSection } from './HeroSection'

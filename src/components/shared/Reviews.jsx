@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import ReviewCard from '@/components/shared/ReviewCard'
-import { Button } from '../ui/Button'
+import { Button } from '@/components/ui'
 import { GreaterThan, SmallerThan } from '@/svgs/Icons'
 
 // Swiper imports
@@ -57,7 +57,7 @@ function Reviews() {
     return (
         <>
             {/* Top Header + Navigation */}
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center">
                 {/* Headings */}
                 <div className="text-xl md:text-2xl lg:text-4xl font-extrabold">
                     <h2 className="text-Black">WHAT OUR CLIENTS SAY</h2>

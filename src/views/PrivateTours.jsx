@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import IconCard from '@/components/shared/IconCard'
+
+// Niches
 import {
     Niches1,
     Niches2,
@@ -15,7 +17,7 @@ import {
     Niches11,
     Niches12,
 } from '@/svgs/Icons';
-
+// Flags
 import {
     Flag1,
     Flag2,
@@ -46,21 +48,12 @@ import {
     Flag27,
 } from '@/svgs/Icons';
 
+import { Reviews, HeroSection } from '@/components/shared'
 
+// Images
 import {
-    contactHeroSection,
-    footerBg,
-    footerImageGradient,
-    getInTouch,
     heroImgPrivateTours,
-    landingPageHeroSection,
-    largeCardImg,
-    logoName,
-    logo,
-    pastTourHeroSection,
-    pastTourBanner,
     privateTourDes,
-    smallCardImg,
 } from '@/assets';
 import { GetInTouch } from '@/components';
 function PrivateTours() {
@@ -109,33 +102,24 @@ function PrivateTours() {
         { title: 'Bulgaria', icon: Flag27 },
     ];
 
+    const HeroSectionDetails = {
+        title: 'Private Tours by Wandering Earl Tours',
+        paraText: 'Imagine an amazing private tour specifically crafted for your group or organization. We’ll take care of every aspect of the trip, and will even provide one of our Expert Tour Leaders.',
+        subText: 'All you need to do is enjoy.',
+        ImgUrl: heroImgPrivateTours,
+    }
 
     return (
         <>
-            <div className='flex flex-col gap-30'>
+            <div className='flex flex-col gap-20 md:gap-25 lg:gap-30 '>
                 {/* Hero Section */}
-                <div className='bg-Primary gap-5 px-5 py-5'>
-                    {/* Headings */}
-                    <div className='w-full flex lg:flex-row md:flex-row flex-col justify-between px-6 py-4 gap-3'>
-                        <div className='w-full md:w-1/2 '>
-                            <h1 className="text-White text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-extrabold">
-                                Private Tours by Wandering Earl Tours
-                            </h1>
-
-                        </div>
-                        <div className=' flex flex-col justify-between text-lightGrey w-full md:w-1/2 gap-3 '>
-                            <p>Imagine an amazing private tour specifically crafted for your group or organization. We’ll take care of every aspect of the trip, and will even provide one of our Expert Tour Leaders.
-                            </p>
-                            <p className='italic'>All you need to do is enjoy.</p>
-                        </div>
-                    </div>
-                    {/* Image */}
-                    <div>
-                        <Image
-                            src={heroImgPrivateTours}
-                            alt='Hero Img Private Tours Bannner'
-                        />
-                    </div>
+                <div className='bg-Primary px-5'>
+                    <HeroSection
+                        title={HeroSectionDetails.title}
+                        paraText={HeroSectionDetails.paraText}
+                        subText={HeroSectionDetails.subText}
+                        ImgUrl={HeroSectionDetails.ImgUrl}
+                    />
                 </div>
 
                 {/* after hero section */}
@@ -145,7 +129,7 @@ function PrivateTours() {
                             Private tours
                         </span>,
                             perfectly crafted.</h3>
-                        <div className='flex flex-col gap-4 text-Black'>
+                        <div className='flex flex-col gap-4 text-Black text-sm lg:text-md'>
                             <p>Whether you’re a group of friends, a photography organization, a textile club, abandoned building enthusiasts, or anything in between, we’ll create a magical private tour for your group</p>
                             <p>Unlike tour operators that use the exact same itinerary over and over again, we ensure that every trip is 100% unique. We want to learn about your specific interests, goals, budget and more in order to carefully craft and customize every aspect of the trip in a way that will suit your group perfectly. We choose the ideal route, best lodgings, most rewarding activities, tastiest restaurants, and more, that will all lead to the most extraordinary trip possible.
                                 Since 2013, we’ve offered our highly-regarded, excellent value trips to dozens of groups in dozens of countries around the world.</p>
@@ -170,7 +154,7 @@ function PrivateTours() {
                 <div className='px-[20px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
                         <h2 className='text-Black text-4xl font-bold mb-1 lg:mb-2'>NICHES</h2>
-                        <p className='text-Black'>Some of the niches that we’ve organized private tours around include:</p>
+                        <p className='text-Black text-center'>Some of the niches that we’ve organized private tours around include:</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10"
@@ -185,7 +169,7 @@ function PrivateTours() {
                 <div className='px-[20px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
                         <h2 className='text-Black text-4xl font-bold mb-1 lg:mb-2'>COUNTRIES</h2>
-                        <p className='text-Black'>Some of the countries we’ve organized private tours to include:</p>
+                        <p className='text-Black text-center'>Some of the countries we’ve organized private tours to include:</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 content-center">
@@ -202,6 +186,11 @@ function PrivateTours() {
                 {/* Get in touch */}
                 <div className='p-5' >
                     <GetInTouch />
+                </div>
+
+                {/* Testimonials */}
+                <div className='px-25'>
+                    <Reviews />
                 </div>
             </div>
         </>
