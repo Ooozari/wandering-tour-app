@@ -20,9 +20,9 @@ function OurStyles() {
     }
     return (
         <>
-            <div className='flex flex-col gap-20 md:gap-25 lg:gap-30'>
+            <div className='flex flex-col gap-10 md:gap-20 lg:gap-25'>
                 {/* Hero Section */}
-                <div className='bg-Primary'>
+                <div className='bg-Primary px-5'>
                     <HeroSection
                         title={HeroSectionDetails.title}
                         paraText={HeroSectionDetails.paraText}
@@ -32,7 +32,7 @@ function OurStyles() {
                 </div>
 
                 {/* After Hero Section */}
-                <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10'>
+                <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row gap-10'>
                     <div className='w-full lg:w-1/2'>
                         <h3 className='text-Black font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'><span className='text-Secondary'>Unique tours<br /></span>you can’t find anywhere else.</h3>
                         <div className='flex flex-col gap-4 text-Black text-sm lg:text-md'>
@@ -58,7 +58,7 @@ function OurStyles() {
                 </div>
 
                 {/* Tour that are good for Every One */}
-                <div className='px-[20px] flex flex-col items-center lg:flex-row-reverse gap-10'>
+                <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row-reverse gap-10'>
                     <div className='w-full lg:w-1/2'>
                         <h3 className='text-Black font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'><span className='text-Secondary'>Tours<br /></span>that are good for everyone.</h3>
                         <div className='flex flex-col gap-4 text-Black text-sm lg:text-md'>
@@ -99,9 +99,12 @@ function OurStyles() {
                             }}
                         ></div>
                         {/* Text Content */}
-                        <div className='px- absolute bottom-10 left-12 right-12'>
+                        <div className=' absolute 
+                        bottom-3 left-5 right-5
+                        md:bottom-7 md:left-9 md:right-9
+                        lg:bottom-10 lg:left-12 lg:right-12'>
                             <h3 className='text-White font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'>No <span className='text-Secondary'>cookie-cutter </span>trips.</h3>
-                            <div className='flex text-White flex-col gap-4 text- text-sm lg:text-md'>
+                            <div className='flex text-White flex-col gap-4 text-xs md:text-sm lg:text-md'>
                                 <p>We make a point of handcrafting every trip we offer, which is why we can say with pride that no two tours we offer are the same. Every time we sit down to make an itinerary for a tour, we build it from the ground up. We choose the ideal route, best lodgings, most rewarding activities, tastiest restaurants, and more, that will all lead to the most extraordinary trip possible.</p>
                                 <p>We also allow for flexibility on the spot, so if we see something fantastic happening (ever been to an Indian wedding?) we can stop and join in the fun without worrying that we’ll be “off-schedule.”</p>
                                 <p>It’s for these reasons that we don’t make contracts with hotels, restaurants, and tourist sites like so many other operators. We want to have the freedom to offer the absolute best trip, and we want to make sure it’s not just what you expected, but so much more.</p>
@@ -126,9 +129,11 @@ function OurStyles() {
                             }}
                         ></div>
                         {/* Text Content */}
-                        <div className='px- absolute bottom-10 left-18 right-10'>
+                        <div className='absolute bottom-3 left-5 right-5
+                        md:bottom-7 md:left-9 md:right-9
+                        lg:bottom-10 lg:left-12 lg:right-12'>
                             <h3 className='text-White font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'>Safety</h3>
-                            <div className='flex text-White flex-col gap-4 text- text-sm lg:text-md'>
+                            <div className='flex text-White flex-col gap-4 text-xs md:text-sm lg:text-md'>
                                 <p>Safety is not something we take lightly. When you travel with Wandering Earl Tours, you can be confident that the safety of every traveler, every team member and the local populations is our top priority…always.</p>
                                 <p>Every tour is led by one of our amazing Expert Tour Leaders who is there to ensure your trip runs smoothly and safely. These leaders are with you throughout your experience and are highly skilled in handling all kinds of situations. They also work side by side with our fantastic team of local contacts who offer a level of expertise that ensures any situation can be handled quickly and properly.</p>
                             </div>
@@ -142,15 +147,9 @@ function OurStyles() {
                 </div>
 
                 {/* TOURS LARGE */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-25'>
+                <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
                     <AllToursLarge />
                 </div>
-
-                 {/* Get in Touch */}
-                <div className='p-5' >
-                    <GetInTouch />
-                </div>
-
             </div>
         </>
     )
