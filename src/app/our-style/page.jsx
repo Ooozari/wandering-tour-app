@@ -1,9 +1,10 @@
 import React from 'react'
+import { OurStyles} from '@/views';
 
 function Contact() {
     return (
         <>
-            <div>Our Style page</div>
+           <OurStyles />
         </>
     )
 }

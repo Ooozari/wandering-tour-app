@@ -5,6 +5,11 @@ export { default as ReserveNow } from './ReserveNow';
 export { default as ReviewCard } from './ReviewCard';
 export { default as Reviews } from './Reviews';
 export { default as Tab } from './Tab';
-export { default as TourCardLarge } from './TourCardLarge';
-export { default as TourCardSmall } from './TourCardSmall';
 export {default as HeroSection } from './HeroSection'
+export {default as Only2Spots} from './Only2Spots'
+export {default as SoldOut} from './SoldOut'
+export {default as TourCardLarge} from './TourCardLarge'
+export {default as TourCardSmall} from './TourCardSmall'
+export {default as AllToursLarge} from './AllToursLarge'
+
+

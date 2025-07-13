@@ -56,57 +56,60 @@ function Reviews() {
 
     return (
         <>
-            {/* Top Header + Navigation */}
-            <div className="flex justify-between items-center">
-                {/* Headings */}
-                <div className="text-xl md:text-2xl lg:text-4xl font-extrabold">
-                    <h2 className="text-Black">WHAT OUR CLIENTS SAY</h2>
-                    <h2 className="text-Secondary">ABOUT US</h2>
+            <div>
+                {/* Top Header + Navigation */}
+                <div className="flex justify-between items-center">
+                    {/* Headings */}
+                    <div className="text-xl md:text-2xl lg:text-4xl font-extrabold">
+                        <h2 className="text-Black">WHAT OUR CLIENTS SAY</h2>
+                        <h2 className="text-Secondary">ABOUT US</h2>
+                    </div>
+
+                    {/* Nav Buttons */}
+                    <div className="flex gap-2">
+                        <Button variant='outlineCircle' size='circle' id="prevBtn">
+                            <SmallerThan color='White' />
+                        </Button>
+                        <Button variant='circle' id="nextBtn">
+                            <GreaterThan color='Secondary' />
+                        </Button>
+                    </div>
                 </div>
 
-                {/* Nav Buttons */}
-                <div className="flex gap-2">
-                    <Button variant='outlineCircle' size='circle' id="prevBtn">
-                        <SmallerThan color='White' />
-                    </Button>
-                    <Button variant='circle' id="nextBtn">
-                        <GreaterThan color='Secondary' />
-                    </Button>
-                </div>
+                {/* Swiper Slider */}
+                <Swiper
+                    modules={[Navigation]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    breakpoints={{
+                        640: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                    navigation={{
+                        prevEl: '#prevBtn',
+                        nextEl: '#nextBtn',
+                    }}
+                    onSwiper={(swiper) => {
+                        // Wait for DOM elements (buttons) to mount
+                        setTimeout(() => swiper.navigation.update(), 100)
+                    }}
+                >
+                    {reviewsUser.map((review, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="h-full flex">
+                                <ReviewCard
+                                    msg={review.reviewMsg}
+                                    name={review.name}
+                                    location={review.location}
+                                />
+                            </div>
+                        </SwiperSlide>
+
+                    ))}
+                </Swiper>
             </div>
 
-            {/* Swiper Slider */}
-            <Swiper
-                modules={[Navigation]}
-                spaceBetween={20}
-                slidesPerView={1}
-                breakpoints={{
-                    640: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                }}
-                navigation={{
-                    prevEl: '#prevBtn',
-                    nextEl: '#nextBtn',
-                }}
-                onSwiper={(swiper) => {
-                    // Wait for DOM elements (buttons) to mount
-                    setTimeout(() => swiper.navigation.update(), 100)
-                }}
-            >
-                {reviewsUser.map((review, index) => (
-                    <SwiperSlide key={index} className="h-full">
-                        <div className="h-full flex">
-                            <ReviewCard
-                                msg={review.reviewMsg}
-                                name={review.name}
-                                location={review.location}
-                            />
-                        </div>
-                    </SwiperSlide>
-
-                ))}
-            </Swiper>
         </>
     )
 }

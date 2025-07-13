@@ -125,9 +125,9 @@ function PrivateTours() {
                 {/* after hero section */}
                 <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10'>
                     <div className='w-full lg:w-1/2'>
-                        <h3 className='text-Black font-bold text-4xl uppercase mb-4'><span className='text-Secondary'>
+                        <h3 className='text-Black font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'><span className='text-Secondary'>
                             Private tours
-                        </span>,
+                        </span>,<br/>
                             perfectly crafted.</h3>
                         <div className='flex flex-col gap-4 text-Black text-sm lg:text-md'>
                             <p>Whether you’re a group of friends, a photography organization, a textile club, abandoned building enthusiasts, or anything in between, we’ll create a magical private tour for your group</p>
@@ -189,7 +189,7 @@ function PrivateTours() {
                 </div>
 
                 {/* Testimonials */}
-                <div className='px-25'>
+                <div className='px-5 md:px-15 lg:px-25'>
                     <Reviews />
                 </div>
             </div>
