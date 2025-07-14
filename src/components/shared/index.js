@@ -11,5 +11,6 @@ export {default as SoldOut} from './SoldOut'
 export {default as TourCardLarge} from './TourCardLarge'
 export {default as TourCardSmall} from './TourCardSmall'
 export {default as AllToursLarge} from './AllToursLarge'
+export {default as OurTeam} from './OurTeam'
 
 

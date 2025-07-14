@@ -48,7 +48,7 @@ function AllToursLarge() {
                 {/* Heading & Button */}
                 <div className='flex justify-between items-end'>
                     <div>
-                        <h1 className='text-darkGrey uppercase font-extrabold text-3xl md:text-5xl lg:text-7xl xl:text-9xl'>
+                        <h1 className='text-darkGrey uppercase font-extrabold text-2xl md:text-3xl lg:text-5xl xl:text-7xl'>
                             Tours
                         </h1>
                     </div>

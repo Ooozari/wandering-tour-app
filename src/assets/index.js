@@ -18,3 +18,23 @@ export {default as WanderAcrossMexico} from './WanderAcrossMexico.png'
 export {default as WandertoVietnam} from './WandertoVietnam.png'
 export {default as WanderAcrossRomania} from './WanderAcrossRomania.png'
 export {default as SmallWanderAcrossMexico} from './SmallWanderAcrossMexico.png'
+export {default as AboutUsHeroImg} from './AboutUsHeroImg.png'
+export {default as Blur} from './Blur.png'
+export {default as AboutUsDes} from './AboutUsDes.png'
+export {default as OurGlobalFamliyAboutUs} from './OurGlobalFamliyAboutUs.jpg'
+export {default as TeamMemberImg1} from './TeamMemberImg1.png'
+export {default as TeamMemberImg2} from './TeamMemberImg2.png'
+export {default as TeamMemberImg3} from './TeamMemberImg3.png'
+export {default as TeamMemberImg4} from './TeamMemberImg4.png'
+export {default as TeamMemberImg5} from './TeamMemberImg5.png'
+export {default as TeamMemberImg6} from './TeamMemberImg6.png'
+export {default as TeamMemberImg7} from './TeamMemberImg7.png'
+
+
+
+
+
+
+
+
+

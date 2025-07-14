@@ -7,7 +7,7 @@ function HeroSection({ title, paraText, subText, ImgUrl }) {
             {/* Hero Section */}
             <div className='flex flex-col gap-5 py-5'>
                 {/* Headings */}
-                <div className='w-full flex lg:flex-row md:flex-row flex-col justify-between px-6 py-4 gap-3'>
+                <div className='w-full flex lg:flex-row md:flex-row flex-col justify-between items-center px-6 py-4 gap-3'>
                     <div className='w-full md:w-1/2 '>
                         <h1 className="text-White text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-extrabold">
                             {title}

@@ -3,3 +3,5 @@ export { default as LandingPage } from './LandingPage';
 export { default as OurStyles } from './OurStyles';
 export { default as PastTours } from './PastTours';
 export { default as PrivateTours } from './PrivateTours';
+export { default as AboutUs } from './AboutUs';
+

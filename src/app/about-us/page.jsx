@@ -1,9 +1,10 @@
 import React from 'react'
+import {AboutUs} from "@/views";
 
 function Contact() {
     return (
         <>
-            <div>Abouts Us page</div>
+            <AboutUs/>
         </>
     )
 }
