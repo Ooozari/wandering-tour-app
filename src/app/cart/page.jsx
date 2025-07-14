@@ -1,9 +1,9 @@
 import React from 'react'
-
+import {Cart} from "@/views";
 function Contact() {
     return (
         <>
-            <div>Cart page</div>
+            <Cart />
         </>
     )
 }

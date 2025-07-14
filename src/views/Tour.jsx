@@ -186,7 +186,8 @@ function Tour() {
 
     return (
         <>
-            <div className='flex flex-col gap-15  lg:gap-20'>
+            <div className='flex flex-col'>
+
                 {/* Hero Section */}
                 <div className='relative w-full'>
                     <Image
@@ -195,55 +196,75 @@ function Tour() {
                         className='w-full h-auto object-cover'
                         priority
                     />
-
+                    <div
+                        className="absolute inset-0"
+                        style={{
+                            background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                        }}
+                    />
                     <div className='absolute inset-0 z-10 flex justify-center items-center'>
                         <h1 className='text-White font-extrabold text-4xl md:text-6xl'>TOURS</h1>
                     </div>
                 </div>
 
-                {/* Past Tour 2024*/}
-                <div className='px-5 py-10'>
-                    <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
-                        <span className='text-Secondary'>2024 </span>TOURS
-                    </h1>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
-                        {Year2024.map((tour, index) => (
-                            <TourCardSmall
-                                key={index}
-                                imgUrl={tour.imgUrl}
-                                Status={tour.Status}
-                                title={tour.title}
-                                content={tour.content}
-                                bookSpot={tour.bookSpot}
-                                location={tour.location}
-                                days={tour.days}
-                                btnText={tour.btnText}
-                            />
-                        ))}
-                    </div>
+                {/* Gradient Section without gap */}
+                <div className='relative w-full h-[170px] -mt-[1px] -mb-[50px]'> {/* Slight negative margin to overlap */}
+                    <div
+                        className='absolute inset-0'
+                        style={{
+                            background: "linear-gradient(180deg, #1E365C 0%, rgba(30, 54, 92, 0) 100%)",
+                        }}
+                    />
                 </div>
 
-                {/* Past Tour 2025*/}
-                <div className='px-5 py-10'>
-                    <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
-                        <span className='text-Secondary'>2025 </span>TOURS
-                    </h1>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
-                        {Year2025.map((tour, index) => (
-                            <TourCardSmall
-                                key={index}
-                                imgUrl={tour.imgUrl}
-                                Status={tour.Status}
-                                title={tour.title}
-                                content={tour.content}
-                                bookSpot={tour.bookSpot}
-                                location={tour.location}
-                                days={tour.days}
-                                btnText={tour.btnText}
-                            />
-                        ))}
+                {/* Other Sections with gap */}
+                <div className='flex flex-col gap-15 lg:gap-20'>
+                    {/* Past Tour 2024*/}
+                    <div className='px-5'>
+                        <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
+                            <span className='text-Secondary'>2024 </span>TOURS
+                        </h1>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+                            {Year2024.map((tour, index) => (
+                                <TourCardSmall
+                                    key={index}
+                                    imgUrl={tour.imgUrl}
+                                    Status={tour.Status}
+                                    title={tour.title}
+                                    content={tour.content}
+                                    bookSpot={tour.bookSpot}
+                                    location={tour.location}
+                                    days={tour.days}
+                                    btnText={tour.btnText}
+                                />
+                            ))}
+                        </div>
                     </div>
+
+                    {/* Past Tour 2025*/}
+                    <div className='px-5'>
+                        <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
+                            <span className='text-Secondary'>2025 </span>TOURS
+                        </h1>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+                            {Year2025.map((tour, index) => (
+                                <TourCardSmall
+                                    key={index}
+                                    imgUrl={tour.imgUrl}
+                                    Status={tour.Status}
+                                    title={tour.title}
+                                    content={tour.content}
+                                    bookSpot={tour.bookSpot}
+                                    location={tour.location}
+                                    days={tour.days}
+                                    btnText={tour.btnText}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
+
 
             </div>
         </>

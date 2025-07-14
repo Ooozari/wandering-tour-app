@@ -5,4 +5,6 @@ export { default as PastTours } from './PastTours';
 export { default as PrivateTours } from './PrivateTours';
 export { default as AboutUs } from './AboutUs';
 export { default as Tour } from './Tour';
+export { default as Cart } from './Cart';
+
 
