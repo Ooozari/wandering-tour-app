@@ -29,7 +29,7 @@ function AllToursLarge() {
             bookSpot: '2 out of 12 spots booked',
             location: 'Vietnam',
             days: 'Nov 08 — Nov 17, 2024 (10 days)',
-            btnText: 'Add to WaitList'
+            btnText: 'Add to Waitlist'
         },
         {
             imgUrl: WanderAcrossRomania,

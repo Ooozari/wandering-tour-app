@@ -1,32 +1,250 @@
-import { TourCardSmall } from '@/components'
+
 import React from 'react'
 import Image from 'next/image'
+import { ToursHeroImg } from '@/assets'
+import { TourCardSmall, Only2Spots, SoldOut, HeroSection } from '@/components/shared'
+import {
+    Tour2024Img1,
+    Tour2024Img2,
+    Tour2024Img3,
+    Tour2024Img4,
+    Tour2024Img5,
+    Tour2024Img6,
+    Tour2024Img8
+} from '@/assets/tour2024'
+import {
+    Tour2025Img1,
+    Tour2025Img2,
+    Tour2025Img3,
+    Tour2025Img4,
+    Tour2025Img5,
+    Tour2025Img6,
+    Tour2025Img7,
+    Tour2025Img8
+} from '@/assets/tour2025'
+
 
 function Tour() {
 
-    const Year2024 = {
+    const Year2024 = [
+        {
+            imgUrl: Tour2024Img1,
+            title: 'Wander Across Mexico',
+            Status: Only2Spots,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2024Img2,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2024Img3,
+            title: 'Wander Across Mexico',
+            Status: SoldOut,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Add to Waitlist'
+        },
+        {
+            imgUrl: Tour2024Img4,
+            title: 'Wander Across Mexico',
+            Status: Only2Spots,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2024Img5,
+            title: 'Wander Across Mexico',
+            Status: SoldOut,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Add to Waitlist'
+        },
+        {
+            imgUrl: Tour2024Img6,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2024Img1,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2024Img8,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+    ]
 
-    }
+    const Year2025 = [
+        {
+            imgUrl: Tour2025Img1,
+            title: 'Wander Across Mexico',
+            Status: Only2Spots,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2025Img2,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2025Img3,
+            title: 'Wander Across Mexico',
+            Status: SoldOut,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Add to Waitlist'
+        },
+        {
+            imgUrl: Tour2025Img4,
+            title: 'Wander Across Mexico',
+            Status: Only2Spots,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2025Img5,
+            title: 'Wander Across Mexico',
+            Status: SoldOut,
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Add to Waitlist'
+        },
+        {
+            imgUrl: Tour2025Img6,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2025Img7,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+        {
+            imgUrl: Tour2025Img8,
+            title: 'Wander Across Mexico',
+            content: `Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!`,
+            bookSpot: '2 out of 12 spots booked',
+            location: 'Mexico',
+            days: 'Nov 08 — Nov 17, 2024 (10 days)',
+            btnText: 'Details'
+        },
+    ]
+
     return (
         <>
-            <div>
+            <div className='flex flex-col gap-15  lg:gap-20'>
                 {/* Hero Section */}
-                <div>
-                    <Image />
+                <div className='relative w-full'>
+                    <Image
+                        src={ToursHeroImg}
+                        alt='Tours Hero Img'
+                        className='w-full h-auto object-cover'
+                        priority
+                    />
+
+                    <div className='absolute inset-0 z-10 flex justify-center items-center'>
+                        <h1 className='text-White font-extrabold text-4xl md:text-6xl'>TOURS</h1>
+                    </div>
                 </div>
 
-                {/* Past Tour */}
-                <div>
-                    <div>
-                        <h1><span className='text-Secondary'>2024</span>Year</h1>
-                    </div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
-                        {Year2024.map(() => (
-                            <TourCardSmall />
+                {/* Past Tour 2024*/}
+                <div className='px-5 py-10'>
+                    <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
+                        <span className='text-Secondary'>2024 </span>TOURS
+                    </h1>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+                        {Year2024.map((tour, index) => (
+                            <TourCardSmall
+                                key={index}
+                                imgUrl={tour.imgUrl}
+                                Status={tour.Status}
+                                title={tour.title}
+                                content={tour.content}
+                                bookSpot={tour.bookSpot}
+                                location={tour.location}
+                                days={tour.days}
+                                btnText={tour.btnText}
+                            />
                         ))}
                     </div>
-
                 </div>
+
+                {/* Past Tour 2025*/}
+                <div className='px-5 py-10'>
+                    <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
+                        <span className='text-Secondary'>2025 </span>TOURS
+                    </h1>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+                        {Year2025.map((tour, index) => (
+                            <TourCardSmall
+                                key={index}
+                                imgUrl={tour.imgUrl}
+                                Status={tour.Status}
+                                title={tour.title}
+                                content={tour.content}
+                                bookSpot={tour.bookSpot}
+                                location={tour.location}
+                                days={tour.days}
+                                btnText={tour.btnText}
+                            />
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </>
     )

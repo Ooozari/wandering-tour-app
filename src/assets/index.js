@@ -29,6 +29,8 @@ export {default as TeamMemberImg4} from './TeamMemberImg4.png'
 export {default as TeamMemberImg5} from './TeamMemberImg5.png'
 export {default as TeamMemberImg6} from './TeamMemberImg6.png'
 export {default as TeamMemberImg7} from './TeamMemberImg7.png'
+export {default as ToursHeroImg} from './ToursHeroImg.png'
+
 
 
 

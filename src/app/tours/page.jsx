@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Tour from '@/views/Tour'
 function Contact() {
     return (
         <>
-            <div>Tour page</div>
+            <Tour/>
         </>
     )
 }
