@@ -24,7 +24,9 @@ function Cart() {
                 <div className='border-b-1 border-lightGrey py-4'>
                     <h1 className='text-6xl font-[900] text-Black'>Cart</h1>
                 </div>
+
                 <div className='flex md:flex-row flex-col gap-15 '>
+
                     {/* Cart Table */}
                     <div className='w-full md:w-[65%] flex flex-col gap-12'>
                         <div className='relative bg-White px-2 py-4 shadow-lg border border-strokeLight rounded-2xl'>
@@ -119,7 +121,7 @@ function Cart() {
                             <h5 className='text-center text-White font-[900] py-3 text-2xl uppercase'>Cart Totals</h5>
                         </div>
 
-                        <div className='px-5 py-7 w-full rounded-b-3xl shadow-lg flex flex-col gap-8'>
+                        <div className='px-5 pt-2 pb-6 w-full rounded-b-3xl shadow-lg flex flex-col gap-8'>
                             <div className='flex flex-col'>
                                 <div className='border-b border-lightGrey py-5 flex justify-between items-center'>
                                     <p className='text-darkGrey'>Subtotal</p>
