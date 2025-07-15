@@ -2,6 +2,7 @@ import React from 'react'
 import { input as Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/Button'
 import Image from 'next/image'
+import {ContactForm} from '@/components/shared'
 import ContactPageHeroSection from '@/assets/contact-HeroSection.png'
 
 function ContactUs() {
@@ -47,7 +48,10 @@ function ContactUs() {
                 <p className='px-2 text-darkGrey text-sm md:text-md'>We’re here to help. If you have any questions or simply want to chat, let us know below. We’ll always reply quickly!</p>
             </div>
             {/* Form */}
-            <div className='flex flex-col mx-auto gap-4 w-[80%]'>
+            <div>
+                <ContactForm inputBorder='border-lightGrey'/>
+            </div>
+            {/* <div className='flex flex-col mx-auto gap-4 w-[80%]'>
                 <div className='flex flex-col gap-3 sm:flex-row'>
                     <div className='w-full flex flex-col gap-1 md:gap-2'>
                         <label >First Name</label>
@@ -66,7 +70,7 @@ function ContactUs() {
                     <label >Message</label>
                     <Input type='text' placeholder="Write..." />
                 </div>
-            </div>
+            </div> */}
 
             <div className='text-center mb-10 mt-6'>
                 <Button variant='secondary' size='lg'>Submit</Button>
