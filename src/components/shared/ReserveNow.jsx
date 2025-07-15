@@ -14,7 +14,6 @@ export default function ReserveNow() {
     else {
       setPersonCounter(personCounter - 1);
     }
-
   }
   return (
     <>

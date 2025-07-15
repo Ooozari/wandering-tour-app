@@ -30,6 +30,10 @@ export {default as TeamMemberImg5} from './TeamMemberImg5.png'
 export {default as TeamMemberImg6} from './TeamMemberImg6.png'
 export {default as TeamMemberImg7} from './TeamMemberImg7.png'
 export {default as ToursHeroImg} from './ToursHeroImg.png'
+export {default as CartItem1} from './CartItem1.png'
+export {default as CartItem2} from './CartItem2.png'
+
+
 
 
 

@@ -64,7 +64,7 @@ function HeaderPrimary() {
             {/* buttons */}
             <div className='flex gap-2'>
                 <Button variant='outlineCircle' size='circle'>
-                    <Cart color='White'/>
+                   <Link href="/cart"><Cart color='White'/></Link> 
                 </Button>
                 <Button variant='whitePrimary' size='lg' className='bg-White'>
                     <Link href="/login">Login</Link>
