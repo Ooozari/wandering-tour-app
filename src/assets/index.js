@@ -3,7 +3,6 @@ export { default as footerBg } from './footer-bg.png';
 export { default as footerImageGradient } from './footer-image-gradient.png';
 export { default as getInTouch } from './getInTouch.png';
 export { default as heroImgPrivateTours } from './heroImgPrivateTours.png';
-export { default as landingPageHeroSection } from './landingPage-HeroSection.png';
 export { default as logoName } from './Logo-name.png';
 export { default as logo } from './Logo.png';
 export { default as pastTourHeroSection } from './PastTour-HeroSection.png';
@@ -32,6 +31,8 @@ export {default as TeamMemberImg7} from './TeamMemberImg7.png'
 export {default as ToursHeroImg} from './ToursHeroImg.png'
 export {default as CartItem1} from './CartItem1.png'
 export {default as CartItem2} from './CartItem2.png'
+export {default as landingPageHeroSection} from './landingPageHeroSection.png'
+
 
 
 

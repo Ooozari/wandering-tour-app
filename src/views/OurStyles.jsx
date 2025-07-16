@@ -146,6 +146,15 @@ function OurStyles() {
                     <GetInTouch />
                 </div>
 
+
+                <div className="relative h-48">  {/* ✅ Give it a height */}
+                    <div className="absolute inset-0 z-0 bg-[linear-gradient(178.06deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]" />
+                    <div className="relative z-10 flex items-center justify-center h-full">
+                        <h1 className='text-Primary uppercase font-extrabold text-2xl md:text-3xl lg:text-5xl xl:text-7xl'>2024</h1>
+                    </div>
+                </div>
+
+
                 {/* TOURS LARGE */}
                 <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
                     <AllToursLarge />

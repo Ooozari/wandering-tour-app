@@ -99,6 +99,7 @@ function HeaderPrimary() {
         <div className='flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-[60px] py-4 md:py-[20px] bg-Primary gap-4 md:gap-0'>
             {/* Logo */}
             <div className="relative flex items-center">
+                <Link href="/">
                 <Image
                     src={companyName}
                     alt="Logo Name"
@@ -113,6 +114,7 @@ function HeaderPrimary() {
                     width={150}
                     height={150}
                 />
+                </Link>
             </div>
 
             {/* Navbar Links */}
