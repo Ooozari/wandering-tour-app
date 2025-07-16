@@ -161,7 +161,7 @@ function AboutUs() {
 
                 {/* TOURS LARGE */}
                 <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
-                    <AllToursLarge />
+                    <AllToursLarge title="Tours" />
                 </div>
 
 

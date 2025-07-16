@@ -43,7 +43,7 @@ function LandingPage() {
     ]
 
     return (
-        <div>
+        <div className='flex flex-col gap-10 md:gap-15 lg:gap-20'>
             {/* Hero Section */}
             <div className="relative">
                 {/* Image */}
@@ -97,19 +97,21 @@ function LandingPage() {
 
             {/* 2024 Tour */}
             <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
-                <AllToursLarge />
+               <AllToursLarge year="2024" title="Tours" />
             </div>
 
             {/* Tour Group */}
-            <div>
-                <div>
-                    <h1>Our trips are not standard</h1>
-                    <h1>group tours</h1>
-                    <p>Experience culture, wonder and fun like never before.</p>
+            <div className='flex flex-col gap-5 md:gap-10 lg:gap-15'>
+                <div className='text-center'>
+                    <div className='mb-4'>
+                        <h1 className='text-Black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase font-[900] leading-[100%]'>Our trips are not standard</h1>
+                        <h1 className='text-Secondary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase font-[900] leading-[100%]'>group tours</h1>
+                    </div>
+                    <p className='text-Black text-md lg:text-lg xl:text-xl '>Experience culture, wonder and fun like never before.</p>
                 </div>
 
                 {/* Tour Group Card */}
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                <div className='px-5 md:px-10 lg:px-15 xl:px-25 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {
                         tourGroup.map((group, index) => (
                             <GroupTourCard

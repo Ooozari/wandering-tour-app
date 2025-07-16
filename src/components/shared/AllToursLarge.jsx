@@ -9,7 +9,7 @@ import {
 
 import { Only2Spots, SoldOut, TourCardLarge } from '@/components/shared'
 
-function AllToursLarge() {
+function AllToursLarge({ year, title }) {
     const largeTourCardDetail = [
         {
             imgUrl: WanderAcrossMexico,
@@ -48,8 +48,12 @@ function AllToursLarge() {
                 {/* Heading & Button */}
                 <div className='flex justify-between items-end'>
                     <div>
-                        <h1 className='text-darkGrey uppercase font-extrabold text-2xl md:text-3xl lg:text-5xl xl:text-7xl'>
-                            Tours
+                        <h1 className='flex flex-col text-darkGrey uppercase font-extrabold text-2xl md:text-3xl lg:text-5xl xl:text-7xl'>
+                            {year && <span className='text-Primary'>{year}</span>}
+                            <span className='text-darkGrey'>
+                                {title}
+                            </span>
+
                         </h1>
                     </div>
                     <div>
