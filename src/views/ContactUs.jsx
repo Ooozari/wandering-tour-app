@@ -38,7 +38,7 @@ function ContactUs() {
             ></div>
 
             {/* CONTENT WRAPPER STARTS HERE */}
-            <div className="container mx-auto px-4 max-w-[1280px]">
+            <div className="container mx-auto px-4">
 
                 {/* Headings */}
                 <div className='text-center mb-9'>

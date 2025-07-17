@@ -21,10 +21,10 @@ function HeroSection({ title, paraText, subText, ImgUrl }) {
                     </div>
                 </div>
                 {/* Image */}
-                <div>
+                <div className='mx-auto'>
                     <Image
                         src={ImgUrl}
-                        alt='Hero Img Private Tours Bannner'
+                        alt='Hero Img Private Tours Bannner '
                     />
                 </div>
             </div>

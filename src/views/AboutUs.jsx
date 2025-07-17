@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroSection, OurTeam,AllToursLarge } from '@/components/shared'
+import { HeroSection, OurTeam, AllToursLarge } from '@/components/shared'
 import { Button } from '@/components/ui'
 import { AboutUsHeroImg, AboutUsDes, OurGlobalFamliyAboutUs, TeamMemberImg1, TeamMemberImg2, TeamMemberImg3, TeamMemberImg4, TeamMemberImg5, TeamMemberImg6, TeamMemberImg7 } from '@/assets'
 import Image from 'next/image'
@@ -77,21 +77,8 @@ function AboutUs() {
     ]
     return (
         <>
-            <div className='relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
-
-                {/* Hero + After */}
-                <div>
-                    {/* Background Gradient with Blur */}
-                    <div
-                        className="absolute inset-0 -z-10 w-full h-full"
-                        style={{
-                            height: '115vh',
-                            background: 'linear-gradient(180deg, #1E365C 0%, #1E365C 50.5%, rgba(30, 54, 92, 0.15) 100%)',
-                        }}
-                    />
-
-                    {/* Hero Section */}
-                    <div className='px-5 relative z-10'>
+         {/* Hero Section */}
+                    <div className='bg-Primary  relative z-10'>
                         <HeroSection
                             title={HeroSectionDetails.title}
                             paraText={HeroSectionDetails.paraText}
@@ -99,16 +86,29 @@ function AboutUs() {
                             ImgUrl={HeroSectionDetails.ImgUrl}
                         />
                     </div>
+            <div className='container mx-auto px-4 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
 
-                    {/* After hero section */}
-                    <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row gap-10'>
-                        {/* Text */}
+                {/* Hero + After */}
+                <div>
+                    {/* <div
+                        className="absolute inset-0 -z-10 w-full h-full"
+                        style={{
+                            height: '115vh',
+                            background: 'linear-gradient(180deg, #1E365C 0%, #1E365C 50.5%, rgba(30, 54, 92, 0.15) 100%)',
+                        }}
+                    /> */}
+
+                   
+
+                   
+                </div>
+                    
+                 {/* After hero section */}
+                    <div className='flex flex-col items-center lg:flex-row gap-10'>
                         <div className='w-full lg:w-1/2 text-Black'>
                             <p>Our team at Wandering Earl Tours has a strong desire to bring rich cultural connections around the world to people who would appreciate them the most. And we hold this mission at the core of everything we do</p>
                             <p>Focused, purposeful and incredibly rewarding trips are the goal, and each member of our team brings their own insights, skills and enthusiasm to the table. When combined, our goal is achieved, with unique Wandering Earl Tours that we are all genuinely excited to offer!</p>
                         </div>
-
-                        {/* Img */}
                         <div className='w-full lg:w-1/2'>
                             <Image
                                 src={AboutUsDes}
@@ -116,28 +116,29 @@ function AboutUs() {
                             />
                         </div>
                     </div>
-                </div>
-
-                {/* Our Glocal Family */}
+                {/* Our Global Family */}
                 <div className='flex flex-col lg:flex-row items-center gap-1 bg-Secondary w-full'>
-                    <div className='w-full lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
-                        <h3 className='text-White font-extrabold text-2xl md:text-3xl lg:text-4xl'>Get In Touch</h3>
-                        <p className='text-White text-md lg:text-[16px] mt-2 mb-4'>Our team also consists of our incredible travel partners, friends and endless local contacts in every country where we operate. These wonderful people work extremely hard to help us create and run our unique trips. We could not do this without all of them as it takes such a dedicated and global team to create our rewarding travel experiences!</p>
-                        <div>
-                            <Button varient='default' size='lg'>Contact us Today</Button>
+                    <div className='container mx-auto px-4 flex flex-col lg:flex-row w-full'>
+                        <div className='w-full lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
+                            <h3 className='text-White font-extrabold text-2xl md:text-3xl lg:text-4xl'>Get In Touch</h3>
+                            <p className='text-White text-md lg:text-[16px] mt-2 mb-4'>
+                                Our team also consists of our incredible travel partners, friends and endless local contacts in every country where we operate. These wonderful people work extremely hard to help us create and run our unique trips. We could not do this without all of them as it takes such a dedicated and global team to create our rewarding travel experiences!
+                            </p>
+                            <div>
+                                <Button varient='default' size='lg'>Contact us Today</Button>
+                            </div>
+                        </div>
+
+                        <div className='hidden lg:flex w-full h-full lg:w-1/2'>
+                            <Image src={OurGlobalFamliyAboutUs}
+                                alt='Our Global Famliy AboutUs'
+                                className='rounded-tl-[1821px] rounded-bl-[795px]' />
                         </div>
                     </div>
-
-                    <div className='hidden lg:flex w-full h-full lg:w-1/2'>
-                        <Image src={OurGlobalFamliyAboutUs}
-                            alt='Our Global Famliy AboutUs'
-                            className='rounded-tl-[1821px] rounded-bl-[795px]' />
-                    </div>
-
                 </div>
 
                 {/* Our Team */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col gap-10'>
+                <div className='flex flex-col gap-10'>
                     <div className='text-Black font-extrabold text-center text-2xl md:text-3xl lg:text-4xl'>
                         <h1>Our <span className='text-Secondary'>Team</span></h1>
                     </div>
@@ -155,17 +156,16 @@ function AboutUs() {
                                 Direction={member.Direction}
                             />
                         ))}
-
                     </div>
                 </div>
 
                 {/* TOURS LARGE */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
+                <div className='mb-3'>
                     <AllToursLarge title="Tours" />
                 </div>
 
-
             </div>
+
         </>
     )
 }

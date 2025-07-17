@@ -20,8 +20,7 @@ function OurStyles() {
     }
     return (
         <>
-            <div className='flex flex-col gap-10 md:gap-20 lg:gap-25'>
-                {/* Hero Section */}
+        {/* Hero Section */}
                 <div className='bg-Primary px-5'>
                     <HeroSection
                         title={HeroSectionDetails.title}
@@ -31,6 +30,8 @@ function OurStyles() {
                     />
                 </div>
 
+            <div className='container mx-auto px-4 flex flex-col gap-10 md:gap-20 lg:gap-25'>
+                
                 {/* After Hero Section */}
                 <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row gap-10'>
                     <div className='w-full lg:w-1/2'>
@@ -140,7 +141,7 @@ function OurStyles() {
                         </div>
                     </div>
                 </div>
-
+                
                 {/* Get in Touch */}
                 <div className='p-5' >
                     <GetInTouch />
@@ -151,6 +152,7 @@ function OurStyles() {
                     <AllToursLarge title="Tours" />
                 </div>
             </div>
+
         </>
     )
 }

@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-// import { ShieldIcon } from '@/assets/icons';
+import { SaleIcon } from '@/svgs/Icons';
 import { useState } from 'react'
 import { Button } from '@/components/ui/Button'
 
@@ -22,12 +22,12 @@ export default function ReserveNow() {
         {/* dont forget to remove mt */}
         <div className="relative mt-9 w-full">
           {/* Circle */}
-          <div className="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-Secondary text-White rounded-full flex items-center justify-center z-10">
-            {/* <ShieldIcon className="w-12 h-12 text-white" /> */} O
+          <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 pt-4 px-4 pb-0 bg-Secondary text-White rounded-t-full flex items-center justify-center z-10">
+            <SaleIcon className='w-7 h-7' />
           </div>
 
           {/* Rectangle Header (full width) */}
-          <div className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-3 text-center text-lg font-bold">
+          <div className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-4 text-center text-lg font-bold">
             RESERVE NOW
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function ReserveNow() {
             <div className='flex gap-2.5'>
               <div className="flex items-center px-[10px] border border-Secondary rounded-2xl gap-10">
                 <div>
-                  <p className="text-sm">
+                  <p className="text-xs">
                     Shared Room
                   </p>
                   <p className="text-xl text-Secondary font-bold">$3,789</p>
@@ -51,7 +51,7 @@ export default function ReserveNow() {
 
               <div className="flex justify-between items-center px-3 py-2  border rounded-2xl border-lightGrey gap-6">
                 <div >
-                  <p className="text-sm">Single Supplement</p>
+                  <p className="text-xs">Single Supplement</p>
                   <p className="text-lg text-Primary font-bold">$4,449</p>
                 </div>
                 <div className="text-Negative font-semibold text-lg">

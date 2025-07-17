@@ -16,7 +16,7 @@ function PastTours() {
                 <Image
                     src={PastTourHeroSection}
                     alt="Contact page banner"
-                    className="object-cover"
+                    className="object-cover w-full"
                     priority
                 />
                 <div
@@ -41,46 +41,50 @@ function PastTours() {
                         "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
                 }}
             ></div>
+            <div className='container mx-auto px-4'>
 
-            {/* Past Tour images */}
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4'>
 
-                {pastTourImages.map((item, index) => (
-                    <Image
-                        key={index}
-                        src={item.imgSrc}
-                        alt={item.imgAlt}
-                        className="rounded-lg"
-                    />
-                ))}
-            </div>
+                {/* Past Tour images */}
+                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4'>
 
-            <div className='gird pb-3'>
-                <Image
-                    src={pastTourBanner}
-                    alt='past Tour Banner Large'
-                />
-            </div>
-
-            <div className="relative w-full mt-4 ">
-                {/* Gradient Background Behind All Cards */}
-                <div
-                    className="absolute inset-0 h-[300px] md:h-[400px] -z-10"
-                    style={{
-                        background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
-                    }}
-                ></div>
-
-                {/* Review Section */}
-                <div className='px-5 md:px-10 lg:px-20'>
-                    <Reviews />
+                    {pastTourImages.map((item, index) => (
+                        <Image
+                            key={index}
+                            src={item.imgSrc}
+                            alt={item.imgAlt}
+                            className="rounded-lg"
+                        />
+                    ))}
                 </div>
 
+                <div className='gird pb-3'>
+                    <Image
+                        src={pastTourBanner}
+                        alt='past Tour Banner Large'
+                    />
+                </div>
+
+                <div className="relative w-full mt-4 ">
+                    {/* Gradient Background Behind All Cards */}
+                    {/* <div
+                        className="absolute inset-0 h-[300px] md:h-[400px] -z-10"
+                        style={{
+                            background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                        }}
+                    ></div> */}
+
+                    {/* Review Section */}
+                    <div className='px-5 md:px-10 lg:px-20'>
+                        <Reviews />
+                    </div>
+
+                </div>
             </div>
 
-
-
             <div className='bg-Primary'>
+                <div className='container mx-auto px-4'>
+
+                
                 {/* Heading */}
                 <div>
                     <h2 className='text-White
@@ -89,14 +93,14 @@ function PastTours() {
 
                 {/* Form */}
                 <div className='text-White'>
-                    <ContactForm inputBorder='border-White/24'/>
+                    <ContactForm inputBorder='border-White/24' />
                 </div>
                 {/* Submit Button */}
                 <div className='text-center pb-10 pt-6'>
                     <Button variant='secondary' size='lg'>Submit</Button>
                 </div>
+                </div>
             </div>
-
         </>
     )
 }

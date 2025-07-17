@@ -13,5 +13,10 @@ export {default as TourCardSmall} from './TourCardSmall'
 export {default as AllToursLarge} from './AllToursLarge'
 export {default as OurTeam} from './OurTeam'
 export {default as GroupTourCard} from './GroupTourCard'
+export {default as RelatedTourSmall} from './RelatedTourSmall'
+export {default as Details} from './Details'
+
+
+
 
 

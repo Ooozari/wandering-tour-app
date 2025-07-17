@@ -186,7 +186,7 @@ function Tour() {
 
     return (
         <>
-            <div className='flex flex-col'>
+            <div className='flex flex-col mb-10'>
 
                 {/* Hero Section */}
                 <div className='relative w-full'>
@@ -218,7 +218,8 @@ function Tour() {
                 </div>
 
                 {/* Other Sections with gap */}
-                <div className='flex flex-col gap-15 lg:gap-20'>
+                <div className='container mx-auto px-4 flex flex-col justify-between items-center gap-15 lg:gap-20'>
+
                     {/* Past Tour 2024*/}
                     <div className='px-5'>
                         <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
@@ -265,8 +266,8 @@ function Tour() {
 
                 </div>
 
-
             </div>
+
         </>
     )
 }

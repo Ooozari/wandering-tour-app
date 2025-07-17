@@ -111,23 +111,23 @@ function PrivateTours() {
 
     return (
         <>
-            <div className='flex flex-col gap-20 md:gap-25 lg:gap-30 '>
-                {/* Hero Section */}
-                <div className='bg-Primary px-5'>
-                    <HeroSection
-                        title={HeroSectionDetails.title}
-                        paraText={HeroSectionDetails.paraText}
-                        subText={HeroSectionDetails.subText}
-                        ImgUrl={HeroSectionDetails.ImgUrl}
-                    />
-                </div>
 
+            {/* Hero Section */}
+            <div className='bg-Primary px-5'>
+                <HeroSection
+                    title={HeroSectionDetails.title}
+                    paraText={HeroSectionDetails.paraText}
+                    subText={HeroSectionDetails.subText}
+                    ImgUrl={HeroSectionDetails.ImgUrl}
+                />
+            </div>
+            <div className='container mx-auto px-4 flex flex-col gap-20 md:gap-25 lg:gap-30 '>
                 {/* after hero section */}
                 <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10'>
                     <div className='w-full lg:w-1/2'>
                         <h3 className='text-Black font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'><span className='text-Secondary'>
                             Private tours
-                        </span>,<br/>
+                        </span>,<br />
                             perfectly crafted.</h3>
                         <div className='flex flex-col gap-4 text-Black text-sm lg:text-md'>
                             <p>Whether you’re a group of friends, a photography organization, a textile club, abandoned building enthusiasts, or anything in between, we’ll create a magical private tour for your group</p>

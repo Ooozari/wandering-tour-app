@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body>
         {isHome ? <TransparentHeader /> : <HeaderPrimary />}
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

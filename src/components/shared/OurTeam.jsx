@@ -9,7 +9,7 @@ function OurTeam({ imgUrl, p1, p2, p3, p4, name, position, Direction }) {
                     <Image
                         src={imgUrl}
                         alt='Team member'
-                        className='rounded-3xl' />
+                        className='rounded-3xl'/>
                 </div>
                 {/* Text Content */}
                 <div className='w-full lg:w-1/2 flex flex-col gap-3'>

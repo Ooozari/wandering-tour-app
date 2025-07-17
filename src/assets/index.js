@@ -32,8 +32,10 @@ export {default as ToursHeroImg} from './ToursHeroImg.png'
 export {default as CartItem1} from './CartItem1.png'
 export {default as CartItem2} from './CartItem2.png'
 export {default as landingPageHeroSection} from './landingPageHeroSection.png'
-
-
+export {default as relatedTour1} from './relatedTour1.png'
+export {default as relatedTour2} from './relatedTour2.png'
+export {default as relatedTour3} from './relatedTour3.png'
+export {default as relatedTour4} from './relatedTour4.png'
 
 
 

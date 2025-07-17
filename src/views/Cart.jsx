@@ -19,7 +19,8 @@ function Cart() {
     }
     return (
         <>
-            <div className='px-5 md:px-10 lg:px-15 py-14 flex flex-col gap-5 md:gap-10 lg:gap-15'>
+            <div className='bg-Icon container mx-auto px-4 py-14 flex flex-col gap-5 md:gap-10 lg:gap-15'>
+
                 {/* Headings */}
                 <div className='border-b-1 border-lightGrey py-4'>
                     <h1 className='text-6xl font-[900] text-Black'>Cart</h1>
@@ -30,17 +31,12 @@ function Cart() {
                     {/* Cart Table */}
                     <div className='w-full md:w-[65%] flex flex-col gap-12'>
                         <div className='relative bg-White px-2 py-4 shadow-lg border border-strokeLight rounded-2xl'>
-                            {/* Table Scrollable */}
                             <div className='overflow-x-auto'>
                                 <table className="min-w-[800px] w-full border-collapse">
                                     <tbody>
                                         <tr className="border-b">
                                             <td className='p-4'>
-                                                <Image
-                                                    src={CartItem1}
-                                                    alt="Cart Item 1 Img"
-                                                    className="w-full h-full object-cover rounded-xl"
-                                                />
+                                                <Image src={CartItem1} alt="Cart Item 1 Img" className="w-full h-full object-cover rounded-xl" />
                                             </td>
                                             <td className="p-4">
                                                 <h3 className="font-medium text-Black">Wander Across Iraq - Shared Room</h3>
@@ -66,11 +62,7 @@ function Cart() {
 
                                         <tr className="border-b">
                                             <td className='p-4'>
-                                                <Image
-                                                    src={CartItem2}
-                                                    alt="Cart Item 2 Img"
-                                                    className="w-full h-full object-cover rounded-xl"
-                                                />
+                                                <Image src={CartItem2} alt="Cart Item 2 Img" className="w-full h-full object-cover rounded-xl" />
                                             </td>
                                             <td className="p-4">
                                                 <h3 className="font-medium text-Black">SE Asia Culinary Journey (2024) - Single Supplement</h3>
@@ -97,15 +89,11 @@ function Cart() {
                                 </table>
                             </div>
 
-
-                            {/* Sticky Update Cart Button (outside scroll) */}
                             <div className='sticky right-0 bottom-0 flex justify-end bg-White py-4'>
                                 <Button variant='lightSecondary' size='lg' className='font-bold'>Update Cart</Button>
                             </div>
                         </div>
 
-
-                        {/* Coupon Section */}
                         <div className='p-4 bg-white shadow-lg border border-strokeLight rounded-2xl flex flex-col gap-4'>
                             <p className='text-Secondary font-semibold'>If you have a coupon code, please apply it below.</p>
                             <Input type='text' placeholder="Write" />
@@ -146,7 +134,6 @@ function Cart() {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
