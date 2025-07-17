@@ -37,8 +37,8 @@ export default function ReserveNow() {
           <div>
             <h5 className="text-Grey text-xl mb-2">Choose an Option:</h5>
 
-            <div className='flex gap-2.5'>
-              <div className="flex items-center px-[10px] border border-Secondary rounded-2xl gap-10">
+            <div className='flex flex-col lg:flex-row gap-2.5'>
+              <div className="flex items-center px-[10px] border border-Secondary rounded-2xl gap-10 justify-between">
                 <div>
                   <p className="text-xs">
                     Shared Room
@@ -64,7 +64,7 @@ export default function ReserveNow() {
           {/* Payment */}
           <div className="mt-4">
             <h5 className="text-Grey text-xl mb-2">Payment:</h5>
-            <div className="flex gap-2.5">
+            <div className="flex flex-col lg:flex-row gap-2.5">
               <div className="flex justify-between items-center px-[10px] py-[16px] border rounded-2xl border-lightGrey gap-6 w-full">
                 <label>Pay Deposit</label>
                 <input type="radio" name="payment" className="accent-Primary w-6 h-6" />
@@ -98,6 +98,7 @@ export default function ReserveNow() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
 

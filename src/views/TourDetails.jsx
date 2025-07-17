@@ -177,9 +177,10 @@ function TourDetails() {
                             </Tabs>
                         </div>
 
-                        <div className="w-full lg:max-w-[30%]">
+                        <div className="w-full mx-auto lg:max-w-[30%]">
                             <ReserveNow />
                         </div>
+
 
                     </div>
 
