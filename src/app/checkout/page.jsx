@@ -1,11 +1,10 @@
 import React from 'react'
+import {Checkout} from '@/views'
 
-function Contact() {
+function Page() {
     return (
-        <>
-            
-        </>
+     <Checkout />   
     )
 }
 
-export default Contact
+export default Page

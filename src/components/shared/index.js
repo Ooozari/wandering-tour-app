@@ -21,6 +21,8 @@ export {default as Map} from './Map'
 export {default as Itinerary} from './Itinerary'
 export {default as TourEssentials} from './TourEssentials'
 export {default as WhatIncluded} from './WhatIncluded'
+export {default as BookingDetails} from './BookingDetails'
+
 
 
 

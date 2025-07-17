@@ -617,17 +617,24 @@ export const Dropdown = () => (
 
 export const TickCircle = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="12" r="12" fill="#1E365C"/>
-<path d="M7 12.1034L10.2754 16L17 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+        <circle cx="12" cy="12" r="12" fill="#1E365C" />
+        <path d="M7 12.1034L10.2754 16L17 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
 
 )
 export const CrossCircle = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="12" r="12" fill="#C60F13"/>
-<path d="M8.6377 16L15.3623 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8 8.63867L16 15.3633" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+        <circle cx="12" cy="12" r="12" fill="#C60F13" />
+        <path d="M8.6377 16L15.3623 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M8 8.63867L16 15.3633" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+)
+
+export const Secure = () => (
+    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.5 9V7C22.5 6.46957 22.2893 5.96086 21.9142 5.58579C21.5391 5.21071 21.0304 5 20.5 5H4.5C3.96957 5 3.46086 5.21071 3.08579 5.58579C2.71071 5.96086 2.5 6.46957 2.5 7V17C2.5 17.5304 2.71071 18.0391 3.08579 18.4142C3.46086 18.7893 3.96957 19 4.5 19H14.5M22.5 9H6.5M22.5 9V13M21.667 18.5H21.9C22.0591 18.5 22.2117 18.5632 22.3243 18.6757C22.4368 18.7883 22.5 18.9409 22.5 19.1V21.4C22.5 21.5591 22.4368 21.7117 22.3243 21.8243C22.2117 21.9368 22.0591 22 21.9 22H18.1C17.9409 22 17.7883 21.9368 17.6757 21.8243C17.5632 21.7117 17.5 21.5591 17.5 21.4V19.1C17.5 18.9409 17.5632 18.7883 17.6757 18.6757C17.7883 18.5632 17.9409 18.5 18.1 18.5H18.333M21.667 18.5V16.75C21.667 16.167 21.333 15 20 15C18.667 15 18.333 16.167 18.333 16.75V18.5M21.667 18.5H18.333" stroke="#1AA903" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
 
 )
 

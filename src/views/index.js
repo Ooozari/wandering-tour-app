@@ -7,5 +7,6 @@ export { default as AboutUs } from './AboutUs';
 export { default as Tour } from './Tour';
 export { default as Cart } from './Cart';
 export { default as TourDetails } from './TourDetails';
+export { default as Checkout } from './Checkout';
 
 
