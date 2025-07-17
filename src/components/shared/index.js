@@ -22,6 +22,10 @@ export {default as Itinerary} from './Itinerary'
 export {default as TourEssentials} from './TourEssentials'
 export {default as WhatIncluded} from './WhatIncluded'
 export {default as BookingDetails} from './BookingDetails'
+export {default as CustomerDetails} from './CustomerDetails'
+export {default as PaymentInfo} from './PaymentInfo'
+export {default as PaymentDone} from './PaymentDone'
+
 
 
 

@@ -4,7 +4,7 @@ import { Secure } from '@/svgs/Icons'
 function BookingDetails() {
     return (
         <>
-            <div className="inline-flex flex-col mt-10">
+            <div className="inline-flex flex-col">
                 {/* Header rectangle */}
                 <div className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-4 text-center text-lg font-[900]">
                     SE Asia Culinary Journey (2024)

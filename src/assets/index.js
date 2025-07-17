@@ -49,6 +49,8 @@ export {default as touressentials3} from './touressentials3.png'
 export {default as touressentials4} from './touressentials4.png'
 export {default as touressentials5} from './touressentials5.png'
 export {default as touressentials6} from './touressentials6.png'
+export {default as creditcards} from './creditcards.png'
+export {default as ToursDetailsHeroImg} from './ToursDetailsHeroImg.png'
 
 
 

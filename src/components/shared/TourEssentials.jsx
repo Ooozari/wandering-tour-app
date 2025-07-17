@@ -40,7 +40,7 @@ function TourEssentials() {
     return (
         <>
             {/* Highlight Cards*/}
-            <div className="grid gap-5 grid-cols-2 ">
+            <div className="grid gap-5 grid-cols-1 lg:grid-cols-2">
                 {TourEssentials.map((item, index) => (
                     <HighlightCard
                         key={index}

@@ -1,6 +1,8 @@
 import React from 'react'
-import { RelatedTourSmall, ReserveNow, Details, Gallery, Map, Itinerary,TourEssentials,WhatIncluded } from '@/components/shared'
+import { RelatedTourSmall, ReserveNow, Details, Gallery, Map, Itinerary, TourEssentials, WhatIncluded } from '@/components/shared'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { ToursDetailsHeroImg } from '@/assets'
+import Image from 'next/image'
 
 function TourDetails() {
     const itinerary = [
@@ -58,13 +60,32 @@ function TourDetails() {
         <>
             <div>
                 {/* hero section */}
+                <div className='relative w-full'>
+                    <Image
+                        src={ToursDetailsHeroImg}
+                        alt='Tours Details Hero Img'
+                        className='w-full h-screen object-cover'
+                        priority
+                    />
+                    <div
+                        className="absolute inset-0"
+                        style={{
+                            background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                        }}
+                    />
+                    <div className='absolute inset-0 z-10 flex justify-center items-center'>
+                        <h1 className='text-White font-extrabold text-4xl md:text-6xl'>SE Asia Culinary Journey (2024)</h1>
+                    </div>
+                </div>
 
-                {/* Tabs and reserve now*/}
-                <div className="flex flex-col lg:flex-row gap-15 justify-between">
-                    <div className="inline-block w-full lg:max-w-[60%]">
+
+                <div className='container mx-auto px-4 py-14'>
+                    {/* Tabs and reserve now*/}
+                    {/* <div className=" flex flex-col lg:flex-row gap-15 justify-between">
+                    <div className="inline-block w-full lg:max-w-[70%]">
                         <Tabs defaultValue="Details" className="inline-block">
                             <div className="flex flex-col gap-4">
-                                <TabsList className="flex w-full gap-2">
+                                <TabsList className="flex w-full gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
                                     <TabsTrigger value="Details">Details</TabsTrigger>
                                     <TabsTrigger value="Gallery">Gallery</TabsTrigger>
                                     <TabsTrigger value="Map">Map</TabsTrigger>
@@ -73,14 +94,15 @@ function TourDetails() {
                                     <TabsTrigger value="Included">What's Included</TabsTrigger>
                                 </TabsList>
 
-                                <TabsContent value="Details" className="w-full py-5 px-2">
+
+                                <TabsContent value="Details" className="w-full max-w-full py-5 px-2">
                                     <Details />
                                 </TabsContent>
-                                <TabsContent value="Gallery" className="w-full py-5 px-2">
+                                <TabsContent value="Gallery" className="w-full max-w-full py-5 px-2">
                                     <Gallery />
                                 </TabsContent>
-                                <TabsContent value="Map" className="w-full py-5 px-2"><Map /></TabsContent>
-                                <TabsContent value="Itinerary" className="w-full flex flex-col gap-3 py-5 px-2">{itinerary.map((item, index) => (
+                                <TabsContent value="Map" className="w-full max-w-full py-5 px-2"><Map /></TabsContent>
+                                <TabsContent value="Itinerary" className="w-full max-w-full flex flex-col gap-3 py-5 px-2">{itinerary.map((item, index) => (
                                     <Itinerary
                                         key={index}
                                         date={item.date}
@@ -95,7 +117,7 @@ function TourDetails() {
                                 <TabsContent value="Essentials" className="w-full py-5 px-2">
                                     <TourEssentials /></TabsContent>
                                 <TabsContent value="Included" className="w-full py-5 px-2">
-                                <WhatIncluded /></TabsContent>
+                                    <WhatIncluded /></TabsContent>
                             </div>
                         </Tabs>
                     </div>
@@ -103,12 +125,67 @@ function TourDetails() {
                     <div className='w-full text-center'>
                         <ReserveNow />
                     </div>
-                </div>
+                </div> */}
+                    <div className="flex flex-col gap-10 lg:flex-row lg:gap-15 justify-between">
+                        <div className="w-full lg:max-w-[65%]">
+                            <Tabs defaultValue="Details" className="w-full">
+                                <div className="flex flex-col gap-4">
+                                    {/* Tabs List Scrollable on small screens */}
+                                    <TabsList className="flex w-full gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
+                                        <TabsTrigger className="min-w-[120px]" value="Details">Details</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px]" value="Gallery">Gallery</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px]" value="Map">Map</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px]" value="Itinerary">Itinerary</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px]" value="Essentials">Tour Essentials</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px]" value="Included">What's Included</TabsTrigger>
+                                    </TabsList>
 
-                {/* related tours */}
-                <div>
-                    <RelatedTourSmall
-                        title='Related Tours' />
+                                    {/* Tabs Content */}
+                                    <TabsContent value="Details" className="w-full max-w-full py-5 px-2">
+                                        <Details />
+                                    </TabsContent>
+                                    <TabsContent value="Gallery" className="w-full max-w-full py-5 px-2">
+                                        <Gallery />
+                                    </TabsContent>
+                                    <TabsContent value="Map" className="w-full max-w-full py-5 px-2">
+                                        <Map />
+                                    </TabsContent>
+                                    <TabsContent value="Itinerary" className="w-full max-w-full flex flex-col gap-3 py-5 px-2">
+                                        {itinerary.map((item, index) => (
+                                            <Itinerary
+                                                key={index}
+                                                date={item.date}
+                                                route={item.route}
+                                                highlights={item.highlights}
+                                                included={item.included}
+                                                notes1={item.notes1}
+                                                notes2={item.notes2}
+                                                status={item.status}
+                                            />
+                                        ))}
+                                    </TabsContent>
+                                    <TabsContent value="Essentials" className="w-full py-5 px-2">
+                                        <TourEssentials />
+                                    </TabsContent>
+                                    <TabsContent value="Included" className="w-full py-5 px-2">
+                                        <WhatIncluded />
+                                    </TabsContent>
+                                </div>
+                            </Tabs>
+                        </div>
+
+                        <div className="w-full lg:max-w-[30%]">
+                            <ReserveNow />
+                        </div>
+
+                    </div>
+
+
+                    {/* related tours */}
+                    <div>
+                        <RelatedTourSmall
+                            title='Related Tours' />
+                    </div>
                 </div>
             </div>
         </>

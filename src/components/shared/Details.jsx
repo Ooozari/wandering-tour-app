@@ -39,7 +39,7 @@ function Details() {
                     <p className='text-Black mb-3'>Join us on an unforgettable food-focused adventure in Southeast Asia, where we will uncover the culinary secrets of Thailand, Malaysia and Singapore!
                     </p>
                     {/* details */}
-                    <div className='flex gap-5 text-lightGrey'>
+                    <div className='flex flex-col md:flex-row gap-5 text-lightGrey'>
                         <span>
                             <div className='flex gap-1 items-center '>
                                 <Spot />
@@ -70,7 +70,7 @@ function Details() {
                 </div>
 
                 {/* Highlight Cards*/}
-                <div className="grid gap-5 grid-cols-3">
+                <div className="grid gap-5 grid-cols-1 lg:grid-cols-3">
                     {highlightCards.map((item, index) => (
                         <HighlightCard
                             key={index}
