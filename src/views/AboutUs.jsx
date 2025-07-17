@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeroSection, OurTeam, AllToursLarge } from '@/components/shared'
-import { Button } from '@/components/ui'
+import { Button } from '@/components/ui/Button'
 import { AboutUsHeroImg, AboutUsDes, OurGlobalFamliyAboutUs, TeamMemberImg1, TeamMemberImg2, TeamMemberImg3, TeamMemberImg4, TeamMemberImg5, TeamMemberImg6, TeamMemberImg7 } from '@/assets'
 import Image from 'next/image'
 function AboutUs() {

@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { landingPageHeroSection } from '@/assets';
-import { Button } from '@/components/ui/';
+import { Button } from '@/components/ui/Button';
 import { AllToursLarge, GroupTourCard } from '@/components/shared'
 import { TourGroup1, TourGroup2, TourGroup3, TourGroup4, TourGroup5, TourGroup6 } from '@/svgs/Icons'
 import { Key } from 'lucide-react';

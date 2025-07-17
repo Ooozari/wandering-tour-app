@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@/components/ui';
+import { Button } from '@/components/ui/Button';
 import Image from 'next/image';
 import getInTouch from '@/assets/getInTouch.png';
 

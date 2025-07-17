@@ -7,7 +7,7 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { input as Input } from '@/components/ui/input'
-import { Button } from '@/components/ui'
+import { Button } from '@/components/ui/Button'
 
 function CustomerDetails() {
     const inputBorder = 'border-lightGrey'

@@ -60,11 +60,11 @@ function TourDetails() {
         <>
             <div>
                 {/* hero section */}
-                <div className='relative w-full'>
+                <div className='relative w-full h-screen'>
                     <Image
                         src={ToursDetailsHeroImg}
                         alt='Tours Details Hero Img'
-                        className='w-full h-screen object-cover'
+                        className='w-full h-full object-cover'
                         priority
                     />
                     <div
@@ -73,10 +73,13 @@ function TourDetails() {
                             background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
                         }}
                     />
-                    <div className='absolute inset-0 z-10 flex justify-center items-center'>
-                        <h1 className='text-White font-extrabold text-4xl md:text-6xl'>SE Asia Culinary Journey (2024)</h1>
+                    <div className='absolute inset-0 z-10 flex justify-center items-center text-center px-4'>
+                        <h1 className='text-White font-extrabold text-3xl md:text-6xl leading-tight'>
+                            SE Asia Culinary Journey (2024)
+                        </h1>
                     </div>
                 </div>
+
 
 
                 <div className='container mx-auto px-4 py-14'>

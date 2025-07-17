@@ -1,6 +1,6 @@
 import React from 'react'
 import { Checkbox } from "@/components/ui/checkbox";
-import { Button } from '@/components/ui'
+import { Button } from '@/components/ui/Button'
 import { input as Input } from '@/components/ui/input'
 import { creditcards } from '@/assets'
 import Image from 'next/image';
