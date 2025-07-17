@@ -1,16 +1,67 @@
 import React from 'react'
-import { RelatedTourSmall, ReserveNow, Details } from '@/components/shared'
+import { RelatedTourSmall, ReserveNow, Details, Gallery, Map, Itinerary,TourEssentials,WhatIncluded } from '@/components/shared'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 function TourDetails() {
+    const itinerary = [
+        {
+            date: 'Jan 20',
+            route: 'Bangkok',
+            highlights: 'Arival Day',
+            included: 'Dinner',
+            notes1: 'Upon arrival, you’ll be picked up at the airport and taken to our hotel in the city center. After getting settled and having a good rest, we’ll start off with an evening orientation and a group dinner at one of the city’s best restaurants.',
+            status: true,
+        },
+        {
+            date: 'Jan 21',
+            route: 'Bangkok',
+            highlights: `Full-day tour of Bangkok's highlights and markets`,
+            included: 'Breakfast, Lunch, Dinner',
+            notes1: `Today, we'll dive into the heart of Bangkok, exploring its rich culture, delicious cuisine, and local hotspots. We'll start off at the Grand Palace, a mesmerizing blend of buildings and temples that were the royal abode for the Kings of Siam. While there, we'll also make a stop at Wat Phra Kaew, the residence of the revered Emerald Buddha, and marvel at the grandeur of the Reclining Buddha at Wat Pho.`,
+            notes2: `
+            Once we've soaked in the historical significance, we'll move on to the bustling flower market where you'll get hands-on experience in a garland flower arrangement workshop before grabbing lunch at a highly-rated local restaurant. After a break at the hotel to rest and recharge, our evening will take us on a culinary journey through Chinatown. We'll wander its narrow lanes, tasting a mix of time-honored and distinct dishes.`,
+            status: false,
+        },
+        {
+            date: 'Jan 22',
+            route: 'Bangkok',
+            highlights: `Full-day tour of Bangkok's highlights and markets`,
+            included: 'Breakfast, Lunch, Dinner',
+            notes1: `Today, we'll dive into the heart of Bangkok, exploring its rich culture, delicious cuisine, and local hotspots. We'll start off at the Grand Palace, a mesmerizing blend of buildings and temples that were the royal abode for the Kings of Siam. While there, we'll also make a stop at Wat Phra Kaew, the residence of the revered Emerald Buddha, and marvel at the grandeur of the Reclining Buddha at Wat Pho.`,
+            notes2: `
+            Once we've soaked in the historical significance, we'll move on to the bustling flower market where you'll get hands-on experience in a garland flower arrangement workshop before grabbing lunch at a highly-rated local restaurant. After a break at the hotel to rest and recharge, our evening will take us on a culinary journey through Chinatown. We'll wander its narrow lanes, tasting a mix of time-honored and distinct dishes.`,
+            status: false,
+        },
+        {
+            date: 'Jan 23',
+            route: 'Bangkok >> Ayutthaya',
+            highlights: `Full-day tour of Bangkok's highlights and markets`,
+            included: 'Breakfast, Lunch, Dinner',
+            notes1: `Today, we'll dive into the heart of Bangkok, exploring its rich culture, delicious cuisine, and local hotspots. We'll start off at the Grand Palace, a mesmerizing blend of buildings and temples that were the royal abode for the Kings of Siam. While there, we'll also make a stop at Wat Phra Kaew, the residence of the revered Emerald Buddha, and marvel at the grandeur of the Reclining Buddha at Wat Pho.`,
+            notes2: `
+            Once we've soaked in the historical significance, we'll move on to the bustling flower market where you'll get hands-on experience in a garland flower arrangement workshop before grabbing lunch at a highly-rated local restaurant. After a break at the hotel to rest and recharge, our evening will take us on a culinary journey through Chinatown. We'll wander its narrow lanes, tasting a mix of time-honored and distinct dishes.`,
+            status: false,
+        },
+        {
+            date: 'Jan 24',
+            route: 'Ayutthaya >> Bangkok >> Kuala Lumpur',
+            highlights: `Full-day tour of Bangkok's highlights and markets`,
+            included: 'Breakfast, Lunch, Dinner',
+            notes1: `Today, we'll dive into the heart of Bangkok, exploring its rich culture, delicious cuisine, and local hotspots. We'll start off at the Grand Palace, a mesmerizing blend of buildings and temples that were the royal abode for the Kings of Siam. While there, we'll also make a stop at Wat Phra Kaew, the residence of the revered Emerald Buddha, and marvel at the grandeur of the Reclining Buddha at Wat Pho.`,
+            notes2: `
+            Once we've soaked in the historical significance, we'll move on to the bustling flower market where you'll get hands-on experience in a garland flower arrangement workshop before grabbing lunch at a highly-rated local restaurant. After a break at the hotel to rest and recharge, our evening will take us on a culinary journey through Chinatown. We'll wander its narrow lanes, tasting a mix of time-honored and distinct dishes.`,
+            status: false,
+        }
+
+    ]
     return (
         <>
             <div>
                 {/* hero section */}
 
                 {/* Tabs and reserve now*/}
-                <div className="flex flex-col md:flex-row gap-15 justify-between">
-                    <div className="inline-block max-w-2/3 bg-Primary">
+                <div className="flex flex-col lg:flex-row gap-15 justify-between">
+                    <div className="inline-block w-full lg:max-w-[60%]">
                         <Tabs defaultValue="Details" className="inline-block">
                             <div className="flex flex-col gap-4">
                                 <TabsList className="flex w-full gap-2">
@@ -22,24 +73,37 @@ function TourDetails() {
                                     <TabsTrigger value="Included">What's Included</TabsTrigger>
                                 </TabsList>
 
-                                <TabsContent value="Details" className="w-full">
+                                <TabsContent value="Details" className="w-full py-5 px-2">
                                     <Details />
                                 </TabsContent>
-                                <TabsContent value="Gallery" className="w-full">Gallery</TabsContent>
-                                <TabsContent value="Map" className="w-full">Map</TabsContent>
-                                <TabsContent value="Itinerary" className="w-full">Itinerary</TabsContent>
-                                <TabsContent value="Essentials" className="w-full">Tour Essentials</TabsContent>
-                                <TabsContent value="Included" className="w-full">What's Included</TabsContent>
+                                <TabsContent value="Gallery" className="w-full py-5 px-2">
+                                    <Gallery />
+                                </TabsContent>
+                                <TabsContent value="Map" className="w-full py-5 px-2"><Map /></TabsContent>
+                                <TabsContent value="Itinerary" className="w-full flex flex-col gap-3 py-5 px-2">{itinerary.map((item, index) => (
+                                    <Itinerary
+                                        key={index}
+                                        date={item.date}
+                                        route={item.route}
+                                        highlights={item.highlights}
+                                        included={item.included}
+                                        notes1={item.notes1}
+                                        notes2={item.notes2}
+                                        status={item.status}
+                                    />
+                                ))}</TabsContent>
+                                <TabsContent value="Essentials" className="w-full py-5 px-2">
+                                    <TourEssentials /></TabsContent>
+                                <TabsContent value="Included" className="w-full py-5 px-2">
+                                <WhatIncluded /></TabsContent>
                             </div>
                         </Tabs>
                     </div>
 
-                    <div className='w-full lg:max-w-[35%] bg-Middle'>
+                    <div className='w-full text-center'>
                         <ReserveNow />
                     </div>
                 </div>
-
-
 
                 {/* related tours */}
                 <div>

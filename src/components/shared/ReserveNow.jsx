@@ -17,10 +17,9 @@ export default function ReserveNow() {
   }
   return (
     <>
-      <div className="inline-flex flex-col">
+      <div className="inline-flex flex-col mt-10">
         {/* Header with circle and rectangle */}
-        {/* dont forget to remove mt */}
-        <div className="relative mt-9 w-full">
+        <div className="relative w-full">
           {/* Circle */}
           <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 pt-4 px-4 pb-0 bg-Secondary text-White rounded-t-full flex items-center justify-center z-10">
             <SaleIcon className='w-7 h-7' />

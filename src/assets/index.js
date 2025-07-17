@@ -36,6 +36,20 @@ export {default as relatedTour1} from './relatedTour1.png'
 export {default as relatedTour2} from './relatedTour2.png'
 export {default as relatedTour3} from './relatedTour3.png'
 export {default as relatedTour4} from './relatedTour4.png'
+export {default as highlightImg1} from './highlightImg1.png'
+export {default as highlightImg2} from './highlightImg2.png'
+export {default as highlightImg3} from './highlightImg3.png'
+export {default as highlightImg4} from './highlightImg4.png'
+export {default as highlightImg5} from './highlightImg5.png'
+export {default as highlightImg6} from './highlightImg6.png'
+export {default as map} from './map.png'
+export {default as touressentials1} from './touressentials1.png'
+export {default as touressentials2} from './touressentials2.png'
+export {default as touressentials3} from './touressentials3.png'
+export {default as touressentials4} from './touressentials4.png'
+export {default as touressentials5} from './touressentials5.png'
+export {default as touressentials6} from './touressentials6.png'
+
 
 
 
