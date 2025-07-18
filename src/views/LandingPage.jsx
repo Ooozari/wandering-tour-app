@@ -66,7 +66,7 @@ function LandingPage() {
             <div className='container mx-auto flex flex-col gap-10 md:gap-15 lg:gap-20'>
                 {/* after hero section */}
                 <div>
-                    <div className="relative w-full bg-Primary overflow-hidden p-15">
+                    <div className="relative w-full bg-Primary overflow-hidden p-5 lg:p-15">
                         {/* Gradient Background */}
                         <div className="absolute inset-0 z-0 bg-[linear-gradient(178.06deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]" />
 
