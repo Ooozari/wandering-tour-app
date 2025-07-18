@@ -70,11 +70,11 @@ function LandingPage() {
                         {/* Gradient Background */}
                         <div className="absolute inset-0 z-0 bg-[linear-gradient(178.06deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]" />
 
-                        {/* Content Flex Layout */}
-                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-10">
+                        {/* Content */}
+                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-1 py-3 lg:px-6 lg:py-10">
                             {/* Text Block */}
                             <div className="text-white flex-1 w-full lg:w-1/2 ">
-                                <h2 className="text-2xl font-bold mb-4">Sustainable and responsible travel</h2>
+                                <h2 className="text-xl md:text-3xl lg:text-5xl  font-[900] mb-4">Sustainable and responsible travel</h2>
                                 <p className="mb-2 text-sm md:text-md lg:text-lg">
                                     We’re fully committed to promoting and offering responsible, respectful and sustainable travel experiences around the world.
                                 </p>
