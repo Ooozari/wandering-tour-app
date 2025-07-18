@@ -133,4 +133,7 @@
     @apply bg-background text-foreground;
   }
 }
+.scroll-smooth {
+  -webkit-overflow-scrolling: touch;
+}
 

@@ -134,14 +134,20 @@ function TourDetails() {
                             <Tabs defaultValue="Details" className="w-full">
                                 <div className="flex flex-col gap-4">
                                     {/* Tabs List Scrollable on small screens */}
-                                    <TabsList className="flex w-full gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
-                                        <TabsTrigger className="min-w-[120px]" value="Details">Details</TabsTrigger>
-                                        <TabsTrigger className="min-w-[120px]" value="Gallery">Gallery</TabsTrigger>
-                                        <TabsTrigger className="min-w-[120px]" value="Map">Map</TabsTrigger>
-                                        <TabsTrigger className="min-w-[120px]" value="Itinerary">Itinerary</TabsTrigger>
-                                        <TabsTrigger className="min-w-[120px]" value="Essentials">Tour Essentials</TabsTrigger>
-                                        <TabsTrigger className="min-w-[120px]" value="Included">What's Included</TabsTrigger>
+                                    <TabsList className="
+                                            flex w-full
+                                            overflow-x-auto 
+                                            flex-nowrap 
+                                            scroll-smooth 
+                                    ">
+                                        <TabsTrigger className="min-w-[120px] snap-start" value="Details">Details</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px] snap-start" value="Gallery">Gallery</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px] snap-start" value="Map">Map</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px] snap-start" value="Itinerary">Itinerary</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px] snap-start" value="Essentials">Tour Essentials</TabsTrigger>
+                                        <TabsTrigger className="min-w-[120px] snap-start" value="Included">What's Included</TabsTrigger>
                                     </TabsList>
+
 
                                     {/* Tabs Content */}
                                     <TabsContent value="Details" className="w-full max-w-full py-5 px-2">

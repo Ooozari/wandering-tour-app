@@ -7,6 +7,7 @@ import {
     OurStyleTourThatAreGood,
     OurStyleCookies,
     OurStyleSafety,
+   
 } from '@/assets';
 
 import { HeroSection, GetInTouch, AllToursLarge } from '@/components/shared'
@@ -30,7 +31,7 @@ function OurStyles() {
                     />
                 </div>
 
-            <div className='container mx-auto px-4 flex flex-col gap-10 md:gap-20 lg:gap-25'>
+            <div className='container mx-auto px-4 py-10 flex flex-col gap-10 md:gap-20 lg:gap-25'>
                 
                 {/* After Hero Section */}
                 <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row gap-10'>

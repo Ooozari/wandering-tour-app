@@ -48,14 +48,14 @@ import {
     Flag27,
 } from '@/svgs/Icons';
 
-import { Reviews, HeroSection } from '@/components/shared'
+import { Reviews, HeroSection,GetInTouch } from '@/components/shared'
 
 // Images
 import {
     heroImgPrivateTours,
     privateTourDes,
 } from '@/assets';
-import { GetInTouch } from '@/components';
+
 function PrivateTours() {
     const nicheData = [
         { title: 'Portrait photography', icon: Niches1 },

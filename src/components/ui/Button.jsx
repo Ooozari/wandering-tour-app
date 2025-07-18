@@ -25,9 +25,9 @@ const buttonVariants = cva(
           "bg-[#E9482B1A] shadow-xs hover:bg-[#E9482B1A]/80 text-Secondary",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
-        circle: "w-10 h-10 rounded-full  flex items-center justify-center",
-        outlineCircle: "bg-[#FFFFFF1A] text-white border border-[#D6D6D64D] flex items-center justify-center hover:bg-[#ffffff33] focus-visible:ring-2",
+        link: "text-Primary underline-offset-4 hover:underline",
+        circle: "bg-White text-White border-2 border-Primary flex items-center justify-center hover:bg-Secondary hover:border-Secondary focus-visible:ring-2",
+        outlineCircle: "text-darkGrey border-2 border-lightGrey flex items-center justify-center hover:bg-[#ffffff33] focus-visible:ring-2",
         whitePrimary: "bg-white text-Primary shadow-xs hover:bg-gray-100 focus-visible:ring-2 focus-visible:ring-Primary/20",
 
       },

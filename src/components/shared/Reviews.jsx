@@ -16,13 +16,12 @@ function Reviews() {
             reviewMsg: `Thank you for such a well thought-out and memorable trip. 
       The sights and people of Morocco are wonderful. I appreciated you feeding my nerdy self 
       with information on the geography, animals and plants of Morocco. The meals were laid back 
-      and wonderful and I appreciated the pace. Truly memorable. Thank you for your hard work, 
-      phenomenal organization and attention to the needs of the group.`,
+      and wonderful and I appreciated the pace. Truly memorable. Thank you for your hard work.`,
             name: 'Kathy J.',
             location: 'Morocco',
         },
         {
-            reviewMsg: `Wandering through Romania was an incredible trip in every way: great sights, great people, and everything was very well-organized. This was an excellent trip in which we got to visit many beautiful places (both well-known and off the beaten path) all while in the company of a small, cohesive group of like-minded travelers. I’ve traveled to 40+ countries and this trip still stands out in my mind as one of the best I’ve been on. I would highly recommend it!`,
+            reviewMsg: `Wandering through Romania was an incredible trip in every way: great sights, great people, and everything was very well-organized. This was an excellent trip in which we got to visit many beautiful places (both well-known and off the beaten path) all while in the company of a small, cohesive group of like-minded travelers.`,
             name: 'Nadia A.',
             location: 'Romania',
         },
@@ -42,12 +41,16 @@ function Reviews() {
             location: 'Thailand',
         },
         {
-            reviewMsg: `This tour exceeded all expectations! The mix of adventure, relaxation, and cultural immersion was perfect. Our guide went above and beyond to accommodate everyone’s preferences. 10/10 would recommend.`,
+            reviewMsg: `Absolutely phenomenal! From the moment we landed to the very last day, every detail was taken care of. The itinerary was well-paced, the guides were knowledgeable, and we got a real taste of the culture. I can’t wait to book my next adventure with you guys.`,
             name: 'Bilal H.',
             location: 'Pakistan',
         },
         {
-            reviewMsg: `One of the most enriching trips I’ve ever been on. From scenic hikes to cozy local meals, every moment felt special. I’ve traveled with many agencies, but this one felt the most personal and thoughtful.`,
+            reviewMsg: `Thank you for such a well thought-out and memorable trip. 
+      The sights and people of Morocco are wonderful. I appreciated you feeding my nerdy self 
+      with information on the geography, animals and plants of Morocco. The meals were laid back 
+      and wonderful and I appreciated the pace. Truly memorable. Thank you for your hard work, 
+      phenomenal organization and attention to the needs of the group.`,
             name: 'Maira Z.',
             location: 'Georgia',
         },
@@ -70,13 +73,12 @@ function Reviews() {
                         <Button variant='outlineCircle' size='circle' id="prevBtn">
                             <SmallerThan color='White' />
                         </Button>
-                        <Button variant='circle' id="nextBtn">
-                            <GreaterThan color='Secondary' />
+                        <Button variant='circle' size='circle' id="nextBtn" className='bg-Primary'>
+                            <GreaterThan color='Primary' />
                         </Button>
                     </div>
                 </div>
 
-                {/* Swiper Slider */}
                 <Swiper
                     modules={[Navigation]}
                     spaceBetween={20}
@@ -91,13 +93,13 @@ function Reviews() {
                         nextEl: '#nextBtn',
                     }}
                     onSwiper={(swiper) => {
-                        // Wait for DOM elements (buttons) to mount
                         setTimeout(() => swiper.navigation.update(), 100)
                     }}
+                    className="h-full"
                 >
                     {reviewsUser.map((review, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="h-full flex">
+                        <SwiperSlide key={index} className="h-auto flex">
+                            <div className="flex flex-col h-full w-full">
                                 <ReviewCard
                                     msg={review.reviewMsg}
                                     name={review.name}
@@ -105,9 +107,9 @@ function Reviews() {
                                 />
                             </div>
                         </SwiperSlide>
-
                     ))}
                 </Swiper>
+
             </div>
 
         </>
