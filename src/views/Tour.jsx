@@ -207,15 +207,14 @@ function Tour() {
                     </div>
                 </div>
 
-                {/* Gradient Section without gap */}
-                <div className='relative w-full h-[170px] -mt-[1px] -mb-[50px]'> {/* Slight negative margin to overlap */}
+                {/* Gradient continuation after hero image */}
                     <div
-                        className='absolute inset-0'
+                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
                         style={{
-                            background: "linear-gradient(180deg, #1E365C 0%, rgba(30, 54, 92, 0) 100%)",
+                            background:
+                                "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
                         }}
-                    />
-                </div>
+                    ></div>
 
                 {/* Other Sections with gap */}
                 <div className='container mx-auto px-4 flex flex-col justify-between items-center gap-15 lg:gap-20'>

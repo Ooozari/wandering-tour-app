@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { landingPageHeroSection, HomePageMaps } from '@/assets';
+import { landingPageHeroSection, HomePageMaps, afterheroImg2, afterheroImg1, Sub2, sub102, sub101 } from '@/assets';
 import { Button } from '@/components/ui/Button';
 import { AllToursLarge, GroupTourCard, Reviews, GetInTouch } from '@/components/shared'
-import { TourGroup1, TourGroup2, TourGroup3, TourGroup4, TourGroup5, TourGroup6 } from '@/svgs/Icons'
+import { TourGroup1, TourGroup2, TourGroup3, TourGroup4, TourGroup5, TourGroup6, Plane, DashLine } from '@/svgs/Icons'
 
 function LandingPage() {
 
@@ -63,33 +63,89 @@ function LandingPage() {
 
                 </div>
             </div >
-            <div className='flex flex-col gap-10 md:gap-15 lg:gap-20'>
+            <div className='container mx-auto flex flex-col gap-10 md:gap-15 lg:gap-20'>
                 {/* after hero section */}
-                <div className="relative">
-                    {/* text */}
-                    <div className="relative z-10 p-6 text-white flex flex-col">
-                        <h2 className="text-2xl font-bold mb-4">Sustainable and responsible travel</h2>
-                        <p className="mb-2 text-sm md:text-md lg:text-lg">
-                            We’re fully committed to promoting and offering responsible, respectful and sustainable travel experiences around the world.
-                        </p>
-                        <p className="mb-2 text-xs md:text-sm lg:text-md">
-                            Everything we do is aimed at enriching the lives of the people we work with. We want you to go way from our tours with great memories, new friends, and a real appreciation for the places we visit. But, more than that, we also want to leave those places better than we found them.
-                        </p>
-                        <p className="mb-4 text-xs md:text-sm lg:text-md">
-                            We make a point of avoiding mass tourism destinations. Instead, we sustainably support local businesses, communities and the environment everywhere we go. Every aspect of our trips, from accommodation to local guides, activities to meals, and everything in between, are chosen to ensure that your tourism dollar leaves a positive and lasting impact and that our visit leaves a minimal footprint.
-                        </p>
-                        <div>
-                            <Button variant='secondary'>Book a Tour Now</Button>
+                <div>
+                    <div className="relative w-full bg-Primary overflow-hidden p-15">
+                        {/* Gradient Background */}
+                        <div className="absolute inset-0 z-0 bg-[linear-gradient(178.06deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]" />
+
+                        {/* Content Flex Layout */}
+                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-10">
+                            {/* Text Block */}
+                            <div className="text-white flex-1 w-full lg:w-1/2 ">
+                                <h2 className="text-2xl font-bold mb-4">Sustainable and responsible travel</h2>
+                                <p className="mb-2 text-sm md:text-md lg:text-lg">
+                                    We’re fully committed to promoting and offering responsible, respectful and sustainable travel experiences around the world.
+                                </p>
+                                <p className="mb-2 text-xs md:text-sm lg:text-md">
+                                    Everything we do is aimed at enriching the lives of the people we work with. We want you to go away from our tours with great memories, new friends, and a real appreciation for the places we visit. But, more than that, we also want to leave those places better than we found them.
+                                </p>
+                                <p className="mb-4 text-xs md:text-sm lg:text-md">
+                                    We make a point of avoiding mass tourism destinations. Instead, we sustainably support local businesses, communities and the environment everywhere we go. Every aspect of our trips, from accommodation to local guides, activities to meals, and everything in between, are chosen to ensure that your tourism dollar leaves a positive and lasting impact and that our visit leaves a minimal footprint.
+                                </p>
+                                <div>
+                                    <Button variant='secondary'>Book a Tour Now</Button>
+                                </div>
+                            </div>
+
+
+
+                            {/* Images Block */}
+                            <div className="relative flex flex-row md:flex-row items-center justify-center gap-8 w-full lg:w-1/2">
+                                {/* Img 1 */}
+                                <div className="relative top-20 lg:-right-40 z-10">
+                                    <Image
+                                        src={afterheroImg1}
+                                        alt="Image 1"
+                                        className="rounded-2xl h-auto"
+                                    />
+
+                                    {/* Overlapping DashLine & Plane */}
+                                    <div className="absolute top-5 left-2 -translate-x-1/3 -translate-y-1/3 z-20">
+                                        <div className="relative">
+                                            <DashLine />
+                                            <div className="absolute -top-9 left-[90%]">
+                                                <Plane />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Img 2 */}
+                                <div className="relative z-10">
+                                    <Image
+                                        src={afterheroImg2}
+                                        alt="Image 2"
+                                        className="rounded-2xl h-auto"
+                                    />
+
+                                    {/* Overlapping Sub Image */}
+                                    <div className="absolute top-5 left-10 -translate-x-1/3 -translate-y-1/3 z-20">
+                                        <Image
+                                            src={Sub2}
+                                            alt="Overlay Image"
+                                            className="w-[100px] h-auto"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div className="absolute inset-0 z-0 bg-[linear-gradient(180deg,#1E365C_0%,#1E365C_84.5%,rgba(30,54,92,0.94)_100%)]" />
 
-                    <div>
-                        <Image />
-                        <Image />
-
-                    </div>
+                    {/* Gradient continuation after hero image */}
+                    <div
+                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                        style={{
+                            background:
+                                "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                        }}
+                    ></div>
                 </div>
+
+
+
 
                 {/* 2024 Tour */}
                 <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
@@ -123,29 +179,51 @@ function LandingPage() {
                 </div>
 
                 {/* Countries Section */}
-                <div className="relative w-full flex flex-col items-center justify-center bg-[#1E365C] py-16">
-                    {/* Gradient Background */}
-                    <div className="absolute inset-0 -z-10" style={{
-                        background: "linear-gradient(180deg, #1E365C 0%, #1E365C 84.5%, rgba(30, 54, 92, 0.94) 100%)",
-                        opacity: 0.95
-                    }} />
+                <div>
+                    {/* Gradient continuation before hero image */}
+                    <div
+                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                        style={{
+                            background:
+                                "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                        }}
+                    ></div>
 
-                    {/* Content */}
-                    <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold uppercase text-center text-white px-4 mb-10">
-                        Countries where we are offering tours
-                        <span className="block text-Secondary">each year</span>
+                    <div className="relative w-full flex flex-col items-center justify-center bg-[#1E365C] py-16">
+                        {/* Gradient Background */}
+                        <div className="absolute inset-0 -z-10" style={{
+                            background: "linear-gradient(180deg, #1E365C 0%, #1E365C 84.5%, rgba(30, 54, 92, 0.94) 100%)",
+                            opacity: 0.95
+                        }} />
 
-                    </h1>
+                        {/* Content */}
+                        <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold uppercase text-center text-white px-4 mb-10">
+                            Countries where we are offering tours
+                            <span className="block text-Secondary">each year</span>
 
-                    {/* Image */}
-                    <div className="w-full max-w-5xl px-4">
-                        <Image
-                            src={HomePageMaps}
-                            alt="Landing Page - Countries"
-                            className="object-cover w-full h-auto rounded-xl"
-                        />
+                        </h1>
+
+                        {/* Image */}
+                        <div className="w-full max-w-5xl px-4">
+                            <Image
+                                src={HomePageMaps}
+                                alt="Landing Page - Countries"
+                                className="object-cover w-full h-auto rounded-xl"
+                            />
+                        </div>
                     </div>
+
+                    {/* Gradient continuation after hero image */}
+                    <div
+                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                        style={{
+                            background:
+                                "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                        }}
+                    ></div>
+
                 </div>
+
 
                 {/* 2025 Tour */}
                 <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
@@ -171,3 +249,10 @@ function LandingPage() {
 }
 
 export default LandingPage;
+
+
+//  <div className='relative h-100px'>
+//                     {/* Gradient Background */}
+//                     <div className="absolute inset-0 z-0 bg-[linear-gradient(178.06deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]" />
+
+//                 </div> 

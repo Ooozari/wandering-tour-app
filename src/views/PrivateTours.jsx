@@ -121,9 +121,9 @@ function PrivateTours() {
                     ImgUrl={HeroSectionDetails.ImgUrl}
                 />
             </div>
-            <div className='container mx-auto px-4 flex flex-col gap-20 md:gap-25 lg:gap-30 '>
+            <div className='container mx-auto px-4 py-10 flex flex-col gap-20 md:gap-25 lg:gap-30 '>
                 {/* after hero section */}
-                <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10'>
+                <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10 '>
                     <div className='w-full lg:w-1/2'>
                         <h3 className='text-Black font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'><span className='text-Secondary'>
                             Private tours

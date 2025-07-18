@@ -86,26 +86,10 @@ function AboutUs() {
                             ImgUrl={HeroSectionDetails.ImgUrl}
                         />
                     </div>
-            <div className='container mx-auto px-4 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
-
-                {/* Hero + After */}
-                <div>
-                    {/* <div
-                        className="absolute inset-0 -z-10 w-full h-full"
-                        style={{
-                            height: '115vh',
-                            background: 'linear-gradient(180deg, #1E365C 0%, #1E365C 50.5%, rgba(30, 54, 92, 0.15) 100%)',
-                        }}
-                    /> */}
-
-                   
-
-                   
-                </div>
-                    
+            <div className='container mx-auto px-5 py-15 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
                  {/* After hero section */}
                     <div className='flex flex-col items-center lg:flex-row gap-10'>
-                        <div className='w-full lg:w-1/2 text-Black'>
+                        <div className='w-full lg:w-1/2 text-Black space-y-5 p-5'>
                             <p>Our team at Wandering Earl Tours has a strong desire to bring rich cultural connections around the world to people who would appreciate them the most. And we hold this mission at the core of everything we do</p>
                             <p>Focused, purposeful and incredibly rewarding trips are the goal, and each member of our team brings their own insights, skills and enthusiasm to the table. When combined, our goal is achieved, with unique Wandering Earl Tours that we are all genuinely excited to offer!</p>
                         </div>
@@ -118,7 +102,7 @@ function AboutUs() {
                     </div>
                 {/* Our Global Family */}
                 <div className='flex flex-col lg:flex-row items-center gap-1 bg-Secondary w-full'>
-                    <div className='container mx-auto px-4 flex flex-col lg:flex-row w-full'>
+                    <div className='container mx-auto  flex flex-col lg:flex-row w-full'>
                         <div className='w-full lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
                             <h3 className='text-White font-extrabold text-2xl md:text-3xl lg:text-4xl'>Get In Touch</h3>
                             <p className='text-White text-md lg:text-[16px] mt-2 mb-4'>

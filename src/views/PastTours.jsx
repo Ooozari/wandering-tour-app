@@ -41,9 +41,8 @@ function PastTours() {
                         "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
                 }}
             ></div>
-            <div className='container mx-auto px-4'>
 
-
+            <div className='container mx-auto px-4 py-15'>
                 {/* Past Tour images */}
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4'>
 

@@ -29,7 +29,7 @@ export default function Footer() {
                 <div className="flex flex-col lg:flex-row gap-10  py-10">
                     {/* Left */}
                     <div className="flex flex-col gap-3 p-4 rounded-xl">
-                        <div className="relative w-[120px] h-[50px]">
+                        <div className="relative w-[120px] h-[50px] mx-auto">
                             {/* Second Image (Bottom Layer) */}
                             <div className='absolute inset-0 z-0'>
                                 <Image src={Logo} alt="Logo" className="w-auto h-auto" />

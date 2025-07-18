@@ -26,7 +26,7 @@ function Reviews() {
             location: 'Romania',
         },
         {
-            reviewMsg: `The trip was amazing, on every level. Your experience and curiosity has created an amazing itinerary, and your willingness to accommodate the random wishes that came up was above and beyond. India is just endless fascination. The accommodations were great, and as someone that doesn’t really care about the food experience…it was great!!`,
+            reviewMsg: `The trip was amazing, on every level. Your experience and curiosity has created an amazing itinerary, and your willingness to accommodate the random wishes that came up was above and beyond. India is just endless fascination. The accommodations were great, and as someone that doesn’t really care about the food!!`,
             name: 'Tricia S.',
             location: 'India',
         },
@@ -49,8 +49,7 @@ function Reviews() {
             reviewMsg: `Thank you for such a well thought-out and memorable trip. 
       The sights and people of Morocco are wonderful. I appreciated you feeding my nerdy self 
       with information on the geography, animals and plants of Morocco. The meals were laid back 
-      and wonderful and I appreciated the pace. Truly memorable. Thank you for your hard work, 
-      phenomenal organization and attention to the needs of the group.`,
+      and wonderful and I appreciated the pace. Truly memorable.`,
             name: 'Maira Z.',
             location: 'Georgia',
         },

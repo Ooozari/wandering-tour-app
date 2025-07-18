@@ -80,55 +80,19 @@ function TourDetails() {
                     </div>
                 </div>
 
+                {/* Gradient continuation after hero image */}
+                    <div
+                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                        style={{
+                            background:
+                                "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                        }}
+                    ></div>
+
 
 
                 <div className='container mx-auto px-4 py-14'>
                     {/* Tabs and reserve now*/}
-                    {/* <div className=" flex flex-col lg:flex-row gap-15 justify-between">
-                    <div className="inline-block w-full lg:max-w-[70%]">
-                        <Tabs defaultValue="Details" className="inline-block">
-                            <div className="flex flex-col gap-4">
-                                <TabsList className="flex w-full gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
-                                    <TabsTrigger value="Details">Details</TabsTrigger>
-                                    <TabsTrigger value="Gallery">Gallery</TabsTrigger>
-                                    <TabsTrigger value="Map">Map</TabsTrigger>
-                                    <TabsTrigger value="Itinerary">Itinerary</TabsTrigger>
-                                    <TabsTrigger value="Essentials">Tour Essentials</TabsTrigger>
-                                    <TabsTrigger value="Included">What's Included</TabsTrigger>
-                                </TabsList>
-
-
-                                <TabsContent value="Details" className="w-full max-w-full py-5 px-2">
-                                    <Details />
-                                </TabsContent>
-                                <TabsContent value="Gallery" className="w-full max-w-full py-5 px-2">
-                                    <Gallery />
-                                </TabsContent>
-                                <TabsContent value="Map" className="w-full max-w-full py-5 px-2"><Map /></TabsContent>
-                                <TabsContent value="Itinerary" className="w-full max-w-full flex flex-col gap-3 py-5 px-2">{itinerary.map((item, index) => (
-                                    <Itinerary
-                                        key={index}
-                                        date={item.date}
-                                        route={item.route}
-                                        highlights={item.highlights}
-                                        included={item.included}
-                                        notes1={item.notes1}
-                                        notes2={item.notes2}
-                                        status={item.status}
-                                    />
-                                ))}</TabsContent>
-                                <TabsContent value="Essentials" className="w-full py-5 px-2">
-                                    <TourEssentials /></TabsContent>
-                                <TabsContent value="Included" className="w-full py-5 px-2">
-                                    <WhatIncluded /></TabsContent>
-                            </div>
-                        </Tabs>
-                    </div>
-
-                    <div className='w-full text-center'>
-                        <ReserveNow />
-                    </div>
-                </div> */}
                     <div className="flex flex-col gap-10 lg:flex-row lg:gap-15 justify-between">
                         <div className="w-full lg:max-w-[65%]">
                             <Tabs defaultValue="Details" className="w-full">
