@@ -38,8 +38,8 @@ const paragraphVariants = cva("", {
       subText: "text-[8px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]",
       normal: "text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl",
       sm: "text-xs sm:text-sm md:text-sm lg:text-base xl:text-base 2xl:text-lg",
-      xs: "text-[6px] sm:text-[8px] md:text-[10px] lg:text-[12px] xl:text-[14px] 2xl:text-base",
-      xxs: "text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px]"
+      xs: "text-[8px] md:text-[10px] lg:text-[12px] xl:text-[14px] 2xl:text-base",
+      xxs: "text-[8px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px]"
     },
   },
   defaultVariants: { size: "normal" },
