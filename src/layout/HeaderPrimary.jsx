@@ -89,11 +89,11 @@ export default function HeaderPrimary() {
                     <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/private-tours">PRIVATE TOURS</Link>
                     <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/past-tours">PAST TOURS</Link>
                     <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/contact-us">CONTACT US</Link>
-                    <div className='flex gap-2 items-center'>
+                    <div className='flex gap-5 items-center'>
                         <Button variant='outlineCircle' size='circle' className='border-1'>
                             <Link href="/cart"><Cart color='White' /></Link>
                         </Button>
-                        <Button variant='whitePrimary' size='lg' className='bg-White text-sm px-4 md:px-6'>
+                        <Button variant='whitePrimary' size='lg' className='bg-White text-sm px-7 md:px-6'>
                             <Link href="/login">Login</Link>
                         </Button>
                     </div>
