@@ -54,7 +54,7 @@ function LandingPage() {
                     priority
                 />
                 <div className="absolute inset-0 z-0 bg-[linear-gradient(180deg,rgba(30,54,92,0)_0%,rgba(30,54,92,0.3)_52.5%,#1E365C_100%)]" />
-                <div className='absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4 gap-1.5 lg:gap-4'>
+                <div className='absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4 gap-4'>
                     <Heading
                         level="h1"
                         className="text-White text-center font-[900] uppercase"
@@ -67,7 +67,7 @@ function LandingPage() {
                     >
                         Tours that show you something new.
                     </Paragraph>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 my-5">
                         <Button>
                             <Paragraph size="normal" className="m-0 p-0">
                                 Visit 2024 Tours
