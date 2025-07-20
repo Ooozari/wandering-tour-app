@@ -35,9 +35,9 @@ export function Heading({ className, level = "h1", children }) {
 const paragraphVariants = cva("", {
   variants: {
     size: {
-      subText: "text-[12px] md:text-[14px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]",
-      normal: "text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl",
-      sm: "text-xs sm:text-sm md:text-sm lg:text-base xl:text-base 2xl:text-lg",
+      subText: "text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]",
+      normal: "text-sm lg:text-base xl:text-lg 2xl:text-xl",
+      sm: "text-sm lg:text-base xl:text-base 2xl:text-lg",
       xs: "text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base",
       xxs: "text-[11px] lg:text-[12px] xl:text-[13px] 2xl:text-[14px]"
     },
