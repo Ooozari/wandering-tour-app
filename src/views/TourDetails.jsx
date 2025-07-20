@@ -3,6 +3,7 @@ import { RelatedTourSmall, ReserveNow, Details, Gallery, Map, Itinerary, TourEss
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ToursDetailsHeroImg } from '@/assets'
 import Image from 'next/image'
+import { Heading, Paragraph } from "@/components/ui/typography";
 
 function TourDetails() {
     const itinerary = [
@@ -74,20 +75,21 @@ function TourDetails() {
                         }}
                     />
                     <div className='absolute inset-0 z-10 flex justify-center items-center text-center px-4'>
-                        <h1 className='text-White font-extrabold text-3xl md:text-6xl leading-tight'>
+                        <Heading level="h1" className="text-White font-[900] leading-tight">
                             SE Asia Culinary Journey (2024)
-                        </h1>
+                        </Heading>
+
                     </div>
                 </div>
 
                 {/* Gradient continuation after hero image */}
-                    <div
-                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
-                        style={{
-                            background:
-                                "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
-                        }}
-                    ></div>
+                <div
+                    className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                    style={{
+                        background:
+                            "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                    }}
+                ></div>
 
 
 
@@ -99,11 +101,12 @@ function TourDetails() {
                                 <div className="flex flex-col gap-4">
                                     {/* Tabs List Scrollable on small screens */}
                                     <TabsList className="
-                                            flex w-full
-                                            overflow-x-auto 
+                                            flex w-full 
+                                            overflow-x-auto
+                                            whitespace-nowrap 
                                             flex-nowrap 
-                                            scroll-smooth 
-                                    ">
+                                            scroll-smooth"
+                                    >
                                         <TabsTrigger className="min-w-[120px] snap-start" value="Details">Details</TabsTrigger>
                                         <TabsTrigger className="min-w-[120px] snap-start" value="Gallery">Gallery</TabsTrigger>
                                         <TabsTrigger className="min-w-[120px] snap-start" value="Map">Map</TabsTrigger>

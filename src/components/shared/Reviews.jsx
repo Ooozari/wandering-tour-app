@@ -3,6 +3,7 @@ import React from 'react'
 import ReviewCard from '@/components/shared/ReviewCard'
 import { Button } from '@/components/ui'
 import { GreaterThan, SmallerThan } from '@/svgs/Icons'
+import { Heading } from "@/components/ui/typography";
 
 // Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -58,13 +59,18 @@ function Reviews() {
 
     return (
         <>
-            <div>
+            <div className='flex flex-col gap-5'>
                 {/* Top Header + Navigation */}
                 <div className="flex justify-between items-center">
                     {/* Headings */}
                     <div className="text-xl md:text-2xl lg:text-4xl font-extrabold">
-                        <h2 className="text-Black">WHAT OUR CLIENTS SAY</h2>
-                        <h2 className="text-Secondary">ABOUT US</h2>
+                        <Heading level="h4" className="text-Black">
+                            WHAT OUR CLIENTS SAY
+                        </Heading>
+                        <Heading level="h4" className="text-Secondary">
+                            ABOUT US
+                        </Heading>
+
                     </div>
 
                     {/* Nav Buttons */}
@@ -78,37 +84,38 @@ function Reviews() {
                     </div>
                 </div>
 
-                <Swiper
-                    modules={[Navigation]}
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    breakpoints={{
-                        640: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
-                    }}
-                    navigation={{
-                        prevEl: '#prevBtn',
-                        nextEl: '#nextBtn',
-                    }}
-                    onSwiper={(swiper) => {
-                        setTimeout(() => swiper.navigation.update(), 100)
-                    }}
-                    className="h-full"
-                >
-                    {reviewsUser.map((review, index) => (
-                        <SwiperSlide key={index} className="h-auto flex">
-                            <div className="flex flex-col h-full w-full">
-                                <ReviewCard
-                                    msg={review.reviewMsg}
-                                    name={review.name}
-                                    location={review.location}
-                                />
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-
+                <div>
+                    <Swiper
+                        modules={[Navigation]}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        breakpoints={{
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        }}
+                        navigation={{
+                            prevEl: '#prevBtn',
+                            nextEl: '#nextBtn',
+                        }}
+                        onSwiper={(swiper) => {
+                            setTimeout(() => swiper.navigation.update(), 100)
+                        }}
+                        className="h-full"
+                    >
+                        {reviewsUser.map((review, index) => (
+                            <SwiperSlide key={index} className="h-auto flex">
+                                <div className="flex flex-col h-full w-full">
+                                    <ReviewCard
+                                        msg={review.reviewMsg}
+                                        name={review.name}
+                                        location={review.location}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
             </div>
 
         </>

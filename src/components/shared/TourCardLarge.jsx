@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 import { Location, Calender, Spot } from '@/svgs/Icons';
+import { Heading, Paragraph } from "@/components/ui/typography";
 
 
 function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, days, btnText }) {
@@ -28,24 +29,42 @@ function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, day
                 </div>
 
                 <div className="p-4">
-                    <h4 className="text-Black font-[900] text-xl mb-2.5">{title.toUpperCase()}</h4>
-                    <p className="font-normal text-Black text-sm">{content}</p>
+                    <Heading level="h3" className="text-Black mb-2.5 font-[800]">
+                        {title.toUpperCase()}
+                    </Heading>
+                    <Paragraph size="sm" className="text-Black font-normal">
+                        {content}
+                    </Paragraph>
+
                     <div className="flex items-center mt-3 gap-4 text-xs">
                         <div className="flex gap-1 items-center">
                             <Spot />
-                            <p className="text-Black">{bookSpot}</p>
+                            <Paragraph size="xs" className="text-Black">
+                                {bookSpot}
+                            </Paragraph>
+
                         </div>
                         <div className="flex gap-1 items-center">
                             <Location />
-                            <p className="text-Black">{location}</p>
+                            <Paragraph size="xs" className="text-Black">
+                                {location}
+                            </Paragraph>
+
                         </div>
                     </div>
                     <div className="flex gap-1 mt-3 items-center">
                         <Calender />
-                        <p className="text-darkGrey text-xs">{days}</p>
+                        <Paragraph size="xs" className="text-darkGrey">
+                            {days}
+                        </Paragraph>
+
                     </div>
                     <div className="mt-5">
-                        <Button variant="outline" className="w-full text-Primary font-bold">{btnText}</Button>
+                        <Button variant="outline" className="w-full text-Primary font-bold">
+                            <Paragraph size="sm" className="font-bold text-Primary">
+                                {btnText}
+                            </Paragraph>
+                        </Button>
                     </div>
                 </div>
             </div>

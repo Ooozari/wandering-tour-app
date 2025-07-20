@@ -3,6 +3,7 @@ import { HeroSection, OurTeam, AllToursLarge } from '@/components/shared'
 import { Button } from '@/components/ui/Button'
 import { AboutUsHeroImg, AboutUsDes, OurGlobalFamliyAboutUs, TeamMemberImg1, TeamMemberImg2, TeamMemberImg3, TeamMemberImg4, TeamMemberImg5, TeamMemberImg6, TeamMemberImg7 } from '@/assets'
 import Image from 'next/image'
+import { Heading, Paragraph } from "@/components/ui/typography";
 function AboutUs() {
     const HeroSectionDetails = {
         title: 'About Us',
@@ -77,39 +78,54 @@ function AboutUs() {
     ]
     return (
         <>
-         {/* Hero Section */}
-                    <div className='bg-Primary  relative z-10'>
-                        <HeroSection
-                            title={HeroSectionDetails.title}
-                            paraText={HeroSectionDetails.paraText}
-                            subText={HeroSectionDetails.subText}
-                            ImgUrl={HeroSectionDetails.ImgUrl}
+            {/* Hero Section */}
+            <div className='bg-Primary  relative z-10'>
+                <HeroSection
+                    title={HeroSectionDetails.title}
+                    paraText={HeroSectionDetails.paraText}
+                    subText={HeroSectionDetails.subText}
+                    ImgUrl={HeroSectionDetails.ImgUrl}
+                />
+            </div>
+            <div className='container mx-auto px-5 py-15 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
+                {/* After hero section */}
+                <div className='flex flex-col items-center lg:flex-row gap-10'>
+                    <div className='w-full lg:w-1/2 text-Black space-y-5 p-5'>
+                        <Paragraph size="subText">
+                            Our team at Wandering Earl Tours has a strong desire to bring rich cultural connections around the world to people who would appreciate them the most. And we hold this mission at the core of everything we do
+                        </Paragraph>
+
+                        <Paragraph size="subText">
+                            Focused, purposeful and incredibly rewarding trips are the goal, and each member of our team brings their own insights, skills and enthusiasm to the table. When combined, our goal is achieved, with unique Wandering Earl Tours that we are all genuinely excited to offer!
+                        </Paragraph>
+
+                    </div>
+                    <div className='w-full lg:w-1/2'>
+                        <Image
+                            src={AboutUsDes}
+                            alt='About us Des'
                         />
                     </div>
-            <div className='container mx-auto px-5 py-15 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
-                 {/* After hero section */}
-                    <div className='flex flex-col items-center lg:flex-row gap-10'>
-                        <div className='w-full lg:w-1/2 text-Black space-y-5 p-5'>
-                            <p>Our team at Wandering Earl Tours has a strong desire to bring rich cultural connections around the world to people who would appreciate them the most. And we hold this mission at the core of everything we do</p>
-                            <p>Focused, purposeful and incredibly rewarding trips are the goal, and each member of our team brings their own insights, skills and enthusiasm to the table. When combined, our goal is achieved, with unique Wandering Earl Tours that we are all genuinely excited to offer!</p>
-                        </div>
-                        <div className='w-full lg:w-1/2'>
-                            <Image
-                                src={AboutUsDes}
-                                alt='About us Des'
-                            />
-                        </div>
-                    </div>
+                </div>
                 {/* Our Global Family */}
                 <div className='flex flex-col lg:flex-row items-center gap-1 bg-Secondary w-full'>
                     <div className='container mx-auto  flex flex-col lg:flex-row w-full'>
                         <div className='w-full lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
-                            <h3 className='text-White font-extrabold text-2xl md:text-3xl lg:text-4xl'>Get In Touch</h3>
-                            <p className='text-White text-md lg:text-[16px] mt-2 mb-4'>
+                            <Heading level="h1" className="text-White font-extrabold">
+                                Our global family
+                            </Heading>
+
+                            <Paragraph size="normal" className="text-White mt-2 mb-4">
                                 Our team also consists of our incredible travel partners, friends and endless local contacts in every country where we operate. These wonderful people work extremely hard to help us create and run our unique trips. We could not do this without all of them as it takes such a dedicated and global team to create our rewarding travel experiences!
-                            </p>
+                            </Paragraph>
+
                             <div>
-                                <Button varient='default' size='lg'>Contact us Today</Button>
+                                <Button variant="default" size="lg">
+                                    <Paragraph size="normal" className="font-semibold">
+                                        Contact us Today
+                                    </Paragraph>
+                                </Button>
+
                             </div>
                         </div>
 
@@ -123,8 +139,11 @@ function AboutUs() {
 
                 {/* Our Team */}
                 <div className='flex flex-col gap-10'>
-                    <div className='text-Black font-extrabold text-center text-2xl md:text-3xl lg:text-4xl'>
-                        <h1>Our <span className='text-Secondary'>Team</span></h1>
+                    <div className='text-Black font-extrabold text-center'>
+                        <Heading level="h1" className="text-center">
+                            Our <span className="text-Secondary">Team</span>
+                        </Heading>
+
                     </div>
                     <div>
                         {ourTeam.map((member, index) => (

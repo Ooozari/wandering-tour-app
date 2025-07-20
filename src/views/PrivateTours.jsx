@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import IconCard from '@/components/shared/IconCard'
+import { Heading, Paragraph } from "@/components/ui/typography";
 
 // Niches
 import {
@@ -48,7 +49,7 @@ import {
     Flag27,
 } from '@/svgs/Icons';
 
-import { Reviews, HeroSection,GetInTouch } from '@/components/shared'
+import { Reviews, HeroSection, GetInTouch } from '@/components/shared'
 
 // Images
 import {
@@ -125,14 +126,20 @@ function PrivateTours() {
                 {/* after hero section */}
                 <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10 '>
                     <div className='w-full lg:w-1/2'>
-                        <h3 className='text-Black font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-4'><span className='text-Secondary'>
-                            Private tours
-                        </span>,<br />
-                            perfectly crafted.</h3>
-                        <div className='flex flex-col gap-4 text-Black text-sm lg:text-md'>
-                            <p>Whether you’re a group of friends, a photography organization, a textile club, abandoned building enthusiasts, or anything in between, we’ll create a magical private tour for your group</p>
-                            <p>Unlike tour operators that use the exact same itinerary over and over again, we ensure that every trip is 100% unique. We want to learn about your specific interests, goals, budget and more in order to carefully craft and customize every aspect of the trip in a way that will suit your group perfectly. We choose the ideal route, best lodgings, most rewarding activities, tastiest restaurants, and more, that will all lead to the most extraordinary trip possible.
-                                Since 2013, we’ve offered our highly-regarded, excellent value trips to dozens of groups in dozens of countries around the world.</p>
+                        <Heading level="h6" className="text-Black font-bold uppercase mb-4">
+                            <span className="text-Secondary">Private tours</span>,<br />
+                            perfectly crafted.
+                        </Heading>
+
+                        <div className='flex flex-col gap-4'>
+                            <Paragraph size="sm" className="text-Black">
+                                Whether you’re a group of friends, a photography organization, a textile club, abandoned building enthusiasts, or anything in between, we’ll create a magical private tour for your group.
+                            </Paragraph>
+                            <Paragraph size="sm" className="text-Black">
+                                Unlike tour operators that use the exact same itinerary over and over again, we ensure that every trip is 100% unique. We want to learn about your specific interests, goals, budget and more in order to carefully craft and customize every aspect of the trip in a way that will suit your group perfectly. We choose the ideal route, best lodgings, most rewarding activities, tastiest restaurants, and more, that will all lead to the most extraordinary trip possible.
+                                Since 2013, we’ve offered our highly-regarded, excellent value trips to dozens of groups in dozens of countries around the world.
+                            </Paragraph>
+
                         </div>
                     </div>
 
@@ -153,8 +160,14 @@ function PrivateTours() {
                 {/* Niches */}
                 <div className='px-[20px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
-                        <h2 className='text-Black text-4xl font-bold mb-1 lg:mb-2'>NICHES</h2>
-                        <p className='text-Black text-center'>Some of the niches that we’ve organized private tours around include:</p>
+                        <Heading level="h1" className="text-Black font-bold mb-1 lg:mb-2">
+                            NICHES
+                        </Heading>
+
+                        <Paragraph size="sm" className="text-Black text-center">
+                            Some of the niches that we’ve organized private tours around include:
+                        </Paragraph>
+
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10"
@@ -168,8 +181,14 @@ function PrivateTours() {
                 {/* Countries */}
                 <div className='px-[20px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
-                        <h2 className='text-Black text-4xl font-bold mb-1 lg:mb-2'>COUNTRIES</h2>
-                        <p className='text-Black text-center'>Some of the countries we’ve organized private tours to include:</p>
+                        <Heading level="h1" className="text-Black font-bold mb-1 lg:mb-2">
+                            COUNTRIES
+                        </Heading>
+
+                        <Paragraph size="sm" className="text-Black text-center">
+                            Some of the countries we’ve organized private tours to include:
+                        </Paragraph>
+
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 content-center">

@@ -1,31 +1,43 @@
 import React from 'react'
 import { input as Input } from '@/components/ui/input'
-
-function ContactForm({ inputBorder }) {
+import { Heading, Paragraph } from "@/components/ui/typography";
+function ContactForm({ inputBorder,labelText }) {
 
     return (
         <div className='flex flex-col mx-auto gap-4 w-[80%]'>
             <div className='flex flex-col gap-3 sm:flex-row'>
                 <div className='w-full flex flex-col gap-1 md:gap-2'>
-                    <label>First Name</label>
+                    <label><Paragraph size="normal" className={`block ${labelText}`}>
+                        First Name
+                    </Paragraph></label>
                     <Input type='text' placeholder="Write" className={inputBorder} />
                 </div>
                 <div className='w-full flex flex-col gap-1 md:gap-2'>
-                    <label>Last Name</label>
+                    <label><Paragraph className={`${labelText}`}>
+                        Last Name
+                    </Paragraph>
+                    </label>
                     <Input type='text' placeholder="Write" className={inputBorder} />
                 </div>
             </div>
             <div className='flex flex-col gap-1 md:gap-2'>
-                <label>Email Address</label>
+                <label><Paragraph className={`${labelText}`}>
+                    Email Address
+                </Paragraph>
+                </label>
                 <Input type='email' placeholder="Write" className={inputBorder} />
             </div>
             <div className='flex flex-col gap-1 md:gap-2'>
-                <label>Message</label>
+                <label><Paragraph className={`${labelText}`}>
+                    Message
+                </Paragraph>
+                </label>
                 <textarea
                     placeholder="Write..."
-                    className={`${inputBorder} border-1 focus:none resize-none rounded-md px-3 py-2`}
+                    className={`border ${inputBorder} resize-none rounded-md px-3 py-2 focus:outline-none focus:ring-0 `}
                     rows={4}
                 />
+
             </div>
 
         </div>

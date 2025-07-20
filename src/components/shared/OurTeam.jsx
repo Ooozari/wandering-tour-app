@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { Heading, Paragraph } from "@/components/ui/typography";
 function OurTeam({ imgUrl, p1, p2, p3, p4, name, position, Direction }) {
     return (
         <>
@@ -9,25 +10,24 @@ function OurTeam({ imgUrl, p1, p2, p3, p4, name, position, Direction }) {
                     <Image
                         src={imgUrl}
                         alt='Team member'
-                        className='rounded-3xl'/>
+                        className='rounded-3xl' />
                 </div>
                 {/* Text Content */}
                 <div className='w-full lg:w-1/2 flex flex-col gap-3'>
                     {/* text */}
-                    <p className='text-Black'>{p1}</p>
-                    <p className='text-Black'>{p2}</p>
-                    {p3 && (<p className='text-Black'>{p3}</p>)
+                    <Paragraph size="sm" className="text-Black">{p1}</Paragraph>
+                    <Paragraph size="sm" className="text-Black">{p2}</Paragraph>
+                    {p3 && <Paragraph size="sm" className="text-Black">{p3}</Paragraph>}
+                    {p4 && <Paragraph size="sm" className="text-Black">{p4}</Paragraph>}
 
-                    }
-                    {p4 && (<p className='text-Black'>{p4}</p>)
-                    }
 
                     <div className="flex items-center gap-1 mt-2">
-                        <div className="flex gap-1">
+                        <Paragraph size="normal" className="flex gap-1">
                             <span className="text-Primary">{name}</span>
                             <span className="text-Grey">|</span>
                             <span className="text-Grey font-medium">{position}</span>
-                        </div>
+                        </Paragraph>
+
                         <hr className="flex-1 border-t border-lightGrey ml-2" />
                     </div>
 

@@ -1,14 +1,17 @@
 import React from 'react'
 import { BookingDetails, CustomerDetails, PaymentInfo, PaymentDone } from '@/components/shared'
 import CheckoutTabs from '@/components/ui/CheckoutTabs'
-
+import { Heading, Paragraph } from "@/components/ui/typography";
 function Checkout() {
     return (
         <>
             <div className="container mx-auto px-4 py-10">
                 {/* Headings */}
                 <div className='border-b-1 border-lightGrey py-4'>
-                    <h1 className='text-3xl md:text-5xl lg:text-6xl font-[900] text-Black uppercase'>Checkout</h1>
+                    <Heading level="h2" className="text-Black uppercase font-[900]">
+                        Checkout
+                    </Heading>
+
                 </div>
 
                 <div className='flex flex-col lg:flex-row gap-5 pt-10'>

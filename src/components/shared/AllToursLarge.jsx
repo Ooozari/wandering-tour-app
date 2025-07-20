@@ -6,6 +6,8 @@ import {
     WandertoVietnam,
     WanderAcrossRomania,
 } from '@/assets'
+import { Paragraph, Heading } from "@/components/ui/typography";
+
 
 import { Only2Spots, SoldOut, TourCardLarge } from '@/components/shared'
 
@@ -48,16 +50,15 @@ function AllToursLarge({ year, title }) {
                 {/* Heading & Button */}
                 <div className='flex justify-between items-end'>
                     <div>
-                        <h1 className='flex flex-col text-darkGrey uppercase font-extrabold text-2xl md:text-3xl lg:text-5xl xl:text-7xl'>
-                            {year && <span className='text-Primary'>{year}</span>}
-                            <span className='text-darkGrey'>
-                                {title}
-                            </span>
-
-                        </h1>
+                        <Heading level="h2" className="flex flex-col text-darkGrey uppercase font-[900]">
+                            {year && <span className="text-Primary">{year}</span>}
+                            <span className="text-darkGrey">{title}</span>
+                        </Heading>
                     </div>
                     <div>
-                        <Button variant='outline' size='lg'>All Tours <ArrowRight /></Button>
+                        <Button variant="outline" size="lg">
+                            <Paragraph className="m-0">All Tours</Paragraph> <ArrowRight />
+                        </Button>
                     </div>
                 </div>
 

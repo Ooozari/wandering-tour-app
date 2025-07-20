@@ -22,7 +22,7 @@ import {
     Tour2025Img7,
     Tour2025Img8
 } from '@/assets/tour2025'
-
+import { Heading, Paragraph } from "@/components/ui/typography";
 
 function Tour() {
 
@@ -208,22 +208,23 @@ function Tour() {
                 </div>
 
                 {/* Gradient continuation after hero image */}
-                    <div
-                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
-                        style={{
-                            background:
-                                "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
-                        }}
-                    ></div>
+                <div
+                    className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                    style={{
+                        background:
+                            "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                    }}
+                ></div>
 
                 {/* Other Sections with gap */}
                 <div className='container mx-auto px-4 flex flex-col justify-between items-center gap-15 lg:gap-20'>
 
                     {/* Past Tour 2024*/}
                     <div className='px-5'>
-                        <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
-                            <span className='text-Secondary'>2024 </span>TOURS
-                        </h1>
+                        <Heading level="h1" className="font-[900] text-center mb-6 uppercase">
+                            <span className="text-Secondary">2024 </span>TOURS
+                        </Heading>
+
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
                             {Year2024.map((tour, index) => (
                                 <TourCardSmall

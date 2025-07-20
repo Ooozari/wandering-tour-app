@@ -7,6 +7,7 @@ import { CrossDelete } from '@/svgs/Icons'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CartItem1, CartItem2 } from '@/assets'
+import { Heading, Paragraph } from "@/components/ui/typography";
 function Cart() {
     const [personCounter, setPersonCounter] = useState(1)
     const handlepersonCounterInc = () => {
@@ -20,11 +21,14 @@ function Cart() {
     }
     return (
         <>
-            <div className='container mx-auto px-4 py-14 flex flex-col gap-5 md:gap-10 lg:gap-15'>
+            <div className='container mx-auto px-5 md:px-10 lg:px-15 xl:px-20 py-14 flex flex-col gap-5 md:gap-10 lg:gap-15'>
 
                 {/* Headings */}
                 <div className='border-b-1 border-lightGrey py-4'>
-                    <h1 className='text-3xl md:text-5xl lg:text-6xl font-[900] text-Black'>Cart</h1>
+                    <Heading level="h2" className="text-Black font-[900] uppercase">
+                        Cart
+                    </Heading>
+
                 </div>
 
                 <div className='flex md:flex-row flex-col gap-15 '>
@@ -107,31 +111,49 @@ function Cart() {
                     {/* Cart Total */}
                     <div className='w-full md:w-[35%] rounded-t-3xl rounded-b-3xl'>
                         <div className='flex items-center justify-center bg-Secondary rounded-t-3xl rounded-b-[10px] w-full'>
-                            <h5 className='text-center text-White font-[900] py-3 text-2xl uppercase'>Cart Totals</h5>
+                            <Heading level="h5" className="text-center text-White py-3 uppercase font-extrabold">
+                                Cart Totals
+                            </Heading>
+
                         </div>
 
                         <div className='px-5 pt-2 pb-6 w-full rounded-b-3xl shadow-lg flex flex-col gap-8'>
                             <div className='flex flex-col'>
                                 <div className='border-b border-lightGrey py-5 flex justify-between items-center'>
-                                    <p className='text-darkGrey'>Subtotal</p>
-                                    <p className='text-lightGrey'>$1,000</p>
+                                    <Paragraph size='sm' className="text-darkGrey">Subtotal</Paragraph>
+                                    <Paragraph size='sm' className="text-Grey">$1,000</Paragraph>
                                 </div>
                                 <div className='border-b border-lightGrey py-5 flex justify-between items-center'>
-                                    <p className='font-[600] text-Black text-lg'>Due Today</p>
-                                    <p className='font-[600] text-Secondary text-xl'>$1,000</p>
+                                    <Paragraph size='sm' className="font-[600] text-Black">
+                                        Due Today
+                                    </Paragraph>
+                                    <Paragraph  className="font-[600] text-Secondary">
+                                        $1,000
+                                    </Paragraph>
                                 </div>
                                 <div className='border-b border-lightGrey py-5 flex justify-between items-center'>
-                                    <p className='text-darkGrey'>Future Payments</p>
-                                    <p className='text-lightGrey'>$7,425</p>
+                                    <Paragraph size="sm" className="text-darkGrey">
+                                        Future Payments
+                                    </Paragraph>
+                                    <Paragraph size="sm" className="text-Grey">
+                                        $7,425
+                                    </Paragraph>
+
                                 </div>
                             </div>
 
-                            <div className='text-Primary font-[400] underline text-lg text-center hover:cursor-pointer'>Payment Terms and Schedule</div>
+                            <Paragraph size="sm" className="text-Primary font-normal underline text-center hover:cursor-pointer">
+                                Payment Terms and Schedule
+                            </Paragraph>
+
 
                             <div>
-                                <Link  href="/checkout">
-                                
-                                <Button className='text-[16px] w-full text-White font-bold'>Proceed to Checkout</Button></Link>
+                                <Link href="/checkout">
+
+                                    <Button className='text-[16px] w-full text-White font-semibold'><Paragraph size="sm">
+                                        Proceed to Checkout
+                                    </Paragraph>
+                                    </Button></Link>
                             </div>
                         </div>
                     </div>

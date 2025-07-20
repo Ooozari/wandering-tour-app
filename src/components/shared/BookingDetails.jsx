@@ -1,14 +1,15 @@
 import React from 'react'
 import { Secure } from '@/svgs/Icons'
-
+import { Heading, Paragraph } from "@/components/ui/typography";
 function BookingDetails() {
     return (
         <>
             <div className="inline-flex flex-col">
                 {/* Header rectangle */}
-                <div className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-4 text-center text-lg font-[900]">
+                <Heading level="h5" className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-4 text-center font-[900]">
                     SE Asia Culinary Journey (2024)
-                </div>
+                </Heading>
+
 
 
                 {/* Card Body */}
@@ -17,12 +18,22 @@ function BookingDetails() {
                     <div className='border-b-1 border-lightGrey py-3'>
                         <div className='font-semibold text-lg flex gap-2 justify-between'>
                             <div>
-                                <p className='text-Grey'>Wander Across Iraq -</p>
-                            <p className='text-Grey'>Shared Room<span className='text-Black'> × 1</span></p>
+                                <Paragraph size="sm" className="text-Grey">
+                                    Wander Across Iraq -
+                                </Paragraph>
+                                <Paragraph size="sm" className="text-Grey">
+                                    Shared Room<span className="text-Black"> × 1</span>
+                                </Paragraph>
+
                             </div>
                             <div className='space-y-1 text-end'>
-                                <p className='text-darkGrey'>$500</p>
-                                <p className='text-darkGrey'>$3,975 payable in total</p>
+                                <Paragraph size="sm" className="text-darkGrey">
+                                    $500
+                                </Paragraph>
+                                <Paragraph size="sm" className="text-darkGrey">
+                                    $3,975 payable in total
+                                </Paragraph>
+
                             </div>
                         </div>
                     </div>
@@ -30,42 +41,70 @@ function BookingDetails() {
                     <div className='border-b-1 border-b-lightGrey py-3'>
                         <div className='font-semibold text-lg flex gap-2 justify-between'>
                             <div>
-<p className='text-Grey'>SE Asia Culinary Journey (2024) -</p>
-                            <p className='text-Grey'>Shared Room<span className='text-Black'> × 1</span></p>
+                                <Paragraph size="sm" className="text-Grey">
+                                    SE Asia Culinary Journey (2024) -
+                                </Paragraph>
+                                <Paragraph size="sm" className="text-Grey">
+                                    Shared Room<span className="text-Black"> × 1</span>
+                                </Paragraph>
+
                             </div>
-                            
+
                             <div className='space-y-1 text-end'>
-                                <p className='text-darkGrey'>$500</p>
-                                <p className='text-darkGrey'>$4,450 payable in total</p>
+                                <Paragraph size="sm" className="text-darkGrey">
+                                    $500
+                                </Paragraph>
+                                <Paragraph size="sm" className="text-darkGrey">
+                                    $4,450 payable in total
+                                </Paragraph>
+
                             </div>
                         </div>
                     </div>
 
                     <div className='border-b-1 border-b-lightGrey py-3'>
                         <div className='font-semibold text-lg flex justify-between'>
-                            <p className='text-Grey'>Subtotal</p>
-                            <p className='text-darkGrey'>$1,000</p>
+                            <Paragraph size="sm" className="text-Grey">
+                                Subtotal
+                            </Paragraph>
+                            <Paragraph size="sm" className="text-darkGrey">
+                                $1,000
+                            </Paragraph>
+
                         </div>
 
                     </div>
 
                     <div className='border-b-1 border-b-lightGrey py-3 space-y-3'>
                         <div className='font-semibold text-lg flex justify-between'>
-                            <p className='text-Black'>Due Today</p>
-                            <p className='text-Secondary'>$1,000</p>
+                            <Paragraph size="sm" className="text-Black">
+                                Due Today
+                            </Paragraph>
+                            <Paragraph size="sm" className="text-Secondary">
+                                $1,000
+                            </Paragraph>
+
                         </div>
                         <div className='font-semibold text-lg flex justify-between'>
-                            <p className='text-Black'>Future Payments</p>
-                            <p className='text-Secondary'>$7,425</p>
+                            <Paragraph size="sm" className="text-Black">
+                                Future Payments
+                            </Paragraph>
+                            <Paragraph size="sm" className="text-Secondary">
+                                $7,425
+                            </Paragraph>
+
                         </div>
                     </div>
 
                     <div className='flex flex-col gap-3 py-3'>
-                        <span className='text-Primary underline text-center'>Payment Terms and Schedule</span>
-                        <span className='inline-flex items-center space-x-1 bg-[#1AA9030D] p-2 rounded-[8px] mx-auto'>
+                        <Paragraph size="sm" className="text-Primary underline text-center">
+                            Payment Terms and Schedule
+                        </Paragraph>
+                        <div className="inline-flex items-center space-x-1 bg-[#1AA9030D] p-2 rounded-[8px] mx-auto">
                             <span><Secure /></span>
-                            <span className='text-Positive'>Secure Checkout</span>
-                        </span>
+                            <Paragraph size="sm" className="text-Positive">Secure Checkout</Paragraph>
+                        </div>
+
                     </div>
 
 

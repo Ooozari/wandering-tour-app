@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/Button'
+import { Paragraph, Heading } from "@/components/ui/typography";
+
 
 function GroupTourCard({ iconSvg, title, text }) {
     return (
@@ -15,11 +17,20 @@ function GroupTourCard({ iconSvg, title, text }) {
                 </div>
 
                 {/* Title */}
-                <h3 className='text-md md:text-lg lg:text-xl xl:text-2xl text-center font-bold text-Black uppercase'>{title}</h3>
+                <Heading level="h3" className="text-Black text-center uppercase font-bold">
+                    {title}
+                </Heading>
+
                 {/* text */}
-                <p className='text-darkGrey text-center text-sm lg:text-md'>{text}</p>
+                <Paragraph size="sm" className="text-darkGrey text-center">
+                    {text}
+                </Paragraph>
+
                 <div className='mt-2 mb-4'>
-                    <Button variant='primaryOutline' className='text-md font-semibold' size='sm'>Learn More</Button>
+                    <Button variant='primaryOutline' size='sm'>
+                        <Paragraph size="sm" className="font-semibold">Learn More</Paragraph>
+                    </Button>
+
                 </div>
             </div>
         </>

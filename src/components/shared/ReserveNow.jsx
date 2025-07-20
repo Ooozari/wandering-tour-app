@@ -3,7 +3,7 @@ import React from 'react'
 import { SaleIcon } from '@/svgs/Icons';
 import { useState } from 'react'
 import { Button } from '@/components/ui/Button'
-
+import { Heading, Paragraph } from "@/components/ui/typography";
 export default function ReserveNow() {
   const [personCounter, setPersonCounter] = useState(1)
   const handlepersonCounterInc = () => {
@@ -38,7 +38,7 @@ export default function ReserveNow() {
             <h5 className="text-Grey text-xl mb-2">Choose an Option:</h5>
 
             <div className='flex flex-col lg:flex-row gap-2.5'>
-              <div className="flex items-center px-[10px] border border-Secondary rounded-2xl gap-10 justify-between">
+              <div className="flex items-center border border-Secondary rounded-2xl px-3 py-2  gap-10 justify-between">
                 <div>
                   <p className="text-xs">
                     Shared Room
@@ -77,10 +77,11 @@ export default function ReserveNow() {
           </div>
 
           {/* Person Count */}
-          <div className="mt-6">
-            <h5 className="text-Grey text-xl">
+          <div className="my-6">
+            <Paragraph className="text-Grey text-xl">
               Pay a Deposit of <span className="text-Primary font-bold">$500 per person</span>:
-            </h5>
+            </Paragraph>
+
             {/* Buttons */}
             <div className='flex gap-2.5 items-center mt-2'>
               {/* ButtonsIncDec */}

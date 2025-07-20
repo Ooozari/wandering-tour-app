@@ -6,6 +6,7 @@ import { pastTourImages } from '@/assets/pastTours';
 import Reviews from '@/components/shared/Reviews'
 import ContactForm from '@/components/shared/ContactForm'
 import { Button } from '@/components/ui/Button'
+import { Heading, Paragraph } from "@/components/ui/typography";
 function PastTours() {
 
     return (
@@ -29,7 +30,10 @@ function PastTours() {
 
                 {/* Centered heading */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold">PAST TOURS</h1>
+                    <Heading level="h1" className="text-white font-[900]">
+                        PAST TOURS
+                    </Heading>
+
                 </div>
             </div>
 
@@ -82,22 +86,30 @@ function PastTours() {
 
             <div className='bg-Primary'>
                 <div className='container mx-auto px-4'>
+                    {/* Heading */}
+                    <div>
+                        <Heading
+                            level="h1"
+                            className="text-white font-bold px-5 md:px-10 lg:px-20 text-center pb-10 pt-10"
+                        >
+                            IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE’RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY.
+                        </Heading>
 
-                
-                {/* Heading */}
-                <div>
-                    <h2 className='text-White
-                    font-extrabold px-5 md:px-10 lg:px-20 text-lg md:text-2xl lg:text-4xl text-center pb-10 pt-10'>IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE’RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY.</h2>
-                </div>
+                    </div>
 
-                {/* Form */}
-                <div className='text-White'>
-                    <ContactForm inputBorder='border-White/24' />
-                </div>
-                {/* Submit Button */}
-                <div className='text-center pb-10 pt-6'>
-                    <Button variant='secondary' size='lg'>Submit</Button>
-                </div>
+                    {/* Form */}
+                    <div className='text-White'>
+                        <ContactForm inputBorder='border-White/24' labelText='text-White' />
+                    </div>
+                    {/* Submit Button */}
+                    <div className='text-center pb-10 pt-6'>
+                        <Button variant='secondary' size='lg'>
+                            <Paragraph size="normal" className="font-semibold">
+                                Submit
+                            </Paragraph>
+                        </Button>
+
+                    </div>
                 </div>
             </div>
         </>

@@ -20,7 +20,7 @@ export function TabsList({ className, ...props }) {
     <TabsPrimitive.List
       data-slot="tabs-list"
       className={cn(
-        "bg-white shadow-sm rounded-2xl py-5 inline-flex h-10 w-fit items-center justify-center",
+        "bg-white shadow-sm rounded-2xl flex h-10 items-center",
         className
       )}
       {...props}
