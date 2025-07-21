@@ -4,13 +4,15 @@ import { Heading, Paragraph } from "@/components/ui/typography";
 function OurTeam({ imgUrl, p1, p2, p3, p4, name, position, Direction }) {
     return (
         <>
-            <div className={`flex flex-col items-center mb-14 gap-5 md:gap-10 lg:gap-15 ${Direction ? `lg:${Direction}` : ''}`}>
+            <div className={`flex flex-col items-center justify-between mb-14 gap-5 md:gap-10 lg:gap-15 ${Direction ? `lg:${Direction}` : ''}`}>
                 {/* Default Img */}
-                <div className='w-full lg:w-1/2'>
+                <div className='w-full lg:w-1/2 flex justify-center'>
+                <div className='max-w-[622px] max-h-[622px]'>
                     <Image
                         src={imgUrl}
                         alt='Team member'
                         className='rounded-3xl' />
+                        </div>
                 </div>
                 {/* Text Content */}
                 <div className='w-full lg:w-1/2 flex flex-col gap-3'>
