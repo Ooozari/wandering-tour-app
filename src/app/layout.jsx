@@ -5,11 +5,6 @@ import { Inter } from 'next/font/google';
 import { HeaderPrimary, TransparentHeader, Footer } from '@/layout';
 import { usePathname } from 'next/navigation';
 
-
-// export const metadata = {
-//   title: 'Wandering Earl Tours',
-//   description: 'Explore private and group tours with our travel services',
-// };
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
