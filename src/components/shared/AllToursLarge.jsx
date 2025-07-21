@@ -6,10 +6,12 @@ import {
     WandertoVietnam,
     WanderAcrossRomania,
 } from '@/assets'
+import Link from 'next/link'
 import { Paragraph, Heading } from "@/components/ui/typography";
 
 
 import { Only2Spots, SoldOut, TourCardLarge } from '@/components/shared'
+
 
 function AllToursLarge({ year, title }) {
     const largeTourCardDetail = [
@@ -56,9 +58,11 @@ function AllToursLarge({ year, title }) {
                         </Heading>
                     </div>
                     <div>
+                        <Link href="/tours">
                         <Button variant="outline" size="lg">
                             <Paragraph className="m-0">All Tours</Paragraph> <ArrowRight />
                         </Button>
+                        </Link>
                     </div>
                 </div>
 

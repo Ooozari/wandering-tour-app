@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
+import Link from 'next/link';
 import { Location, Calender, Spot } from '@/svgs/Icons';
 import { Heading, Paragraph } from "@/components/ui/typography";
 function TourCardSmall({ imgUrl, Status, title, content, bookSpot, location, days, btnText }) {
@@ -33,42 +34,44 @@ function TourCardSmall({ imgUrl, Status, title, content, bookSpot, location, day
                         {content}
                     </Paragraph>
 
-                
-                        {/* spot and location */}
-                        <div className='flex flex-col items-start mt-3 gap-1'>
-                            <div className='flex gap-1'>
-                                <Spot />
-                                <Paragraph size="xxs" className="text-Black">
-                                    {bookSpot}
-                                </Paragraph>
 
-                            </div>
-                            <div className='flex gap-1 items-start'>
-                                <Location />
-                                <Paragraph size="xxs" className="text-Black">
-                                    {location}
-                                </Paragraph>
-                                <p className='text-Black'></p>
-                            </div>
-                        </div>
-
-                        {/* Days */}
-                        <div className='flex gap-1 mt-1 2xl:mt-3 items-start'>
-                            <Calender />
+                    {/* spot and location */}
+                    <div className='flex flex-col items-start mt-3 gap-1'>
+                        <div className='flex gap-1'>
+                            <Spot />
                             <Paragraph size="xxs" className="text-Black">
-                                {days}
+                                {bookSpot}
                             </Paragraph>
 
                         </div>
+                        <div className='flex gap-1 items-start'>
+                            <Location />
+                            <Paragraph size="xxs" className="text-Black">
+                                {location}
+                            </Paragraph>
+                            <p className='text-Black'></p>
+                        </div>
+                    </div>
+
+                    {/* Days */}
+                    <div className='flex gap-1 mt-1 2xl:mt-3 items-start'>
+                        <Calender />
+                        <Paragraph size="xxs" className="text-Black">
+                            {days}
+                        </Paragraph>
+
+                    </div>
                 </div>
 
                 {/* Button */}
                 <div className='mt-3'>
-                    <Button variant="outline" size="sm" className="w-full text-Primary">
-                        <Paragraph size="sm" className="text-Primary font-bold">
-                            {btnText}
-                        </Paragraph>
-                    </Button>
+                    <Link href="/tours/details">
+                        <Button variant="outline" size="sm" className="w-full text-Primary">
+                            <Paragraph size="sm" className="text-Primary font-bold">
+                                {btnText}
+                            </Paragraph>
+                        </Button>
+                    </Link>
 
                 </div>
             </div>

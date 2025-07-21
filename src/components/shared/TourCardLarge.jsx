@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 import { Location, Calender, Spot } from '@/svgs/Icons';
 import { Heading, Paragraph } from "@/components/ui/typography";
+import Link from 'next/link';
 
 
 function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, days, btnText }) {
@@ -60,11 +61,13 @@ function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, day
 
                     </div>
                     <div className="mt-5">
+                        <Link href="/tours/details">
                         <Button variant="outline" className="w-full text-Primary font-bold">
                             <Paragraph size="sm" className="font-bold text-Primary">
                                 {btnText}
                             </Paragraph>
                         </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
