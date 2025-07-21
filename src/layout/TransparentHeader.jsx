@@ -44,22 +44,22 @@ export default function TransparentHeader() {
             {/* Desktop Navbar */}
             <nav className="hidden md:flex justify-center items-center gap-4 text-White text-[14px] md:text-md">
                 <Link className={getLinkClasses('/tours')} href="/tours">
-                    <Paragraph size="normal">TOURS</Paragraph>
+                    <Paragraph size="xs">TOURS</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/about-us')} href="/about-us">
-                    <Paragraph size="normal">ABOUT US</Paragraph>
+                    <Paragraph size="xs">ABOUT US</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/our-style')} href="/our-style">
-                    <Paragraph size="normal">OUR STYLE</Paragraph>
+                    <Paragraph size="xs">OUR STYLE</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/private-tours')} href="/private-tours">
-                    <Paragraph size="normal">PRIVATE TOURS</Paragraph>
+                    <Paragraph size="xs">PRIVATE TOURS</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/past-tours')} href="/past-tours">
-                    <Paragraph size="normal">PAST TOURS</Paragraph>
+                    <Paragraph size="xs">PAST TOURS</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/contact-us')} href="/contact-us">
-                    <Paragraph size="normal">CONTACT US</Paragraph>
+                    <Paragraph size="xs">CONTACT US</Paragraph>
                 </Link>
             </nav>
 
