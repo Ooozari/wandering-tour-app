@@ -244,9 +244,9 @@ function Tour() {
 
                     {/* Past Tour 2025*/}
                     <div className='px-5'>
-                        <h1 className='font-[900] text-2xl text-center mb-6 md:text-4xl uppercase'>
+                        <Heading level="h1" className="font-[900] text-center mb-6 uppercase">
                             <span className='text-Secondary'>2025 </span>TOURS
-                        </h1>
+                        </Heading>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
                             {Year2025.map((tour, index) => (
                                 <TourCardSmall
