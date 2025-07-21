@@ -63,6 +63,9 @@ export {default as uniquetour3} from './uniquetour3.jpg'
 export {default as goodtour1} from './goodtour1.jpg'
 export {default as goodtour2} from './goodtour2.jpg'
 export {default as goodtour3} from './goodtour3.jpg'
+export {default as AboutUsDes1} from './AboutUsDes1.jpg'
+export {default as AboutUsDes2} from './AboutUsDes2.jpg'
+export {default as AboutUsDes3} from './AboutUsDes3.jpg'
 
 
 

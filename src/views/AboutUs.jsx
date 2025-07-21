@@ -1,7 +1,7 @@
 import React from 'react'
 import { HeroSection, OurTeam, AllToursLarge } from '@/components/shared'
 import { Button } from '@/components/ui/Button'
-import { AboutUsHeroImg, AboutUsDes, OurGlobalFamliyAboutUs, TeamMemberImg1, TeamMemberImg2, TeamMemberImg3, TeamMemberImg4, TeamMemberImg5, TeamMemberImg6, TeamMemberImg7 } from '@/assets'
+import { AboutUsHeroImg,AboutUsDes1, AboutUsDes2, AboutUsDes3, OurGlobalFamliyAboutUs, TeamMemberImg1, TeamMemberImg2, TeamMemberImg3, TeamMemberImg4, TeamMemberImg5, TeamMemberImg6, TeamMemberImg7 } from '@/assets'
 import Image from 'next/image'
 import { Heading, Paragraph } from "@/components/ui/typography";
 function AboutUs() {
@@ -87,7 +87,7 @@ function AboutUs() {
                     ImgUrl={HeroSectionDetails.ImgUrl}
                 />
             </div>
-             {/* Gradient continuation after hero image */}
+            {/* Gradient continuation after hero image */}
             <div
                 className="w-full h-[80px] md:h-[120px] 2xl:[150px]" // Adjust height as needed
                 style={{
@@ -96,8 +96,10 @@ function AboutUs() {
                 }}
             ></div>
             <div className='container mx-auto px-5 py-15 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
+
                 {/* After hero section */}
                 <div className='flex flex-col items-center lg:flex-row gap-10'>
+                    {/* text content */}
                     <div className='w-full lg:w-1/2 text-Black space-y-5 p-5'>
                         <Paragraph size="subText">
                             Our team at Wandering Earl Tours has a strong desire to bring rich cultural connections around the world to people who would appreciate them the most. And we hold this mission at the core of everything we do
@@ -108,11 +110,37 @@ function AboutUs() {
                         </Paragraph>
 
                     </div>
+                    {/* Image Block */}
                     <div className='w-full lg:w-1/2'>
-                        <Image
-                            src={AboutUsDes}
-                            alt='About us Des'
-                        />
+                        <div className="relative mx-auto w-full max-w-[762px] max-h-[573px] h-full mb-40 sm:mb-40 md:mb-60 lg:mb-50">
+                            {/* First Image */}
+                            <div className="relative top-2 max-w-[200px] sm:max-w-[267px] md:max-w-[267px] lg:max-w-[210px] xl:max-w-[267px] 2xl:max-w-[317px]">
+                                <Image
+                                    src={AboutUsDes1}
+                                    alt="friends"
+                                    className="object-cover aspect-[3/4] rounded-[2rem]"
+                                />
+                            </div>
+
+                            {/* Second Image */}
+                            <div className="z-20 absolute top-10 left-52 max-w-[220px] sm:top-10 sm:left-[18.5rem] sm:max-w-[244px] md:top-10 md:left-96 md:max-w-[259px] lg:top-10 lg:left-60 lg:max-w-[219px] xl:top-10 xl:left-[21.5rem] xl:max-w-[259px] 2xl:top-10 2xl:left-[26.5rem] 2xl:max-w-[309px]">
+                                <Image
+                                    src={AboutUsDes2}
+                                    alt="castle"
+                                    className="object-cover rounded-[2rem] border-[12px] border-white shadow-[-21px_27px_36px_-1px_rgba(0,0,0,0.55)]"
+                                />
+                            </div>
+
+                            {/* Third Image */}
+                            <div className="z-10 absolute top-[7.5rem] left-20 max-w-[350px] sm:top-[10rem] sm:left-[8.5rem] sm:max-w-[490px] md:top-[10rem] md:left-[8.5rem] md:max-w-[524px] lg:top-[10rem] lg:left-24 lg:max-w-[484px] xl:top-[10rem] xl:left-[8.5rem] xl:max-w-[524px] 2xl:top-[12.5rem] 2xl:left-[11rem] 2xl:max-w-[574px]">
+                                <Image
+                                    src={AboutUsDes3}
+                                    alt="van girl"
+                                    className="object-cover rounded-[2rem] border-[12px] border-white shadow-xl"
+                                />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 {/* Our Global Family */}
