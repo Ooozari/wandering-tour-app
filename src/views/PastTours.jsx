@@ -67,10 +67,14 @@ function PastTours() {
 
 
                 <div className='gird mt-3 pb-3'>
+                    <div className='h-[150px] md:h-[230px] lg:h-[374px]'>
                     <Image
                         src={pastTourBanner}
+                        height={374}
                         alt='past Tour Banner Large'
+                        className='object-cover rounded-2xl w-full h-full'
                     />
+                    </div>
                 </div>
 
                 <div className="relative w-full mt-4 ">
