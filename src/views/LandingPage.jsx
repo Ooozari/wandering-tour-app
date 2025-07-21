@@ -104,11 +104,11 @@ function LandingPage() {
                                 <Paragraph size="normal" className="mb-2">
                                     We’re fully committed to promoting and offering responsible, respectful and sustainable travel experiences around the world.
                                 </Paragraph>
-                                <Paragraph size="normal" className="mb-2">
+                                <Paragraph size="sm" className="mb-2">
                                     Everything we do is aimed at enriching the lives of the people we work with. We want you to go away from our tours with great memories, new friends, and a real appreciation for the places we visit. But, more than that, we also want to leave those places better than we found them.
                                 </Paragraph>
 
-                                <Paragraph size="normal" className="mb-4">
+                                <Paragraph size="sm" className="mb-4">
                                     We make a point of avoiding mass tourism destinations. Instead, we sustainably support local businesses, communities and the environment everywhere we go. Every aspect of our trips, from accommodation to local guides, activities to meals, and everything in between, are chosen to ensure that your tourism dollar leaves a positive and lasting impact and that our visit leaves a minimal footprint.
                                 </Paragraph>
                                 <div>

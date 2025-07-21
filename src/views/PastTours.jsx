@@ -64,8 +64,7 @@ function PastTours() {
                         </div>
                     ))}
                 </div>
-
-
+                
                 <div className='gird mt-3 pb-3'>
                     <div className='h-[150px] md:h-[230px] lg:h-[374px]'>
                     <Image
