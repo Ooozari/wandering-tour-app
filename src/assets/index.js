@@ -57,10 +57,12 @@ export {default as afterheroImg1} from './afterheroImg1.jpg'
 export {default as Sub2} from './Sub2.png'
 export {default as sub102} from './sub102.png'
 export {default as sub101} from './sub101.png'
-
-
-
-
+export {default as uniquetour1} from './uniquetour1.jpg'
+export {default as uniquetour2} from './uniquetour2.jpg'
+export {default as uniquetour3} from './uniquetour3.jpg'
+export {default as goodtour1} from './goodtour1.jpg'
+export {default as goodtour2} from './goodtour2.jpg'
+export {default as goodtour3} from './goodtour3.jpg'
 
 
 

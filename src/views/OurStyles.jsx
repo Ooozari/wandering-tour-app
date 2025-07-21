@@ -7,7 +7,12 @@ import {
     OurStyleTourThatAreGood,
     OurStyleCookies,
     OurStyleSafety,
-
+    uniquetour1,
+    uniquetour2,
+    uniquetour3,
+    goodtour1,
+    goodtour2,
+    goodtour3,
 } from '@/assets';
 
 import { HeroSection, GetInTouch, AllToursLarge } from '@/components/shared'
@@ -66,18 +71,43 @@ function OurStyles() {
                         </div>
                     </div>
 
-                    <div className='w-full lg:w-1/2 '>
-                        <Image
-                            src={OurSyleDes}
-                            alt="Our Style Description Img"
+                    {/* Image Block */}
+                    <div className='w-full lg:w-1/2 flex gap-2'>
+                        {/* Left */}
+                        <div className='max-w-[297px] max-h-[563px]'>
+                            <Image
+                                src={uniquetour1}
+                                alt="Our Style Description Img"
+                                className='object-cover rounded-3xl shadow-2xl w-full h-full aspect-1/2'
+                            />
+                        </div>
 
-                        />
+                        {/* Right */}
+                        <div className='flex flex-col gap-5'>
+                            {/* right top */}
+                            <div className='min-w-[calc(100%+40px)] -translate-x-10 border-[12px] border-White bg-White rounded-[2rem] shadow-[-13px_22px_53px_11px_rgba(0,0,0,0.55)]'>
+                                <Image
+                                    src={uniquetour3}
+                                    alt="Our Style Description Img"
+                                    className='object-cover w-full rounded-[2rem]'
+                                />
+                            </div>
+                            {/* right bottom */}
+                            <div className='flex flex-1 max-w-[297px] max-h-[305px]'>
+                                <Image
+                                    src={uniquetour2}
+                                    alt="Our Style Description Img"
+                                    className='object-cover aspect-[6/5] rounded-3xl w-full h-full'
+                                />
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
                 {/* Tour that are good for Every One */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row-reverse gap-10'>
+                <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row-reverse gap-20'>
+
                     <div className='w-full lg:w-1/2'>
                         <Heading level="h6" className="text-Black font-bold uppercase mb-4">
                             <span className="text-Secondary">Tours<br /></span>that are good for everyone.
@@ -96,13 +126,33 @@ function OurStyles() {
                     </div>
 
                     <div className='w-full lg:w-1/2'>
-                        <div
-                        >
-                            <Image
-                                src={OurStyleTourThatAreGood}
-                                alt="Our Style Tour That Are Good Img"
+                        <div className="max-w-[614px] grid grid-cols-2 gap-4 lg:min-w-[550px]">
+                            {/* Top Full Width Image */}
+                            <div className="flex max-w-[614px] max-h-[349px] col-span-2 shadow-[-40px_30px_60px_0px_#00000066] rounded-[2rem] overflow-hidden">
+                                <Image
+                                    src={goodtour1}
+                                    alt="About Image 1"
+                                    className="object-cover aspect-[12/7] rounded-[2rem]"
+                                />
+                            </div>
 
-                            />
+                            {/* Bottom Left Small Image */}
+                            <div className="max-w-[297px] max-h-[185px]">
+                                <Image
+                                    src={goodtour2}
+                                    alt="About Image 2"
+                                    className="object-cover aspect-[3/2] rounded-[2rem]"
+                                />
+                            </div>
+
+                            {/* Bottom Right Floating Image */}
+                            <div className="flex max-w-[297px] max-h-[391px] translate-x-1 -mt-[60%] border-[12px] border-white bg-white rounded-[2rem] shadow-2xl">
+                                <Image
+                                    src={goodtour3}
+                                    alt="About Image 3"
+                                    className="object-cover aspect-[3/4] rounded-[2rem]"
+                                />
+                            </div>
                         </div>
                     </div>
 
