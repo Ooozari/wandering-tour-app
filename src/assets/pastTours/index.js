@@ -13,6 +13,15 @@ import pt12 from './pt12.png';
 import pt13 from './pt13.png';
 import pt14 from './pt14.png';
 import pt15 from './pt15.png';
+import pt16 from './pt16.png';
+import pt17 from './pt17.png';
+import pt18 from './pt18.png';
+import pt19 from './pt19.png';
+import pt20 from './pt20.png';
+import pt21 from './pt21.png';
+import pt22 from './pt22.png';
+import pt23 from './pt23.png';
+import pt24 from './pt24.png';
 
 export const pastTourImages = [
   { imgSrc: pt1, imgAlt: 'Past Tour 1' },
@@ -30,4 +39,13 @@ export const pastTourImages = [
   { imgSrc: pt13, imgAlt: 'Past Tour 13' },
   { imgSrc: pt14, imgAlt: 'Past Tour 14' },
   { imgSrc: pt15, imgAlt: 'Past Tour 15' },
+  { imgSrc: pt16, imgAlt: 'Past Tour 16' },
+  { imgSrc: pt17, imgAlt: 'Past Tour 17' },
+  { imgSrc: pt18, imgAlt: 'Past Tour 18' },
+  { imgSrc: pt19, imgAlt: 'Past Tour 19' },
+  { imgSrc: pt20, imgAlt: 'Past Tour 20' },
+  { imgSrc: pt21, imgAlt: 'Past Tour 21' },
+  { imgSrc: pt22, imgAlt: 'Past Tour 22' },
+  { imgSrc: pt23, imgAlt: 'Past Tour 23' },
+  { imgSrc: pt24, imgAlt: 'Past Tour 24' },
 ];

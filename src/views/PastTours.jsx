@@ -48,19 +48,25 @@ function PastTours() {
 
             <div className='container mx-auto px-4 py-15'>
                 {/* Past Tour images */}
-                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4'>
-
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-3">
                     {pastTourImages.map((item, index) => (
-                        <Image
+                        <div
                             key={index}
-                            src={item.imgSrc}
-                            alt={item.imgAlt}
-                            className="rounded-lg"
-                        />
+                            className="relative  overflow-hidden rounded-2xl"
+                        >
+                            <Image
+                                src={item.imgSrc}
+                                alt={item.imgAlt}
+                                width={573}
+                                height={374}
+                                className="object-cover rounded-2xl w-full h-full"
+                            />
+                        </div>
                     ))}
                 </div>
 
-                <div className='gird pb-3'>
+
+                <div className='gird mt-3 pb-3'>
                     <Image
                         src={pastTourBanner}
                         alt='past Tour Banner Large'
