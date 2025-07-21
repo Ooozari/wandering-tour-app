@@ -159,7 +159,7 @@ function TourDetails() {
 
 
                     {/* related tours */}
-                    <div className='mt-10'>
+                    <div className='mt-10 px-5 md:px-8 lg:px-10'>
                         <RelatedTourSmall
                             title='Related Tours' />
                     </div>
