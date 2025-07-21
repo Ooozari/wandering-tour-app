@@ -17,7 +17,7 @@ export default function ReserveNow() {
   }
   return (
     <>
-      <div className="inline-flex flex-col mt-10">
+      <div className="w-full inline-flex flex-col mt-10">
         {/* Header with circle and rectangle */}
         <div className="relative w-full">
           {/* Circle */}

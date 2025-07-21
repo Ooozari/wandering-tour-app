@@ -6,7 +6,7 @@ function NichesCard({ svgImg, title }) {
         <div className='flex flex-col items-center justify-center gap-6 border border-[rgba(214,214,214,0.4)] rounded-3xl pt-4 px-7 pb-6 text-center'
             style={{ boxShadow: '0px 15px 20px -12px rgba(0, 0, 0, 0.16)' }}>
             {/* Icon */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center h-15 w-15 lg:h-20 lg:w-20 xl:h-25 xl:w-25">
                 {svgImg}
             </div>
 
@@ -14,7 +14,6 @@ function NichesCard({ svgImg, title }) {
             <Paragraph size="subText" className="font-semibold text-Black">
                 {title}
             </Paragraph>
-
         </div>
     )
 }

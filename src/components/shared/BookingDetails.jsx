@@ -4,7 +4,7 @@ import { Heading, Paragraph } from "@/components/ui/typography";
 function BookingDetails() {
     return (
         <>
-            <div className="inline-flex flex-col">
+            <div className="inline-flex flex-col w-full">
                 {/* Header rectangle */}
                 <Heading level="h5" className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-4 text-center font-[900]">
                     SE Asia Culinary Journey (2024)

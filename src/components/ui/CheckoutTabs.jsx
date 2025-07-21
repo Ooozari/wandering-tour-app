@@ -56,12 +56,17 @@ export default function CheckoutTabs({ children }) {
                             {index < steps.length - 1 && (
                                 <div
                                     className={cn(
-                                        // Horizontal on lg, vertical on mobile
-                                        "w-px h-6 border-l-2 border border-Grey mx-auto my-2 lg:hidden",
-                                        step.id < currentStep ? "border-Positive" : step.id === currentStep ? "border-Primary" : "border-Grey"
+                                        "w-px h-6 border-l-2 my-2 ml-[14px] lg:hidden",
+                                        step.id < currentStep
+                                            ? "border-Positive"
+                                            : step.id === currentStep
+                                                ? "border-Primary"
+                                                : "border-Grey"
                                     )}
                                 />
                             )}
+
+
                             {index < steps.length - 1 && (
                                 <div
                                     className={cn(
@@ -70,7 +75,6 @@ export default function CheckoutTabs({ children }) {
                                     )}
                                 />
                             )}
-
                         </React.Fragment>
                     );
                 })}

@@ -23,7 +23,7 @@ function OurStyles() {
     return (
         <>
             {/* Hero Section */}
-            <div className='bg-Primary px-5'>
+            <div className='bg-Primary px-10'>
                 <HeroSection
                     title={HeroSectionDetails.title}
                     paraText={HeroSectionDetails.paraText}
@@ -31,11 +31,19 @@ function OurStyles() {
                     ImgUrl={HeroSectionDetails.ImgUrl}
                 />
             </div>
+            {/* Gradient continuation after hero image */}
+            <div
+                className="w-full h-[80px] md:h-[120px] 2xl:[150px]" // Adjust height as needed
+                style={{
+                    background:
+                        "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                }}
+            ></div>
 
             <div className='container mx-auto px-4 py-10 flex flex-col gap-10 md:gap-20 lg:gap-25'>
 
                 {/* After Hero Section */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-20 flex flex-col items-center lg:flex-row gap-10'>
+                <div className='px-5 pt-10 md:px-10 lg:px-15 xl:px-20 flex flex-col items-center lg:flex-row gap-10'>
                     <div className='w-full lg:w-1/2'>
                         <Heading level="h6" className="text-Black font-bold uppercase mb-4">
                             <span className="text-Secondary">Unique tours<br /></span>
@@ -99,35 +107,36 @@ function OurStyles() {
                     </div>
 
                 </div>
+            </div>
+            {/* Cookies Cutter and Safety */}
+            <div className='container mx-auto flex flex-col lg:flex-row w-full relative'>
+                {/* left */}
+                <div className='flex w-full lg:w-1/2 relative'>
 
-                {/* Cookies Cutter and Safety */}
-                <div className='flex flex-col lg:flex-row w-full relative'>
-                    {/* left */}
-                    <div className='flex w-full lg:w-1/2 relative'>
+                    {/* Image */}
+                    <Image
+                        src={OurStyleCookies}
+                        alt='Our Style Cookies'
+                        className='w-full'
+                    />
+                    {/* Gradient */}
+                    <div
+                        className="absolute inset-0 w-full h-full"
+                        style={{
+                            background: 'linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, rgba(30, 54, 92, 0) 15.27%, rgba(30, 54, 92, 0.2) 25.06%, rgba(30, 54, 92, 0.85) 61.66%, #1E365C 100%)'
+                        }}
+                    ></div>
 
-                        {/* Image */}
-                        <Image
-                            src={OurStyleCookies}
-                            alt='Our Style Cookies'
-                            className='w-full'
-                        />
-                        {/* Gradient */}
-                        <div
-                            className="absolute inset-0 w-full h-full"
-                            style={{
-                                background: 'linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, rgba(30, 54, 92, 0) 15.27%, rgba(30, 54, 92, 0.2) 25.06%, rgba(30, 54, 92, 0.85) 61.66%, #1E365C 100%)'
-                            }}
-                        ></div>
-                        {/* Text Content */}
+                    <div>
                         <div className=' absolute 
                         bottom-3 left-5 right-5
                         md:bottom-7 md:left-9 md:right-9
                         lg:bottom-10 lg:left-12 lg:right-12'>
-                            <Heading level="h6" className="text-White uppercase font-bold mb-4">
+                            <Heading level="h6" className="text-White uppercase font-bold mb-2 md:mb-3 xl:mb-4">
                                 No <span className="text-Secondary">cookie-cutter </span>trips.
                             </Heading>
 
-                            <div className='flex text-White flex-col gap-4'>
+                            <div className='flex text-White flex-col gap-1 lg:gap-4'>
                                 <Paragraph size="xs">
                                     We make a point of handcrafting every trip we offer, which is why we can say with pride that no two tours we offer are the same. Every time we sit down to make an itinerary for a tour, we build it from the ground up. We choose the ideal route, best lodgings, most rewarding activities, tastiest restaurants, and more, that will all lead to the most extraordinary trip possible.
                                 </Paragraph>
@@ -141,32 +150,35 @@ function OurStyles() {
                             </div>
                         </div>
                     </div>
-                    {/* Right */}
-                    <div className='flex w-full lg:w-1/2 relative'>
+                    {/* Text Content */}
 
-                        {/* Image */}
-                        <Image
-                            src={OurStyleSafety}
-                            alt='Our Style Safety'
-                            className='w-full'
-                        />
-                        {/* Gradient */}
-                        <div
-                            className="absolute inset-0 w-full h-full"
-                            style={{
-                                background:
-                                    'linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, rgba(30, 54, 92, 0) 26.95%, rgba(30, 54, 92, 0.12) 42.24%, rgba(30, 54, 92, 0.85) 66.65%, #1E365C 100%)'
-                            }}
-                        ></div>
-                        {/* Text Content */}
+                </div>
+                {/* Right */}
+                <div className='flex w-full lg:w-1/2 relative'>
+
+                    {/* Image */}
+                    <Image
+                        src={OurStyleSafety}
+                        alt='Our Style Safety'
+                        className='w-full'
+                    />
+                    {/* Gradient */}
+                    <div
+                        className="absolute inset-0 w-full h-full"
+                        style={{
+                            background:
+                                'linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, rgba(30, 54, 92, 0) 26.95%, rgba(30, 54, 92, 0.12) 42.24%, rgba(30, 54, 92, 0.85) 66.65%, #1E365C 100%)'
+                        }}
+                    ></div>
+                    <div>
                         <div className='absolute bottom-3 left-5 right-5
                         md:bottom-7 md:left-9 md:right-9
                         lg:bottom-10 lg:left-12 lg:right-12'>
-                            <Heading level="h6" className="font-bold text-White uppercase mb-4">
+                            <Heading level="h6" className="font-bold text-White uppercase mb-2 md:mb-3 xl:mb-4">
                                 Safety
                             </Heading>
 
-                            <div className='flex text-White flex-col gap-4'>
+                            <div className='flex text-White flex-col  gap-1 lg:gap-4'>
                                 <Paragraph size="xs" >
                                     Safety is not something we take lightly. When you travel with Wandering Earl Tours, you can be confident that the safety of every traveler, every team member and the local populations is our top priority…always.
                                 </Paragraph>
@@ -178,15 +190,21 @@ function OurStyles() {
                             </div>
                         </div>
                     </div>
-                </div>
+                    {/* Text Content */}
 
+                </div>
+            </div>
+
+
+            <div className='container mx-auto'>
                 {/* Get in Touch */}
-                <div className='p-5' >
+                <div className='px-5 py-10 md:py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]
+' >
                     <GetInTouch />
                 </div>
 
                 {/* TOURS LARGE */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
+                <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3 pb-10'>
                     <AllToursLarge title="Tours" />
                 </div>
             </div>

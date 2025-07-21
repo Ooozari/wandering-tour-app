@@ -79,7 +79,7 @@ function AboutUs() {
     return (
         <>
             {/* Hero Section */}
-            <div className='bg-Primary  relative z-10'>
+            <div className='bg-Primary px-10  relative z-10'>
                 <HeroSection
                     title={HeroSectionDetails.title}
                     paraText={HeroSectionDetails.paraText}
@@ -87,6 +87,14 @@ function AboutUs() {
                     ImgUrl={HeroSectionDetails.ImgUrl}
                 />
             </div>
+             {/* Gradient continuation after hero image */}
+            <div
+                className="w-full h-[80px] md:h-[120px] 2xl:[150px]" // Adjust height as needed
+                style={{
+                    background:
+                        "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                }}
+            ></div>
             <div className='container mx-auto px-5 py-15 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
                 {/* After hero section */}
                 <div className='flex flex-col items-center lg:flex-row gap-10'>

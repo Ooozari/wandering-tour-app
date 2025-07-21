@@ -7,6 +7,8 @@ import { Cart } from '@/svgs/Icons';
 import { Button } from '@/components/ui/Button';
 import Logo from "@/assets/Logo.png";
 import companyName from '@/assets/Logo-name.png';
+import { Heading, Paragraph } from "@/components/ui/typography";
+
 
 export default function TransparentHeader() {
     const pathname = usePathname();
@@ -41,13 +43,26 @@ export default function TransparentHeader() {
 
             {/* Desktop Navbar */}
             <nav className="hidden md:flex justify-center items-center gap-4 text-White text-[14px] md:text-md">
-                <Link className={getLinkClasses('/tours')} href="/tours">TOURS</Link>
-                <Link className={getLinkClasses('/about-us')} href="/about-us">ABOUT US</Link>
-                <Link className={getLinkClasses('/our-style')} href="/our-style">OUR STYLE</Link>
-                <Link className={getLinkClasses('/private-tours')} href="/private-tours">PRIVATE TOURS</Link>
-                <Link className={getLinkClasses('/past-tours')} href="/past-tours">PAST TOURS</Link>
-                <Link className={getLinkClasses('/contact-us')} href="/contact-us">CONTACT US</Link>
+                <Link className={getLinkClasses('/tours')} href="/tours">
+                    <Paragraph size="normal">TOURS</Paragraph>
+                </Link>
+                <Link className={getLinkClasses('/about-us')} href="/about-us">
+                    <Paragraph size="normal">ABOUT US</Paragraph>
+                </Link>
+                <Link className={getLinkClasses('/our-style')} href="/our-style">
+                    <Paragraph size="normal">OUR STYLE</Paragraph>
+                </Link>
+                <Link className={getLinkClasses('/private-tours')} href="/private-tours">
+                    <Paragraph size="normal">PRIVATE TOURS</Paragraph>
+                </Link>
+                <Link className={getLinkClasses('/past-tours')} href="/past-tours">
+                    <Paragraph size="normal">PAST TOURS</Paragraph>
+                </Link>
+                <Link className={getLinkClasses('/contact-us')} href="/contact-us">
+                    <Paragraph size="normal">CONTACT US</Paragraph>
+                </Link>
             </nav>
+
 
             {/* Buttons */}
             <div className='hidden md:flex gap-2 items-center z-50'>
@@ -70,12 +85,25 @@ export default function TransparentHeader() {
             {/* Mobile Menu Panel */}
             {isMenuOpen && (
                 <div className="absolute top-0 left-0 w-full h-screen bg-Primary flex flex-col gap-6 justify-center items-center z-40 text-White">
-                    <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/tours">TOURS</Link>
-                    <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/about-us">ABOUT US</Link>
-                    <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/our-style">OUR STYLE</Link>
-                    <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/private-tours">PRIVATE TOURS</Link>
-                    <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/past-tours">PAST TOURS</Link>
-                    <Link onClick={() => setIsMenuOpen(false)} className="text-lg" href="/contact-us">CONTACT US</Link>
+                    <Link onClick={() => setIsMenuOpen(false)} href="/tours">
+                        <Paragraph size="xs">TOURS</Paragraph>
+                    </Link>
+                    <Link onClick={() => setIsMenuOpen(false)} href="/about-us">
+                        <Paragraph size="xs">ABOUT US</Paragraph>
+                    </Link>
+                    <Link onClick={() => setIsMenuOpen(false)} href="/our-style">
+                        <Paragraph size="xs">OUR STYLE</Paragraph>
+                    </Link>
+                    <Link onClick={() => setIsMenuOpen(false)} href="/private-tours">
+                        <Paragraph size="xs">PRIVATE TOURS</Paragraph>
+                    </Link>
+                    <Link onClick={() => setIsMenuOpen(false)} href="/past-tours">
+                        <Paragraph size="xs">PAST TOURS</Paragraph>
+                    </Link>
+                    <Link onClick={() => setIsMenuOpen(false)} href="/contact-us">
+                        <Paragraph size="xs">CONTACT US</Paragraph>
+                    </Link>
+
                     <div className='flex gap-2 items-center '>
                         <Button variant='outlineCircle' size='circle' className='border-1'>
                             <Link href="/cart"><Cart color='White' /></Link>

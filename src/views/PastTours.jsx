@@ -39,7 +39,7 @@ function PastTours() {
 
             {/* Gradient continuation after hero image */}
             <div
-                className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                className="w-full h-[100px] md:h-[150px] 2xl:[180px]" // Adjust height as needed
                 style={{
                     background:
                         "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
@@ -68,14 +68,6 @@ function PastTours() {
                 </div>
 
                 <div className="relative w-full mt-4 ">
-                    {/* Gradient Background Behind All Cards */}
-                    {/* <div
-                        className="absolute inset-0 h-[300px] md:h-[400px] -z-10"
-                        style={{
-                            background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
-                        }}
-                    ></div> */}
-
                     {/* Review Section */}
                     <div className='px-5 md:px-10 lg:px-20'>
                         <Reviews />

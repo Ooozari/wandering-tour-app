@@ -33,33 +33,33 @@ function TourCardSmall({ imgUrl, Status, title, content, bookSpot, location, day
                         {content}
                     </Paragraph>
 
+                
+                        {/* spot and location */}
+                        <div className='flex flex-col items-start mt-3 gap-1'>
+                            <div className='flex gap-1'>
+                                <Spot />
+                                <Paragraph size="xxs" className="text-Black">
+                                    {bookSpot}
+                                </Paragraph>
 
-                    {/* spot and location */}
-                    <div className='flex items-center mt-3 gap-1'>
-                        <div className='flex gap-1 items-center '>
-                            <Spot />
+                            </div>
+                            <div className='flex gap-1 items-start'>
+                                <Location />
+                                <Paragraph size="xxs" className="text-Black">
+                                    {location}
+                                </Paragraph>
+                                <p className='text-Black'></p>
+                            </div>
+                        </div>
+
+                        {/* Days */}
+                        <div className='flex gap-1 mt-1 2xl:mt-3 items-start'>
+                            <Calender />
                             <Paragraph size="xxs" className="text-Black">
-                                {bookSpot}
+                                {days}
                             </Paragraph>
 
                         </div>
-                        <div className='flex gap-1 items-center'>
-                            <Location />
-                            <Paragraph size="xxs" className="text-Black">
-                                {location}
-                            </Paragraph>
-                            <p className='text-Black'></p>
-                        </div>
-                    </div>
-
-                    {/* Days */}
-                    <div className='flex gap-1 mt-3 items-center'>
-                        <Calender />
-                        <Paragraph size="xxs" className="text-Black">
-                            {days}
-                        </Paragraph>
-
-                    </div>
                 </div>
 
                 {/* Button */}

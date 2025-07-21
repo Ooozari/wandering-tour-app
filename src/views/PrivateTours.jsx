@@ -114,7 +114,7 @@ function PrivateTours() {
         <>
 
             {/* Hero Section */}
-            <div className='bg-Primary px-5'>
+            <div className='bg-Primary px-10'>
                 <HeroSection
                     title={HeroSectionDetails.title}
                     paraText={HeroSectionDetails.paraText}
@@ -122,9 +122,18 @@ function PrivateTours() {
                     ImgUrl={HeroSectionDetails.ImgUrl}
                 />
             </div>
+            {/* Gradient continuation after hero image */}
+            <div
+                className="w-full h-[80px] md:h-[120px] 2xl:[150px]" // Adjust height as needed
+                style={{
+                    background:
+                        "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
+                }}
+            ></div>
+
             <div className='container mx-auto px-4 py-10 flex flex-col gap-20 md:gap-25 lg:gap-30 '>
                 {/* after hero section */}
-                <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10 '>
+                <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10 pt-5 lg:pt-10'>
                     <div className='w-full lg:w-1/2'>
                         <Heading level="h6" className="text-Black font-bold uppercase mb-4">
                             <span className="text-Secondary">Private tours</span>,<br />
