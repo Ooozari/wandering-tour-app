@@ -85,7 +85,7 @@ function OurStyles() {
                         {/* Right */}
                         <div className='flex flex-col gap-5'>
                             {/* right top */}
-                            <div className='min-w-[calc(100%+40px)] -translate-x-10 border-[12px] border-White bg-White rounded-[2rem] shadow-[-13px_22px_53px_11px_rgba(0,0,0,0.55)]'>
+                            <div className='min-w-[calc(100%+40px)] -translate-x-10 border-[8px] md:border-[10px] lg:border-[12px]  border-White bg-White rounded-[2rem] shadow-[-13px_22px_53px_11px_rgba(0,0,0,0.55)]'>
                                 <Image
                                     src={uniquetour3}
                                     alt="Our Style Description Img"
@@ -146,7 +146,7 @@ function OurStyles() {
                             </div>
 
                             {/* Bottom Right Floating Image */}
-                            <div className="flex max-w-[297px] max-h-[391px] translate-x-1 -mt-[60%] border-[12px] border-white bg-white rounded-[2rem] shadow-2xl">
+                            <div className="flex max-w-[297px] max-h-[391px] translate-x-1 -mt-[60%] border-[8px] md:border-[10px] lg:border-[12px] border-White bg-White rounded-[2rem] shadow-[-40px_30px_60px_0px_#00000066]">
                                 <Image
                                     src={goodtour3}
                                     alt="About Image 3"
