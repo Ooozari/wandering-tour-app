@@ -79,7 +79,13 @@ export default function HeaderPrimary() {
             {/* Desktop Buttons */}
             <div className='hidden md:flex gap-2 z-50'>
                 <Button variant='outlineCircle' size='circle' className='border-1'>
-                    <Link href="/cart"><Cart color='White' /></Link>
+                    <Link href="/cart">
+                        <div className='relative'>
+                            <Cart color='White' />
+                            <div className="absolute right-0 top-0 translate-x-1/2  w-2 h-2 rounded-full bg-Secondary">
+                            </div>
+                        </div>
+                    </Link>
                 </Button>
                 <Button variant='whitePrimary' size='lg' className='bg-White text-sm px-4 md:px-6'>
                     <Link href="/login">Login</Link>
@@ -88,7 +94,7 @@ export default function HeaderPrimary() {
 
             {/* Mobile Menu Toggle */}
             <button
-                className="md:hidden z-50 text-white text-3xl"
+                className="md:hidden z-50 text-white text-4xl"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
                 {isMenuOpen ? 'x' : '='}
@@ -118,7 +124,13 @@ export default function HeaderPrimary() {
 
                     <div className='flex gap-5 items-center'>
                         <Button variant='outlineCircle' size='circle' className='border-1'>
-                            <Link href="/cart"><Cart color='White' /></Link>
+                            <Link href="/cart">
+                                <div className='relative'>
+                                    <Cart color='White' />
+                                    <div className="absolute right-0 top-0 translate-x-1/2  w-2 h-2 rounded-full bg-Secondary">
+                                    </div>
+                                </div>
+                            </Link>
                         </Button>
                         <Button variant='whitePrimary' size='lg' className='bg-White text-sm px-7 md:px-6'>
                             <Link href="/login">Login</Link>

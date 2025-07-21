@@ -67,7 +67,13 @@ export default function TransparentHeader() {
             {/* Buttons */}
             <div className='hidden md:flex gap-2 items-center z-50'>
                 <Button variant='outlineCircle' size='circle' className='border-1'>
-                    <Link href="/cart"><Cart color='White' /></Link>
+                    <Link href="/cart">
+                        <div className='relative'>
+                            <Cart color='White' />
+                            <div className="absolute right-0 top-0 translate-x-1/2  w-2 h-2 rounded-full bg-Secondary">
+                            </div>
+                        </div>
+                    </Link>
                 </Button>
                 <Button variant='default' size='lg' className='text-sm px-4 md:px-6'>
                     <Link href="/login">Login</Link>
@@ -106,7 +112,11 @@ export default function TransparentHeader() {
 
                     <div className='flex gap-2 items-center '>
                         <Button variant='outlineCircle' size='circle' className='border-1'>
-                            <Link href="/cart"><Cart color='White' /></Link>
+                            <Link href="/cart"><div className='relative'>
+                                <Cart color='White' />
+                                <div className="absolute right-0 top-0 translate-x-1/2  w-2 h-2 rounded-full bg-Secondary">
+                                </div>
+                            </div></Link>
                         </Button>
                         <Button variant='secondary' size='lg' className='text-sm px-4 md:px-6'>
                             <Link href="/login">Login</Link>
