@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 import { landingPageHeroSection, HomePageMaps, afterheroImg2, afterheroImg1, Sub2, sub102, sub101 } from '@/assets';
 import { Button } from '@/components/ui/Button';
 import { AllToursLarge, GroupTourCard, Reviews, GetInTouch } from '@/components/shared'
@@ -68,17 +69,21 @@ function LandingPage() {
                         Tours that show you something new.
                     </Paragraph>
                     <div className="flex gap-4 my-5">
-                        <Button>
-                            <Paragraph size="normal" className="m-0 p-0">
-                                Visit 2024 Tours
-                            </Paragraph>
-                        </Button>
+                        <Link href="/tours">
+                            <Button>
+                                <Paragraph size="normal" className="m-0 p-0">
+                                    Visit 2024 Tours
+                                </Paragraph>
+                            </Button>
+                        </Link>
 
-                        <Button variant="secondary">
-                            <Paragraph size="normal" className="m-0 p-0">
-                                Visit 2025 Tours
-                            </Paragraph>
-                        </Button>
+                        <Link href="/tours">
+                            <Button variant="secondary">
+                                <Paragraph size="normal" className="m-0 p-0">
+                                    Visit 2025 Tours
+                                </Paragraph>
+                            </Button>
+                        </Link>
                     </div>
 
                 </div>
