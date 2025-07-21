@@ -83,11 +83,17 @@ export default function ReserveNow() {
             <div className='flex gap-2.5 items-center mt-2'>
               {/* ButtonsIncDec */}
               <div className="flex-1 flex">
-                <Button variant="outline" className="w-full flex justify-between items-center">
-                  <p onClick={handlepersonCounterDec} className='text-darkGrey text-2xl font-bold'>-</p>
+                <Button variant="outline" className="w-full flex justify-between items-center hover:text-White group">
+                  <p onClick={handlepersonCounterDec} className="text-darkGrey text-2xl font-bold">-</p>
                   <p>{personCounter}</p>
-                  <p onClick={handlepersonCounterInc} className='text-Secondary text-2xl font-bold'>+</p>
+                  <p
+                    onClick={handlepersonCounterInc}
+                    className="text-Secondary group-hover:text-White text-2xl font-bold"
+                  >
+                    +
+                  </p>
                 </Button>
+
               </div>
 
               {/* CheckOutButton */}
