@@ -9,7 +9,7 @@ function HeroSection({ title, paraText, subText, ImgUrl }) {
                 {/* Headings */}
                 <div className='w-full flex lg:flex-row md:flex-row flex-col justify-between items-center px-6 py-4 gap-3'>
                     <div className='w-full md:w-1/2 '>
-                        <Heading level="h2" className="text-White font-[900] uppercase">
+                        <Heading level="h1Large" className="text-White font-[900] uppercase">
                             {title}
                         </Heading>
 

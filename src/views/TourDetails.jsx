@@ -75,7 +75,7 @@ function TourDetails() {
                         }}
                     />
                     <div className='absolute inset-0 z-10 flex justify-center items-center text-center px-4'>
-                        <Heading level="h1" className="text-White font-[900] leading-tight">
+                        <Heading level="h1Large" className="text-White font-[900] leading-tight">
                             SE Asia Culinary Journey (2024)
                         </Heading>
 

@@ -203,7 +203,7 @@ function Tour() {
                         }}
                     />
                     <div className='absolute inset-0 z-10 flex justify-center items-center'>
-                        <h1 className='text-White font-extrabold text-4xl md:text-6xl'>TOURS</h1>
+                        <Heading level="h1Large" className="text-White font-[900]">TOURS</Heading>
                     </div>
                 </div>
 

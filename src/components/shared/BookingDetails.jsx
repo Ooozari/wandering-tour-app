@@ -97,10 +97,10 @@ function BookingDetails() {
                     </div>
 
                     <div className='flex flex-col gap-3 py-3'>
-                        <Paragraph size="sm" className="text-Primary underline text-center">
+                        <Paragraph size="sm" className="text-Primary underline text-center hover:cursor-pointer">
                             Payment Terms and Schedule
                         </Paragraph>
-                        <div className="inline-flex items-center space-x-1 bg-[#1AA9030D] p-2 rounded-[8px] mx-auto">
+                        <div className="inline-flex items-center space-x-1 bg-[#1AA9030D] p-2 rounded-[8px] mx-auto hover:cursor-pointer">
                             <span><Secure /></span>
                             <Paragraph size="sm" className="text-Positive">Secure Checkout</Paragraph>
                         </div>
