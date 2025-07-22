@@ -143,6 +143,7 @@ function AboutUs() {
 
                     </div>
                 </div>
+                </div>
                 {/* Our Global Family */}
                 <div className='flex flex-col lg:flex-row items-center gap-1 bg-Secondary w-full'>
                     <div className='container mx-auto  flex flex-col lg:flex-row w-full'>
@@ -172,7 +173,7 @@ function AboutUs() {
                         </div>
                     </div>
                 </div>
-
+                <div className='container px-5 mx-auto py-15 flex flex-col gap-10 md:gap-15 lg:gap-20'>
                 {/* Our Team */}
                 <div className='flex flex-col gap-10'>
                     <div className='text-Black font-extrabold text-center'>
