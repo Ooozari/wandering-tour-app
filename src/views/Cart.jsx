@@ -49,10 +49,10 @@ function Cart() {
                                             <td className="p-4 text-Black">$3,975</td>
                                             <td className="p-4">
                                                 <div className="flex-1 flex">
-                                                    <Button variant="outline" className="w-full flex justify-between items-center">
+                                                    <Button variant="outline" className="w-full flex justify-between items-center group">
                                                         <p onClick={handlepersonCounterDec} className='text-darkGrey text-2xl font-bold cursor-pointer'>-</p>
                                                         <p>{personCounter}</p>
-                                                        <p onClick={handlepersonCounterInc} className='text-Secondary text-2xl font-bold cursor-pointer'>+</p>
+                                                        <p onClick={handlepersonCounterInc} className='text-Secondary text-2xl font-bold cursor-pointer group-hover:text-White'>+</p>
                                                     </Button>
                                                 </div>
                                             </td>
@@ -75,10 +75,10 @@ function Cart() {
                                             <td className="p-4  text-Black">$4,450</td>
                                             <td className="p-4">
                                                 <div className="flex-1 flex">
-                                                    <Button variant="outline" className="w-full flex justify-between items-center">
+                                                    <Button variant="outline" className="w-full flex justify-between items-center group">
                                                         <p onClick={handlepersonCounterDec} className='text-darkGrey text-2xl font-bold cursor-pointer'>-</p>
                                                         <p>{personCounter}</p>
-                                                        <p onClick={handlepersonCounterInc} className='text-Secondary text-2xl font-bold cursor-pointer'>+</p>
+                                                        <p onClick={handlepersonCounterInc} className='text-Secondary text-2xl font-bold cursor-pointer group-hover:text-White'>+</p>
                                                     </Button>
                                                 </div>
                                             </td>
