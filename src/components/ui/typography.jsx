@@ -8,6 +8,7 @@ const headingVariants = cva(
   {
     variants: {
       level: {
+        h1Large: "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[64px]",
         // Section heading
         h1: "text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl",
         // Component heading + Hero Section

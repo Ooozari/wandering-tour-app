@@ -59,9 +59,11 @@ function AllToursLarge({ year, title }) {
                     </div>
                     <div>
                         <Link href="/tours">
-                        <Button variant="outline" size="lg">
-                            <Paragraph className="m-0">All Tours</Paragraph> <ArrowRight />
-                        </Button>
+                            <Button variant="outline" size="lg" className="group flex items-center gap-2">
+                                <Paragraph className="m-0 text-Primary group-hover:text-White">All Tours</Paragraph>
+                                <ArrowRight className="text-White group-hover:text-White" />
+                            </Button>
+
                         </Link>
                     </div>
                 </div>

@@ -57,7 +57,7 @@ function LandingPage() {
                 <div className="absolute inset-0 z-0 bg-[linear-gradient(180deg,rgba(30,54,92,0)_0%,rgba(30,54,92,0.3)_52.5%,#1E365C_100%)]" />
                 <div className='container mx-auto absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4 gap-4'>
                     <Heading
-                        level="h1"
+                        level="h1Large"
                         className="text-White text-center font-[900] uppercase"
                     >
                         Unique, Local, Small <span className="text-Secondary">Groups</span>
@@ -71,7 +71,7 @@ function LandingPage() {
                     <div className="flex gap-4 my-5">
                         <Link href="/tours">
                             <Button>
-                                <Paragraph size="normal" className="m-0 p-0">
+                                <Paragraph size="normal" className="">
                                     Visit 2024 Tours
                                 </Paragraph>
                             </Button>
@@ -79,7 +79,7 @@ function LandingPage() {
 
                         <Link href="/tours">
                             <Button variant="secondary">
-                                <Paragraph size="normal" className="m-0 p-0">
+                                <Paragraph size="normal" className="">
                                     Visit 2025 Tours
                                 </Paragraph>
                             </Button>
@@ -91,28 +91,25 @@ function LandingPage() {
 
 
             <div className='flex flex-col gap-10 md:gap-15 lg:gap-20 xl:gap-25 2xl:gap-30'>
+                
                 {/* after hero section */}
                 <div>
-                    <div className="relative w-full bg-Primary overflow-visible lg:overflow-hidden p-5 lg:p-15">
+                    <div className="relative w-full  overflow-visible lg:overflow-hidden bg-Primary px-5 md:px-10 lg:px-15 xl:px-20 2xl:px-25">
                         {/* Gradient Background */}
                         <div className="absolute inset-0 z-0 bg-[linear-gradient(178.06deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]" />
-
                         {/* Content */}
-                        <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between px-1 py-3 lg:px-6 lg:py-10 md:gap-0 gap-5">
+                        <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between px-1 py-3 lg:px-6 lg:py-25 md:gap-0 gap-5 ">
                             {/* Text Block */}
-                            <div className="text-white flex-1 w-full lg:w-1/2 ">
-
+                            <div className="text-white flex-1 w-full lg:w-1/2">
                                 <Heading level="h1" className="mb-4 font-extrabold uppercase">
                                     Sustainable and responsible travel
                                 </Heading>
-
                                 <Paragraph size="normal" className="mb-2">
                                     We’re fully committed to promoting and offering responsible, respectful and sustainable travel experiences around the world.
                                 </Paragraph>
                                 <Paragraph size="sm" className="mb-2">
                                     Everything we do is aimed at enriching the lives of the people we work with. We want you to go away from our tours with great memories, new friends, and a real appreciation for the places we visit. But, more than that, we also want to leave those places better than we found them.
                                 </Paragraph>
-
                                 <Paragraph size="sm" className="mb-4">
                                     We make a point of avoiding mass tourism destinations. Instead, we sustainably support local businesses, communities and the environment everywhere we go. Every aspect of our trips, from accommodation to local guides, activities to meals, and everything in between, are chosen to ensure that your tourism dollar leaves a positive and lasting impact and that our visit leaves a minimal footprint.
                                 </Paragraph>
@@ -122,9 +119,9 @@ function LandingPage() {
                                 </div>
                             </div>
                             {/* Images Block */}
-                            <div className="relative flex w-full lg:w-1/2 gap-5">
+                            <div className="relative flex w-full lg:w-1/2 gap-5 lg:pb-20">
                                 {/* Img 1 */}
-                                <div className="relative w-[250px] md:w-[300px] aspect-[7/11] z-10 top-30  -right-[15%]">
+                                <div className="relative w-[250px] md:w-[300px] aspect-[7/11] z-10 top-25 -right-[15%]">
                                     <Image
                                         src={afterheroImg1}
                                         alt="Image 1"
@@ -171,7 +168,7 @@ function LandingPage() {
                 </div>
 
                 {/* 2024 Tour */}
-                <div className='container mx-auto px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
+                <div className='container mx-auto px-5 md:px-10 lg:px-15 xl:px-25 -mt-8 md:mt-16 lg:mt-24 xl:-mt-40 mb-3 '>
                     <AllToursLarge year="2024" title="Tours" />
                 </div>
 
@@ -190,7 +187,6 @@ function LandingPage() {
                         <Paragraph size="subText" className="text-Black">
                             Experience culture, wonder and fun like never before.
                         </Paragraph>
-
                     </div>
 
                     {/* Tour Group Card */}
@@ -205,7 +201,6 @@ function LandingPage() {
                                 />
                             ))
                         }
-
                     </div>
                 </div>
 

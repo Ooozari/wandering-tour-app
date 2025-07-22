@@ -75,8 +75,8 @@ export default function TransparentHeader() {
                         </div>
                     </Link>
                 </Button>
-                <Button variant='default' size='lg' className='text-sm px-4 md:px-6'>
-                    <Link href="/login">Login</Link>
+                <Button variant='default' size='xs' className='group'>
+                    <Paragraph size="xs" className='group-hover:text-Primary'>Login</Paragraph>
                 </Button>
             </div>
 
@@ -118,8 +118,8 @@ export default function TransparentHeader() {
                                 </div>
                             </div></Link>
                         </Button>
-                        <Button variant='secondary' size='lg' className='text-sm px-4 md:px-6'>
-                            <Link href="/login">Login</Link>
+                        <Button variant='default' size='xs' className='group'>
+                            <Paragraph size="xs" className='group-hover:text-Primary'>Login</Paragraph>
                         </Button>
                     </div>
                 </div>

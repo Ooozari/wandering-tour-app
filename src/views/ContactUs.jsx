@@ -62,7 +62,8 @@ function ContactUs() {
                 </div>
 
                 <div className='text-center mb-20'>
-                    <Button variant='secondary' size='lg'>Submit</Button>
+                    <Button variant='secondary' size='lg' className='group'><Paragraph size="normal" className='group-hover:text-Secondary'>Submit</Paragraph>
+                    </Button>
                 </div>
 
             </div>

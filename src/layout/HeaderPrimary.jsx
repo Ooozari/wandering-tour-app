@@ -77,7 +77,7 @@ export default function HeaderPrimary() {
 
 
             {/* Desktop Buttons */}
-            <div className='hidden md:flex gap-2 z-50'>
+            <div className='hidden md:flex md:items-center gap-2 z-50'>
                 <Button variant='outlineCircle' size='circle' className='border-1'>
                     <Link href="/cart">
                         <div className='relative'>
@@ -87,8 +87,8 @@ export default function HeaderPrimary() {
                         </div>
                     </Link>
                 </Button>
-                <Button variant='whitePrimary' size='lg' className='bg-White text-sm px-4 md:px-6'>
-                    <Link href="/login">Login</Link>
+                <Button variant='whitePrimary' className=''>
+                    <Paragraph size="xs">Login</Paragraph>
                 </Button>
             </div>
 
@@ -132,8 +132,8 @@ export default function HeaderPrimary() {
                                 </div>
                             </Link>
                         </Button>
-                        <Button variant='whitePrimary' size='lg' className='bg-White text-sm px-7 md:px-6'>
-                            <Link href="/login">Login</Link>
+                        <Button variant='whitePrimary' size='lg' className=''>
+                            <Paragraph size="normal">Login</Paragraph>
                         </Button>
                     </div>
                 </div>

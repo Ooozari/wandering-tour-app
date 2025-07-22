@@ -27,7 +27,7 @@ function GroupTourCard({ iconSvg, title, text }) {
                 </Paragraph>
 
                 <div className='mt-2 mb-4'>
-                    <Button variant='primaryOutline' size='sm'>
+                    <Button variant='primaryOutline' size='sm' className=''>
                         <Paragraph size="sm" className="font-semibold">Learn More</Paragraph>
                     </Button>
 

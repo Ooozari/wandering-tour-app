@@ -150,7 +150,7 @@ function Cart() {
                             <div>
                                 <Link href="/checkout">
 
-                                    <Button className='text-[16px] w-full text-White font-semibold'><Paragraph size="sm">
+                                    <Button className='text-[16px] w-full text-White font-semibold group'><Paragraph size="sm" className='group-hover:text-Primary'>
                                         Proceed to Checkout
                                     </Paragraph>
                                     </Button></Link>

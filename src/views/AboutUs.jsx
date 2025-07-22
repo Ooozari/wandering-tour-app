@@ -146,8 +146,8 @@ function AboutUs() {
                 </div>
                 {/* Our Global Family */}
                 <div className='flex flex-col lg:flex-row items-center gap-1 bg-Secondary w-full'>
-                    <div className='container mx-auto  flex flex-col lg:flex-row w-full'>
-                        <div className='w-full lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
+                    <div className='container mx-auto flex flex-col lg:flex-row w-full'>
+                        <div className='w-full flex flex-col lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
                             <Heading level="h1" className="text-White font-extrabold">
                                 Our global family
                             </Heading>
@@ -165,7 +165,6 @@ function AboutUs() {
 
                             </div>
                         </div>
-
                         <div className='hidden lg:flex w-full h-full lg:w-1/2'>
                             <Image src={OurGlobalFamliyAboutUs}
                                 alt='Our Global Famliy AboutUs'

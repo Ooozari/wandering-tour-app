@@ -66,8 +66,8 @@ function TourCardSmall({ imgUrl, Status, title, content, bookSpot, location, day
                 {/* Button */}
                 <div className='mt-3'>
                     <Link href="/tours/details">
-                        <Button variant="outline" size="sm" className="w-full text-Primary">
-                            <Paragraph size="sm" className="text-Primary font-bold">
+                        <Button variant="outline" size="sm" className="w-full text-Primary group">
+                            <Paragraph size="sm" className="text-Primary font-bold group-hover:text-White">
                                 {btnText}
                             </Paragraph>
                         </Button>

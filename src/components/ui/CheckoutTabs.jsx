@@ -94,7 +94,7 @@ export default function CheckoutTabs({ children }) {
                     <Button
                         variant="outline"
                         size="lg"
-                        className="px-10 md:px-16 lg:px-20 text-Grey"
+                        className="px-10 md:px-16 lg:px-20 text-Grey font-bold"
                         disabled={currentStep === 1}
                         onClick={() => setCurrentStep((s) => s - 1)}
                     >
@@ -109,7 +109,7 @@ export default function CheckoutTabs({ children }) {
                             : () => setCurrentStep((s) => s + 1)
                     }
                     variant="default"
-                    className="px-10 md:px-16 lg:px-20"
+                    className="px-10 md:px-16 lg:px-20 hover:text-Primary font-bold"
                     size="lg"
                 >
                     {currentStep === 1 && "Next Step"}

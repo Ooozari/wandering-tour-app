@@ -62,8 +62,8 @@ function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, day
                     </div>
                     <div className="mt-5">
                         <Link href="/tours/details">
-                        <Button variant="outline" className="w-full text-Primary font-bold">
-                            <Paragraph size="sm" className="font-bold text-Primary">
+                        <Button variant="outline" className="w-full text-Primary font-bold group">
+                            <Paragraph size="sm" className="font-bold text-Primary group-hover:text-White">
                                 {btnText}
                             </Paragraph>
                         </Button>
