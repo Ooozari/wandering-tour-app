@@ -9,7 +9,7 @@ import Link from 'next/link';
 function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, days, btnText }) {
 
     return (
-        <div className="w-full max-w-[400px] mx-auto">
+        <div className="w-full mx-auto">
             <div
                 className="flex flex-col gap-0 rounded-3xl overflow-hidden bg-White shadow-lg"
                 style={{
@@ -29,25 +29,25 @@ function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, day
                     )}
                 </div>
 
-                <div className="p-4">
-                    <Heading level="h3" className="text-Black mb-2.5 font-[800]">
+                <div className="px-4 py-6">
+                    <Heading level="h5" className="text-Black mb-2.5 font-[900]">
                         {title.toUpperCase()}
                     </Heading>
-                    <Paragraph size="sm" className="text-Black font-normal">
+                    <Paragraph size="xs" className="text-Black font-normal">
                         {content}
                     </Paragraph>
 
-                    <div className="flex items-center mt-3 gap-4 text-xs">
+                    <div className="flex items-center mt-6 gap-4">
                         <div className="flex gap-1 items-center">
                             <Spot />
-                            <Paragraph size="xs" className="text-Black">
+                            <Paragraph size="xxs" className="text-Black">
                                 {bookSpot}
                             </Paragraph>
 
                         </div>
                         <div className="flex gap-1 items-center">
                             <Location />
-                            <Paragraph size="xs" className="text-Black">
+                            <Paragraph size="xxs" className="text-Black">
                                 {location}
                             </Paragraph>
 
@@ -55,18 +55,19 @@ function TourCardLarge({ imgUrl, Status, title, content, bookSpot, location, day
                     </div>
                     <div className="flex gap-1 mt-3 items-center">
                         <Calender />
-                        <Paragraph size="xs" className="text-darkGrey">
+                        <Paragraph size="xxs" className="text-darkGrey">
                             {days}
                         </Paragraph>
 
                     </div>
-                    <div className="mt-5">
+                    <div className="mt-[10px] md:mt-[16px] lg:mt-[20px] xl:mt-[26px] 2xl:mt-[30px]"
+                    >
                         <Link href="/tours/details">
-                        <Button variant="outline" className="w-full text-Primary font-bold group">
-                            <Paragraph size="sm" className="font-bold text-Primary group-hover:text-White">
-                                {btnText}
-                            </Paragraph>
-                        </Button>
+                            <Button variant="outline" className="w-full text-Primary font-bold group">
+                                <Paragraph size="sm" className="font-bold text-Primary group-hover:text-White">
+                                    {btnText}
+                                </Paragraph>
+                            </Button>
                         </Link>
                     </div>
                 </div>

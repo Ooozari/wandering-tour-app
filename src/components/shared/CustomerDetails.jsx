@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/select"
 import { input as Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/Button'
+import { Heading, Paragraph } from "@/components/ui/typography";
 
 function CustomerDetails() {
     const inputBorder = 'border-lightGrey'
@@ -99,10 +100,16 @@ function CustomerDetails() {
 
 
                 <div className='p-4 bg-white shadow-lg border border-strokeLight rounded-2xl flex flex-col gap-4'>
-                    <p className='text-Secondary font-semibold'>If you have a coupon code, please apply it below.</p>
+                    <Paragraph size='md' className="text-Secondary font-semibold">
+                        If you have a coupon code, please apply it below.
+                    </Paragraph>
+
                     <Input type='text' placeholder="Write" />
                     <div>
-                        <Button variant='lightPrimary' className='w-full font-semibold text-[16px]'>Apply Coupon</Button>
+                        <Button variant='lightPrimary' className='w-full font-semibold'><Paragraph className="font-semibold">
+                            Apply Coupon
+                        </Paragraph>
+                        </Button>
                     </div>
                 </div>
             </div>

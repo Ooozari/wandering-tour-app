@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { Heading, Paragraph } from "@/components/ui/typography";
 
 function HighlightCard({ svgImg, title, text }) {
     return (
@@ -12,8 +13,14 @@ function HighlightCard({ svgImg, title, text }) {
                         className='block w-10 h-10'
                     />
                 </div>
-                {title && (<h3 className='text-Black font-semibold'>{title}</h3>)}
-                <p className='text-Black'>{text}</p>
+                {title && (
+                    <Paragraph size="md" className="text-Black font-semibold">
+                        {title}
+                    </Paragraph>
+                )}
+                <Paragraph size="md" className="text-Black">
+                    {text}
+                </Paragraph>
             </div>
         </>
     )

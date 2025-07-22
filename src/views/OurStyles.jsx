@@ -45,17 +45,17 @@ function OurStyles() {
                 }}
             ></div>
 
-            <div className='container mx-auto px-4 py-10 flex flex-col gap-10 md:gap-20 lg:gap-25'>
+            <div className='container mx-auto flex flex-col gap-[30px] md:gap-[60px] lg:gap-[80px] xl:gap-[100px] 2xl:gap-[120px] pt-[16px] md:pt-[32px] lg:pt-[56px] xl:pt-[72px] 2xl:pt-[95px] px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mb-[32px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[140px]'>
 
                 {/* After Hero Section */}
-                <div className='px-5 pt-10 md:px-10 lg:px-15 xl:px-20 flex flex-col items-center lg:flex-row gap-10'>
+                <div className='flex flex-col items-center lg:flex-row gap-10'>
                     <div className='w-full lg:w-1/2'>
-                        <Heading level="h6" className="text-Black font-bold uppercase mb-4">
+                        <Heading level="lgSubText" className="text-Black font-bold uppercase leading-tight ">
                             <span className="text-Secondary">Unique tours<br /></span>
                             you can’t find anywhere else.
                         </Heading>
 
-                        <div className='flex flex-col gap-4 text-Black'>
+                        <div className='flex flex-col gap-4 text-Black pt-[8px] md:pt-[16px] lg:pt-[24px] xl:pt-[32px] 2xl:pt-[40px]'>
                             <Paragraph size="normal">
                                 Through Wandering Earl Tours, we want to you to have authentic experiences and meet the people who live their everyday lives in the places you’re visiting. We want you to really understand the destinations you’ve explored with us, and never feel like you just “passed through.”
                             </Paragraph>
@@ -70,7 +70,6 @@ function OurStyles() {
 
                         </div>
                     </div>
-
                     {/* Image Block */}
                     <div className='w-full lg:w-1/2 flex gap-2'>
                         {/* Left */}
@@ -106,14 +105,14 @@ function OurStyles() {
                 </div>
 
                 {/* Tour that are good for Every One */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-25 flex flex-col items-center lg:flex-row-reverse gap-20'>
+                <div className='flex flex-col items-center lg:flex-row-reverse gap-10'>
 
                     <div className='w-full lg:w-1/2'>
-                        <Heading level="h6" className="text-Black font-bold uppercase mb-4">
+                        <Heading level="lgSubText" className="text-Black font-bold uppercase leading-tight">
                             <span className="text-Secondary">Tours<br /></span>that are good for everyone.
                         </Heading>
 
-                        <div className='flex flex-col gap-4 text-Black'>
+                        <div className='flex flex-col gap-4 text-Black pt-[8px] md:pt-[16px] lg:pt-[24px] xl:pt-[32px] 2xl:pt-[40px]'>
                             <Paragraph size="normal" className="text-Black">
                                 Our tours are full of people and places we love. And, like anything else that we love, we want to take care of them. We want to make sure the people and places we visit together don’t just survive, but thrive.
                             </Paragraph>
@@ -157,7 +156,10 @@ function OurStyles() {
                     </div>
 
                 </div>
+                
             </div>
+
+
             {/* Cookies Cutter and Safety */}
             <div className='container mx-auto flex flex-col lg:flex-row w-full relative'>
                 {/* left */}
@@ -182,7 +184,7 @@ function OurStyles() {
                         bottom-3 left-5 right-5
                         md:bottom-7 md:left-9 md:right-9
                         lg:bottom-10 lg:left-12 lg:right-12'>
-                            <Heading level="h6" className="text-White uppercase font-bold mb-2 md:mb-3 xl:mb-4">
+                            <Heading level="lgSubText" className="text-White uppercase font-bold mb-[8px] md:mb-[16px] lg:mb-[24px] xl:mb-[32px] 2xl:mb-[40px]">
                                 No <span className="text-Secondary">cookie-cutter </span>trips.
                             </Heading>
 
@@ -224,7 +226,7 @@ function OurStyles() {
                         <div className='absolute bottom-3 left-5 right-5
                         md:bottom-7 md:left-9 md:right-9
                         lg:bottom-10 lg:left-12 lg:right-12'>
-                            <Heading level="h6" className="font-bold text-White uppercase mb-2 md:mb-3 xl:mb-4">
+                            <Heading level="lgSubText" className="font-bold text-White uppercase mb-[8px] md:mb-[16px] lg:mb-[24px] xl:mb-[32px] 2xl:mb-[40px]">
                                 Safety
                             </Heading>
 
@@ -245,16 +247,15 @@ function OurStyles() {
                 </div>
             </div>
 
-
-            <div className='container mx-auto'>
+            <div className='container mx-auto mb-[32px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[140px]'>
                 {/* Get in Touch */}
-                <div className='px-5 py-10 md:py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]
-' >
+                <div className='px-[20px] py-10 md:py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]'>
                     <GetInTouch />
                 </div>
 
                 {/* TOURS LARGE */}
-                <div className='px-5 md:px-10 lg:px-15 xl:px-25 mb-3 pb-10'>
+                <div className='px-5 md:px-8 lg:px-10 xl:px-15 2xl:px-20 "mb-[32px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[150px]"
+                '>
                     <AllToursLarge title="Tours" />
                 </div>
             </div>

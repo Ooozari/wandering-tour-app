@@ -186,7 +186,7 @@ function Tour() {
 
     return (
         <>
-            <div className='flex flex-col mb-10'>
+            <div className='flex flex-col mb-[24px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[144px]'>
 
                 {/* Hero Section */}
                 <div className='relative w-full'>
@@ -209,7 +209,7 @@ function Tour() {
 
                 {/* Gradient continuation after hero image */}
                 <div
-                    className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                    className="w-full h-[100px] md:h-[200px] lg:h-[230px] xl:h-[280px] -z-10"
                     style={{
                         background:
                             "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
@@ -217,11 +217,11 @@ function Tour() {
                 ></div>
 
                 {/* Other Sections with gap */}
-                <div className='container mx-auto px-4 flex flex-col justify-between items-center gap-15 lg:gap-20'>
+                <div className='container mx-auto px-[16px] md:px-[32px] lg:px-[48px] xl:px-[64px] 2xl:px-[80px] flex flex-col -mt-[48px] md:-mt-[68px] lg:-mt-[88px] xl:-mt-[105px] 2xl:-mt-[120px]'>
 
                     {/* Past Tour 2024*/}
-                    <div className='px-5'>
-                        <Heading level="h1" className="font-[900] text-center mb-6 uppercase">
+                    <div className=''>
+                        <Heading level="h1" className="font-[900] text-center mb-[12px] md:mb-[24px] lg:mb-[40px] xl:mb-[56px] 2xl:mb-[70px] uppercase">
                             <span className="text-Secondary">2024 </span>TOURS
                         </Heading>
 
@@ -243,11 +243,11 @@ function Tour() {
                     </div>
 
                     {/* Past Tour 2025*/}
-                    <div className='px-5'>
-                        <Heading level="h1" className="font-[900] text-center mb-6 uppercase">
+                    <div className=''>
+                        <Heading level="h1" className="font-[900] text-center mb-[12px] md:mb-[24px] lg:mb-[40px] xl:mb-[56px] 2xl:mb-[70px] mt-[16px] md:mt-[32px] lg:mt-[56px] xl:mt-[72px] 2xl:mt-[94px] uppercase">
                             <span className='text-Secondary'>2025 </span>TOURS
                         </Heading>
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[6px] md:gap-[10px] lg:gap-[14px] xl:gap-[16px] 2xl:gap-[20px]'>
                             {Year2025.map((tour, index) => (
                                 <TourCardSmall
                                     key={index}

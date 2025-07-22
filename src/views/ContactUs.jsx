@@ -25,7 +25,7 @@ function ContactUs() {
                     }}
                 ></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <Heading level="h1" className="text-white font-[900]">
+                    <Heading level="h1Large" className="text-white font-[900]">
                         CONTACT US
                     </Heading>
 
@@ -46,7 +46,7 @@ function ContactUs() {
 
                 {/* Headings */}
                 <div className='text-center mb-9'>
-                    <Heading level="h1" className="text-Black font-bold">
+                    <Heading level="h1" className="text-Black font-bold mb-[6px] md:mb-[12px] lg:mb-[16px] xl:mb-[20px] 2xl:mb-[24px]">
                         HELLO! HAVE <span className="text-Secondary">A QUESTION?</span>
                     </Heading>
 
@@ -57,10 +57,9 @@ function ContactUs() {
                 </div>
 
                 {/* Form */}
-                <div className="mb-10">
+                <div className="my-[10px] md:my-[20px] lg:my-[40px] xl:my-[60px] 2xl:my-[80px]">
                     <ContactForm inputBorder='border-lightGrey' labelText='text-Black' />
                 </div>
-
                 <div className='text-center mb-20'>
                     <Button variant='secondary' size='lg' className='group'><Paragraph size="normal" className='group-hover:text-Secondary'>Submit</Paragraph>
                     </Button>

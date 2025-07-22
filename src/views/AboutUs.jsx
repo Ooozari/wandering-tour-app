@@ -1,7 +1,7 @@
 import React from 'react'
 import { HeroSection, OurTeam, AllToursLarge } from '@/components/shared'
 import { Button } from '@/components/ui/Button'
-import { AboutUsHeroImg,AboutUsDes1, AboutUsDes2, AboutUsDes3, OurGlobalFamliyAboutUs, TeamMemberImg1, TeamMemberImg2, TeamMemberImg3, TeamMemberImg4, TeamMemberImg5, TeamMemberImg6, TeamMemberImg7 } from '@/assets'
+import { AboutUsHeroImg, AboutUsDes1, AboutUsDes2, AboutUsDes3, OurGlobalFamliyAboutUs, TeamMemberImg1, TeamMemberImg2, TeamMemberImg3, TeamMemberImg4, TeamMemberImg5, TeamMemberImg6, TeamMemberImg7 } from '@/assets'
 import Image from 'next/image'
 import { Heading, Paragraph } from "@/components/ui/typography";
 function AboutUs() {
@@ -87,6 +87,7 @@ function AboutUs() {
                     ImgUrl={HeroSectionDetails.ImgUrl}
                 />
             </div>
+
             {/* Gradient continuation after hero image */}
             <div
                 className="w-full h-[80px] md:h-[120px] 2xl:[150px]" // Adjust height as needed
@@ -95,7 +96,10 @@ function AboutUs() {
                         "linear-gradient(0deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
                 }}
             ></div>
-            <div className='container mx-auto px-5 py-15 relative flex flex-col gap-10 md:gap-15 lg:gap-20'>
+
+
+
+            <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mb-[32px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[140px] relative flex flex-col gap-10 md:gap-15 lg:gap-20 pt-[16px] md:pt-[32px] lg:pt-[56px] xl:pt-[72px] 2xl:pt-[95px]'>
 
                 {/* After hero section */}
                 <div className='flex flex-col items-center lg:flex-row gap-10'>
@@ -143,39 +147,44 @@ function AboutUs() {
 
                     </div>
                 </div>
-                </div>
-                {/* Our Global Family */}
-                <div className='flex flex-col lg:flex-row items-center gap-1 bg-Secondary w-full'>
-                    <div className='container mx-auto flex flex-col lg:flex-row w-full'>
-                        <div className='w-full flex flex-col lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
-                            <Heading level="h1" className="text-White font-extrabold">
-                                Our global family
-                            </Heading>
+            </div>
 
-                            <Paragraph size="normal" className="text-White mt-2 mb-4">
-                                Our team also consists of our incredible travel partners, friends and endless local contacts in every country where we operate. These wonderful people work extremely hard to help us create and run our unique trips. We could not do this without all of them as it takes such a dedicated and global team to create our rewarding travel experiences!
-                            </Paragraph>
+            {/* Our Global Family */}
+            <div className='flex flex-col lg:flex-row items-center gap-1 bg-Secondary w-full'>
+                <div className='container mx-auto flex flex-col lg:flex-row w-full'>
+                    <div className='w-full flex flex-col gap-[8px] xl:gap-[11px] 2xl:gap-[40px] lg:w-1/2 px-5 py-5 md:px-8 md:py-10 lg:px-10 lg:py-15'>
+                        <Heading level="h1" className="text-White font-extrabold">
+                            Our global family
+                        </Heading>
 
-                            <div>
-                                <Button variant="default" size="lg">
-                                    <Paragraph size="normal" className="font-semibold">
-                                        Contact us Today
-                                    </Paragraph>
-                                </Button>
+                        <Paragraph size="normal" className="text-White mt-2 mb-4">
+                            Our team also consists of our incredible travel partners, friends and endless local contacts in every country where we operate. These wonderful people work extremely hard to help us create and run our unique trips. We could not do this without all of them as it takes such a dedicated and global team to create our rewarding travel experiences!
+                        </Paragraph>
 
-                            </div>
-                        </div>
-                        <div className='hidden lg:flex w-full h-full lg:w-1/2'>
-                            <Image src={OurGlobalFamliyAboutUs}
-                                alt='Our Global Famliy AboutUs'
-                                className='rounded-tl-[1821px] rounded-bl-[795px]' />
+                        <div>
+                            <Button variant="default" size="lg">
+                                <Paragraph size="normal" className="font-semibold">
+                                    Contact us Today
+                                </Paragraph>
+                            </Button>
+
                         </div>
                     </div>
+
+                    <div className='flex w-full lg:w-1/2 flex-grow'>
+                        <Image
+                            src={OurGlobalFamliyAboutUs}
+                            alt='Our Global Famliy AboutUs'
+                            className='w-full h-full object-cover rounded-tl-[1821px] rounded-bl-[795px]'
+                        />
+                    </div>
+
                 </div>
-                <div className='container px-5 mx-auto py-15 flex flex-col gap-10 md:gap-15 lg:gap-20'>
+            </div>
+            <div className='container mx-auto flex flex-col gap-[16px] md:gap-[48px] lg:gap-[80px] xl:gap-[112px] 2xl:gap-[150px] pt-[24px] md:pt-[48px] lg:pt-[80px] xl:pt-[112px] 2xl:pt-[140px] pb-[32px] md:pb-[64px] lg:pb-[96px] xl:pb-[120px] 2xl:pb-[150px] px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px]'>
                 {/* Our Team */}
-                <div className='flex flex-col gap-10'>
-                    <div className='text-Black font-extrabold text-center'>
+                <div className='flex flex-col'>
+                    <div className='text-Black font-[900] text-center mb-[16px] md:mb-[40px] lg:mb-[60px] xl:mb-[80px] 2xl:mb-[100px]'>
                         <Heading level="h1" className="text-center">
                             Our <span className="text-Secondary">Team</span>
                         </Heading>

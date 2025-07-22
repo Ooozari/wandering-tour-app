@@ -48,7 +48,7 @@ function AllToursLarge({ year, title }) {
 
     return (
         <>
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-[8px] md:gap-[16px] lg:gap-[24px] xl:gap-[28px] 2xl:gap-[32px]'>
                 {/* Heading & Button */}
                 <div className='flex justify-between items-end'>
                     <div>
@@ -63,13 +63,12 @@ function AllToursLarge({ year, title }) {
                                 <Paragraph className="m-0 text-Primary group-hover:text-White">All Tours</Paragraph>
                                 <ArrowRight className="text-White group-hover:text-White" />
                             </Button>
-
                         </Link>
                     </div>
                 </div>
 
                 {/* Cards */}
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full'>
                     {largeTourCardDetail.map((tour, index) => (
                         <TourCardLarge
                             key={index}

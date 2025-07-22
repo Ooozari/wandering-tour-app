@@ -84,7 +84,7 @@ function TourDetails() {
 
                 {/* Gradient continuation after hero image */}
                 <div
-                    className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                    className="w-full h-[70px] md:h-[100px]" // Adjust height as needed
                     style={{
                         background:
                             "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
@@ -92,8 +92,7 @@ function TourDetails() {
                 ></div>
 
 
-
-                <div className='container mx-auto px-4 py-14'>
+                <div className='container mx-auto px-5 md:px-6 pb-14'>
                     {/* Tabs and reserve now*/}
                     <div className="flex flex-col gap-10 lg:flex-row lg:gap-15 justify-between">
                         <div className="w-full lg:max-w-[65%]">
@@ -117,16 +116,16 @@ function TourDetails() {
 
 
                                     {/* Tabs Content */}
-                                    <TabsContent value="Details" className="w-full max-w-full py-5 px-2">
+                                    <TabsContent value="Details" className="w-full max-w-full pt-[20px] md:pt-[24px] lg:pt-[30px] xl:pt-[36px] 2xl:pt-[40px]">
                                         <Details />
                                     </TabsContent>
-                                    <TabsContent value="Gallery" className="w-full max-w-full py-5 px-2">
+                                    <TabsContent value="Gallery" className="w-full max-w-full pt-[20px] md:pt-[24px] lg:pt-[30px] xl:pt-[36px] 2xl:pt-[40px]">
                                         <Gallery />
                                     </TabsContent>
-                                    <TabsContent value="Map" className="w-full max-w-full py-5 px-2">
+                                    <TabsContent value="Map" className="w-full max-w-full pt-[20px] md:pt-[24px] lg:pt-[30px] xl:pt-[36px] 2xl:pt-[40px]">
                                         <Map />
                                     </TabsContent>
-                                    <TabsContent value="Itinerary" className="w-full max-w-full flex flex-col gap-3 py-5 px-2">
+                                    <TabsContent value="Itinerary" className="w-full max-w-full flex flex-col gap-3 pt-[20px] md:pt-[24px] lg:pt-[30px] xl:pt-[36px] 2xl:pt-[40px]">
                                         {itinerary.map((item, index) => (
                                             <Itinerary
                                                 key={index}
@@ -140,10 +139,10 @@ function TourDetails() {
                                             />
                                         ))}
                                     </TabsContent>
-                                    <TabsContent value="Essentials" className="w-full py-5 px-2">
+                                    <TabsContent value="Essentials" className="w-full pt-[20px] md:pt-[24px] lg:pt-[30px] xl:pt-[36px] 2xl:pt-[40px]">
                                         <TourEssentials />
                                     </TabsContent>
-                                    <TabsContent value="Included" className="w-full py-5 px-2">
+                                    <TabsContent value="Included" className="w-full pt-[20px] md:pt-[24px] lg:pt-[30px] xl:pt-[36px] 2xl:pt-[40px]">
                                         <WhatIncluded />
                                     </TabsContent>
                                 </div>
@@ -159,7 +158,7 @@ function TourDetails() {
 
 
                     {/* related tours */}
-                    <div className='mt-10 px-5 md:px-8 lg:px-10'>
+                    <div className='pt-[40px] md:pt-[70px] lg:pt-[100px] xl:pt-[120px] 2xl:pt-[140px] px-5'>
                         <RelatedTourSmall
                             title='Related Tours' />
                     </div>

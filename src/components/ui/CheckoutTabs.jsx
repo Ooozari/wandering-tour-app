@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
+import { Heading, Paragraph } from "@/components/ui/typography";
 
 const steps = [
     { id: 1, label: "Customer Details" },
@@ -40,7 +41,7 @@ export default function CheckoutTabs({ children }) {
                                 </div>
                                 <span
                                     className={cn(
-                                        "uppercase text-lg font-medium",
+                                        "uppercase font-medium",
                                         step.id < currentStep
                                             ? "text-Positive"
                                             : step.id === currentStep
@@ -48,7 +49,7 @@ export default function CheckoutTabs({ children }) {
                                                 : "text-Grey"
                                     )}
                                 >
-                                    {step.label}
+                                    <Paragraph size="md">{step.label}</Paragraph>
                                 </span>
                             </div>
 

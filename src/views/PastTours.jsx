@@ -30,7 +30,7 @@ function PastTours() {
 
                 {/* Centered heading */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <Heading level="h1" className="text-white font-[900]">
+                    <Heading level="h1Large" className="text-white font-[900]">
                         PAST TOURS
                     </Heading>
 
@@ -91,7 +91,7 @@ function PastTours() {
                     <div>
                         <Heading
                             level="h1"
-                            className="text-white font-bold px-5 md:px-10 lg:px-20 text-center pb-10 pt-10"
+                            className="text-white font-[900] px-5 md:px-10 lg:px-20 text-center pb-[16px] md:pb-[32px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[80px] pt-[24px] md:pt-[48px] lg:pt-[72px] xl:pt-[96px] 2xl:pt-[120px]"
                         >
                             IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE’RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY.
                         </Heading>
@@ -103,7 +103,7 @@ function PastTours() {
                         <ContactForm inputBorder='border-White/24' labelText='text-White' />
                     </div>
                     {/* Submit Button */}
-                    <div className='text-center pb-10 pt-6'>
+                    <div className='text-center pb-[24px] md:pb-[48px] lg:pb-[72px] xl:pb-[96px] 2xl:pb-[120px] pt-[16px] md:pt-[32px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[80px]'>
                         <Button variant='secondary' size='lg'>
                             <Paragraph size="normal" className="font-semibold">
                                 Submit

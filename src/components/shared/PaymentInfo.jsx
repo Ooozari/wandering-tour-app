@@ -3,6 +3,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from '@/components/ui/Button'
 import { input as Input } from '@/components/ui/input'
 import { creditcards } from '@/assets'
+import { Heading, Paragraph } from "@/components/ui/typography";
 import Image from 'next/image';
 
 function PaymentInfo() {
@@ -13,7 +14,7 @@ function PaymentInfo() {
 
                 <div className='flex flex-col gap-2'>
                     <div className='shadow-lg rounded-2xl p-5 flex flex-col gap-4'>
-                        <h1 className="text-Black font-[900] text-lg uppercase inline-flex items-center gap-2">
+                        <Paragraph size="subText" className="font-[900] text-Black uppercase inline-flex items-center gap-2">
                             Credit Card
                             <span>
                                 <Image
@@ -21,7 +22,8 @@ function PaymentInfo() {
                                     alt="creditcards"
                                 />
                             </span>
-                        </h1>
+                        </Paragraph>
+
 
                         <div className='w-full flex flex-col gap-3 '>
                             <label className='text-Black'>Card Number</label>
@@ -48,7 +50,10 @@ function PaymentInfo() {
                     </div>
 
                     <div className='flex justify-between p-4  shadow-lg border border-strokeLight rounded-2xl'>
-                        <p className='text-Black font-[900] text-lg uppercase'>Direct bank transfer</p>
+                        <Paragraph size="subText" className="text-Black font-[900] uppercase">
+                            Direct bank transfer
+                        </Paragraph>
+
                         <div> <input type="radio" name="option" className="accent-Primary w-6 h-6" /></div>
                     </div>
                     <div className="flex items-center w-full gap-4">
@@ -58,22 +63,35 @@ function PaymentInfo() {
                     </div>
 
                     <div className='flex justify-between p-4  shadow-lg border border-strokeLight rounded-2xl'>
-                        <p className='text-Black font-[900] text-lg uppercase'>Check payments</p>
+                        <Paragraph size="subText" className="text-Black font-[900] text-lg uppercase">
+                            Check payments
+                        </Paragraph>
+
                         <div> <input type="radio" name="option" className="accent-Primary w-6 h-6" /></div>
                     </div>
                 </div>
 
                 <div className='p-4 bg-white shadow-lg border border-strokeLight rounded-2xl flex flex-col gap-4'>
-                    <p className='text-Secondary font-semibold'>If you have a coupon code, please apply it below.</p>
+                    <Paragraph size='md' className="text-Secondary font-semibold">
+                        If you have a coupon code, please apply it below.
+                    </Paragraph>
+
                     <Input type='text' placeholder="Write" />
                     <div>
-                        <Button variant='lightPrimary' className='w-full font-semibold text-[16px]'>Apply Coupon</Button>
+                        <Button variant='lightPrimary' className='w-full font-semibold'><Paragraph className="font-semibold">
+                            Apply Coupon
+                        </Paragraph>
+                        </Button>
                     </div>
                 </div>
                 <div className='text-darkGrey space-y-3.5'>
-                    <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span className='text-Primary underline'>privacy policy</span>.</p>
-                    <p><span><Checkbox /></span> I have read and agree to the payment and website <span className='text-Primary underline'>terms and conditions</span>
-                        . </p>
+                    <Paragraph size="sm">
+                        Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span className='text-Primary underline hover:cursor-pointer'>privacy policy</span>.
+                    </Paragraph>
+                    <Paragraph size="sm" className='flex items-center'>
+                        <span className='mr-1 lg:mr-1.5 xl:mr-2 2xl:mr-2.5'><Checkbox /></span>I have read and agree to the payment and website<span className='text-Primary underline ml-1 hover:cursor-pointer'>terms and conditions</span>.
+                    </Paragraph>
+
                 </div>
             </div>
         </>

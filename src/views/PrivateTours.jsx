@@ -114,7 +114,7 @@ function PrivateTours() {
         <>
 
             {/* Hero Section */}
-            <div className='bg-Primary px-10'>
+            <div className='bg-Primary'>
                 <HeroSection
                     title={HeroSectionDetails.title}
                     paraText={HeroSectionDetails.paraText}
@@ -131,16 +131,16 @@ function PrivateTours() {
                 }}
             ></div>
 
-            <div className='container mx-auto px-4 py-10 flex flex-col gap-20 md:gap-25 lg:gap-30 '>
+            <div className='container mx-auto px-[16px] md:px-[32px] lg:px-[48px] xl:px-[64px] 2xl:px-[80px] flex flex-col'>
                 {/* after hero section */}
-                <div className='px-[20px] flex flex-col items-center lg:flex-row gap-10 pt-5 lg:pt-10'>
-                    <div className='w-full lg:w-1/2'>
-                        <Heading level="h6" className="text-Black font-bold uppercase mb-4">
+                <div className='flex flex-col items-center lg:flex-row gap-[16px] md:gap-[32px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[128px] pt-[16px] md:pt-[32px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[80px] -mt-[50px] md:-mt-[60px] lg:-mt-[75px] xl:-mt-[94px] 2xl:-mt-[150px]'>
+                    <div className='w-full lg:w-1/2 flex flex-col gap-[8px] md:gap-[16px] lg:gap-[24px] xl:gap-[32px] 2xl:gap-[40px] '>
+                        <Heading level="h6" className="text-Black font-bold uppercase">
                             <span className="text-Secondary">Private tours</span>,<br />
                             perfectly crafted.
                         </Heading>
 
-                        <div className='flex flex-col gap-4'>
+                        <div className='flex flex-col gap-[4px] md:gap-[8px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px]'>
                             <Paragraph size="sm" className="text-Black">
                                 Whether you’re a group of friends, a photography organization, a textile club, abandoned building enthusiasts, or anything in between, we’ll create a magical private tour for your group.
                             </Paragraph>
@@ -153,13 +153,15 @@ function PrivateTours() {
                     </div>
 
                     <div className='w-full lg:w-1/2'>
-                        <div className=' border-White border-[16px] rounded-2xl '
+                        <div className=' border-White border-[16px] rounded-2xl w-full h-full '
                             style={{ boxShadow: '-40px 30px 60px 0px rgba(0, 0, 0, 0.4)' }}
                         >
                             <Image
                                 src={privateTourDes}
                                 alt="Private Tour Description Img"
-                                className="rounded-2xl"
+                                width={870}
+                                height={557}
+                                className="rounded-2xl w-full h-full"
                             />
                         </div>
                     </div>
@@ -167,19 +169,19 @@ function PrivateTours() {
                 </div>
 
                 {/* Niches */}
-                <div className='px-[20px]'>
+                <div className='pt-[40px] md:pt-[80px] lg:pt-[160px] xl:pt-[200px] 2xl:pt-[280px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
-                        <Heading level="h1" className="text-Black font-bold mb-1 lg:mb-2">
+                        <Heading level="lgSubText" className="text-Black font-bold mb-[4px] md:mb-[8px] lg:mb-[12px] xl:mb-[16px] 2xl:mb-[20px]">
                             NICHES
                         </Heading>
 
-                        <Paragraph size="sm" className="text-Black text-center">
+                        <Paragraph size="subText" className="text-Black text-center">
                             Some of the niches that we’ve organized private tours around include:
                         </Paragraph>
 
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10"
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-[16px] md:pt-[32px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[80px]"
                     >
                         {nicheData.map((niche, index) => (
                             <IconCard key={index} svgImg={<niche.icon />} title={niche.title} />
@@ -188,19 +190,19 @@ function PrivateTours() {
                 </div>
 
                 {/* Countries */}
-                <div className='px-[20px]'>
+                <div className='py-[24px] md:py-[48px] lg:py-[80px] xl:py-[112px] 2xl:py-[140px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
-                        <Heading level="h1" className="text-Black font-bold mb-1 lg:mb-2">
+                        <Heading level="lgSubText" className="text-Black font-bold mb-[4px] md:mb-[8px] lg:mb-[12px] xl:mb-[16px] 2xl:mb-[20px]">
                             COUNTRIES
                         </Heading>
 
-                        <Paragraph size="sm" className="text-Black text-center">
+                        <Paragraph size="subText" className="text-Black text-center">
                             Some of the countries we’ve organized private tours to include:
                         </Paragraph>
 
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 content-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 pt-[16px] md:pt-[32px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[80px] content-center">
                         {country.map((item, index) => {
                             const Icon = item.icon;
                             return (
@@ -217,9 +219,12 @@ function PrivateTours() {
                 </div>
 
                 {/* Testimonials */}
-                <div className='px-5 md:px-15 lg:px-25'>
-                    <Reviews />
+                <div className='py-[24px] md:py-[48px] lg:py-[80px] xl:py-[112px] 2xl:py-[140px]'>
+                    <div className='px-[16px] md:px-[32px] lg:px-[64px] xl:px-[96px] 2xl:px-[120px]'>
+                        <Reviews />
+                    </div>
                 </div>
+
             </div>
         </>
     )

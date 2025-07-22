@@ -55,20 +55,20 @@ function LandingPage() {
                     priority
                 />
                 <div className="absolute inset-0 z-0 bg-[linear-gradient(180deg,rgba(30,54,92,0)_0%,rgba(30,54,92,0.3)_52.5%,#1E365C_100%)]" />
-                <div className='container mx-auto absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4 gap-4'>
+                <div className='container mx-auto absolute inset-0 z-20 flex flex-col justify-center items-center text-center'>
                     <Heading
                         level="h1Large"
-                        className="text-White text-center font-[900] uppercase"
+                        className="text-White text-center font-[900] uppercase mb-[6px] md:mb-[12px] lg:mb-[18px] xl:mb-[22px] 2xl:mb-[25px]"
                     >
                         Unique, Local, Small <span className="text-Secondary">Groups</span>
                     </Heading>
                     <Paragraph
                         size="subText"
-                        className="text-White"
+                        className="text-White mb-[12px] md:mb-[24px] lg:mb-[40px] xl:mb-[50px] 2xl:mb-[60px]"
                     >
                         Tours that show you something new.
                     </Paragraph>
-                    <div className="flex gap-4 my-5">
+                    <div className="flex gap-[6px] md:gap-[7px] lg:gap-[8px] xl:gap-[10px] 2xl:gap-[12px]">
                         <Link href="/tours">
                             <Button>
                                 <Paragraph size="normal" className="">
@@ -90,8 +90,8 @@ function LandingPage() {
             </div >
 
 
-            <div className='flex flex-col gap-10 md:gap-15 lg:gap-20 xl:gap-25 2xl:gap-30'>
-                
+            <div className='flex flex-col'>
+
                 {/* after hero section */}
                 <div>
                     <div className="relative w-full  overflow-visible lg:overflow-hidden bg-Primary px-5 md:px-10 lg:px-15 xl:px-20 2xl:px-25">
@@ -101,19 +101,19 @@ function LandingPage() {
                         <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between px-1 py-3 lg:px-6 lg:py-25 md:gap-0 gap-5 ">
                             {/* Text Block */}
                             <div className="text-white flex-1 w-full lg:w-1/2">
-                                <Heading level="h1" className="mb-4 font-extrabold uppercase">
+                                <Heading level="h1" className="mb-[4px] md:mb-[6px] lg:mb-[8px] xl:mb-[10px] 2xl:mb-[12px] font-[900] uppercase">
                                     Sustainable and responsible travel
                                 </Heading>
-                                <Paragraph size="normal" className="mb-2">
+                                <Paragraph size="subText" className="mt-[6px] md:mt-[12px] lg:mt-[18px] xl:mt-[24px] 2xl:mt-[30px]">
                                     We’re fully committed to promoting and offering responsible, respectful and sustainable travel experiences around the world.
                                 </Paragraph>
-                                <Paragraph size="sm" className="mb-2">
+                                <Paragraph size="xs" className="mt-[6px] md:mt-[12px] lg:mt-[18px] xl:mt-[24px] 2xl:mt-[30px] mb-2">
                                     Everything we do is aimed at enriching the lives of the people we work with. We want you to go away from our tours with great memories, new friends, and a real appreciation for the places we visit. But, more than that, we also want to leave those places better than we found them.
                                 </Paragraph>
-                                <Paragraph size="sm" className="mb-4">
+                                <Paragraph size="xs">
                                     We make a point of avoiding mass tourism destinations. Instead, we sustainably support local businesses, communities and the environment everywhere we go. Every aspect of our trips, from accommodation to local guides, activities to meals, and everything in between, are chosen to ensure that your tourism dollar leaves a positive and lasting impact and that our visit leaves a minimal footprint.
                                 </Paragraph>
-                                <div>
+                                <div className='mt-[12px] md:mt-[16px] lg:mt-[12px] xl:mt-[24px] 2xl:mt-[30px]'>
                                     <Button variant='secondary'>
                                         <Paragraph size="normal" className="m-0 p-0">Book a Tour Now</Paragraph></Button>
                                 </div>
@@ -168,29 +168,27 @@ function LandingPage() {
                 </div>
 
                 {/* 2024 Tour */}
-                <div className='container mx-auto px-5 md:px-10 lg:px-15 xl:px-25 -mt-8 md:mt-16 lg:mt-24 xl:-mt-40 mb-3 '>
+                <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mt-[24px] md:mt-[32px] lg:-mt-[48px] xl:-mt-[64px] 2xl:-mt-[80px]'>
                     <AllToursLarge year="2024" title="Tours" />
                 </div>
 
                 {/* Tour Group */}
-                <div className='container mx-auto flex flex-col gap-5 md:gap-10 lg:gap-15'>
-                    <div className='text-center'>
-                        <div className='mb-4'>
-                            <Heading level="h1" className="text-Black uppercase leading-[100%] font-extrabold">
+                <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] flex flex-col mt-[80px] md:mt-[98px] lg:mt-[140px] xl:mt-[160px] 2xl:mt-[197px] text-center'>
+                        <div className=''>
+                            <Heading level="h1" className="text-Black uppercase leading-[100%] font-[900]">
                                 Our trips are not standard
                             </Heading>
 
-                            <Heading level="h1" className="text-Secondary uppercase leading-[100%] font-extrabold">
+                            <Heading level="h1" className="text-Secondary uppercase leading-[100%] font-[900]">
                                 group tours
                             </Heading>
                         </div>
-                        <Paragraph size="subText" className="text-Black">
+                        <Paragraph size="subText" className="text-Black mt-[4px] md:mt-[8px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] mb-[16px] md:mb-[32px] lg:mb-[48px] xl:mb-[64px] 2xl:mb-[80px]">
                             Experience culture, wonder and fun like never before.
                         </Paragraph>
-                    </div>
 
                     {/* Tour Group Card */}
-                    <div className='container mx-auto px-5 md:px-10 lg:px-15 xl:px-25 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                    <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {
                             tourGroup.map((group, index) => (
                                 <GroupTourCard
@@ -205,10 +203,10 @@ function LandingPage() {
                 </div>
 
                 {/* Countries Section */}
-                <div>
+                <div >
                     {/* Gradient continuation before hero image */}
                     <div
-                        className="w-full h-[100px] md:h-[200px] " // Adjust height as needed
+                        className="w-full h-[100px] md:h-[200px] -z-40"
                         style={{
                             background:
                                 "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
@@ -224,7 +222,7 @@ function LandingPage() {
 
                         <div className='container mx-auto'>
                             {/* Content */}
-                            <Heading level="h1" className="text-center text-white px-4 mb-10 font-extrabold">
+                            <Heading level="h1" className="text-center text-white px-4 mb-[30px] md:mb-[45px] lg:mb-[60px] xl:mb-[70px] 2xl:mb-[80px] font-[900] uppercase">
                                 Countries where we are offering tours
                                 <span className="block text-Secondary">each year</span>
                             </Heading>
@@ -255,19 +253,19 @@ function LandingPage() {
 
 
                 {/* 2025 Tour */}
-                <div className='container mx-auto  px-5 md:px-10 lg:px-15 xl:px-25 mb-3'>
+                <div className='container mx-auto mt-[24px] md:mt-[32px] lg:-mt-[48px] xl:-mt-[64px] 2xl:-mt-[80px] px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px]'>
                     <AllToursLarge year="2025" title="Tours" />
                 </div>
 
 
 
                 {/* Testimonials */}
-                <div className='container mx-auto  px-5 md:px-15 lg:px-25'>
+                <div className='container mx-auto  px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mt-[40px] md:mt-[70px] lg:mt-[100px] xl:mt-[120px] 2xl:mt-[140px] '>
                     <Reviews />
                 </div>
 
                 {/* Get in touch */}
-                <div className='container mx-auto px-5 pb-20 ' >
+                <div className='container mx-auto px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 py-[40px] md:py-[70px] lg:py-[100px] xl:py-[120px] 2xl:py-[140px]' >
                     <GetInTouch />
                 </div>
 

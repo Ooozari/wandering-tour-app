@@ -8,14 +8,14 @@ function GetInTouch() {
     return (
         <>
             <div className='relative' >
-                <div className='bg-Secondary rounded-3xl lg:rounded-b-3xl lg:rounded-tl-3xl lg:rounded-tr-[860px]  relative'>
+                <div className='bg-Secondary rounded-3xl lg:rounded-b-3xl lg:rounded-tl-3xl lg:rounded-tr-[860px] relative'>
                     {/* text */}
-                    <div className=' text-White flex flex-col gap-2 px-10 lg:py-20 md:py-15 py-12 w-full lg:max-w-[calc(100%-550px)]'>
-                        <Heading level="h4" className="font-extrabold">
+                    <div className=' text-White flex flex-col gap-2 px-10 2xl:py-14 xl:py-12 lg:py-10 md:py-8 py-6 w-full lg:max-w-[calc(100%-550px)]'>
+                        <Heading level="h4" className="font-[900]">
                             Get In Touch
                         </Heading>
 
-                        <Paragraph size="normal" className="mt-2 mb-4">
+                        <Paragraph size="normal" className="mt-[4px] md:mt-[8px] lg:mt-[12px] xl:mt-[14px] 2xl:mt-[16px] mb-[16px] lg:mb-[24px] xl:mb-[32px] 2xl:mb-[40px]">
                             If you’re interested in a private tour like no other, get in touch with us today. We’re ready to use our expertise to create an absolutely unforgettable trip for your group or organization!
                         </Paragraph>
 
@@ -28,7 +28,7 @@ function GetInTouch() {
 
                     </div>
                     {/* img */}
-                    <div className='absolute z-10 right-0 -top-12 w-[550px] h-[550px] invisible lg:visible '>
+                    <div className='absolute z-10 right-0 -top-12 w-[550px] h-[500px] invisible lg:visible'>
                         <Image
                             src={getInTouch}
                             alt='Get in touch Img'

@@ -17,17 +17,17 @@ function Reviews() {
             reviewMsg: `Thank you for such a well thought-out and memorable trip. 
       The sights and people of Morocco are wonderful. I appreciated you feeding my nerdy self 
       with information on the geography, animals and plants of Morocco. The meals were laid back 
-      and wonderful and I appreciated the pace. Truly memorable. Thank you for your hard work.`,
+      and wonderful and I appreciated the pace.`,
             name: 'Kathy J.',
             location: 'Morocco',
         },
         {
-            reviewMsg: `Wandering through Romania was an incredible trip in every way: great sights, great people, and everything was very well-organized. This was an excellent trip in which we got to visit many beautiful places (both well-known and off the beaten path) all while in the company of a small, cohesive group of like-minded travelers.`,
+            reviewMsg: `Wandering through Romania was an incredible trip in every way: great sights, great people, and everything was very well-organized. This was an excellent trip in which we got to visit many beautiful places all while in the company of a small, cohesive group of like-minded travelers.`,
             name: 'Nadia A.',
             location: 'Romania',
         },
         {
-            reviewMsg: `The trip was amazing, on every level. Your experience and curiosity has created an amazing itinerary, and your willingness to accommodate the random wishes that came up was above and beyond. India is just endless fascination. The accommodations were great, and as someone that doesn’t really care about the food!!`,
+            reviewMsg: `The trip was amazing, on every level. Your experience and curiosity has created an amazing itinerary, and your willingness to accommodate the random wishes that came up was above and beyond. The accommodations were great, and as someone that doesn’t really care about the food!`,
             name: 'Tricia S.',
             location: 'India',
         },
@@ -49,8 +49,7 @@ function Reviews() {
         {
             reviewMsg: `Thank you for such a well thought-out and memorable trip. 
       The sights and people of Morocco are wonderful. I appreciated you feeding my nerdy self 
-      with information on the geography, animals and plants of Morocco. The meals were laid back 
-      and wonderful and I appreciated the pace. Truly memorable.`,
+      with information on the geography, animals and plants of Morocco.`,
             name: 'Maira Z.',
             location: 'Georgia',
         },
@@ -59,15 +58,15 @@ function Reviews() {
 
     return (
         <>
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-[8px] md:gap-[16px] lg:gap-[24px] xl:gap-[28px] 2xl:gap-[32px]'>
                 {/* Top Header + Navigation */}
                 <div className="flex justify-between items-center">
                     {/* Headings */}
-                    <div className="text-xl md:text-2xl lg:text-4xl font-extrabold">
+                    <div className="font-[900]">
                         <Heading level="h4" className="text-Black">
                             WHAT OUR CLIENTS SAY
                         </Heading>
-                        <Heading level="h4" className="text-Secondary">
+                        <Heading level="h4" className="text-Secondary font-[900]">
                             ABOUT US
                         </Heading>
 
@@ -84,6 +83,7 @@ function Reviews() {
                     </div>
                 </div>
 
+                {/* Cards */}
                 <div>
                     <Swiper
                         modules={[Navigation]}
@@ -101,11 +101,11 @@ function Reviews() {
                         onSwiper={(swiper) => {
                             setTimeout(() => swiper.navigation.update(), 100)
                         }}
-                        className="h-full"
+                        className="h-full flex"
                     >
                         {reviewsUser.map((review, index) => (
                             <SwiperSlide key={index} className="h-auto flex">
-                                <div className="flex flex-col h-full w-full">
+                                <div className="flex lg:gap-[12px] xl:gap-[16px] 2xl:gap-[20px] flex-col h-full w-full items-stretch">
                                     <ReviewCard
                                         msg={review.reviewMsg}
                                         name={review.name}

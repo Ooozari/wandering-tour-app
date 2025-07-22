@@ -25,7 +25,7 @@ function Cart() {
 
                 {/* Headings */}
                 <div className='border-b-1 border-lightGrey py-4'>
-                    <Heading level="h2" className="text-Black font-[900] uppercase">
+                    <Heading level="h1Large" className="text-Black font-[900] uppercase">
                         Cart
                     </Heading>
 
@@ -50,9 +50,16 @@ function Cart() {
                                             <td className="p-4">
                                                 <div className="flex-1 flex">
                                                     <Button variant="outline" className="w-full flex justify-between items-center group">
-                                                        <p onClick={handlepersonCounterDec} className='text-darkGrey text-2xl font-bold cursor-pointer'>-</p>
-                                                        <p>{personCounter}</p>
-                                                        <p onClick={handlepersonCounterInc} className='text-Secondary text-2xl font-bold cursor-pointer group-hover:text-White'>+</p>
+                                                        <Paragraph size="md" onClick={handlepersonCounterDec} className="text-darkGrey text-2xl font-bold cursor-pointer">
+                                                            -
+                                                        </Paragraph>
+                                                        <Paragraph size="md" className="text-darkGrey">
+                                                            {personCounter}
+                                                        </Paragraph>
+                                                        <Paragraph size="md" onClick={handlepersonCounterInc} className="text-Secondary text-2xl font-bold cursor-pointer group-hover:text-White">
+                                                            +
+                                                        </Paragraph>
+
                                                     </Button>
                                                 </div>
                                             </td>
@@ -76,9 +83,16 @@ function Cart() {
                                             <td className="p-4">
                                                 <div className="flex-1 flex">
                                                     <Button variant="outline" className="w-full flex justify-between items-center group">
-                                                        <p onClick={handlepersonCounterDec} className='text-darkGrey text-2xl font-bold cursor-pointer'>-</p>
-                                                        <p>{personCounter}</p>
-                                                        <p onClick={handlepersonCounterInc} className='text-Secondary text-2xl font-bold cursor-pointer group-hover:text-White'>+</p>
+                                                        <Paragraph size="md" onClick={handlepersonCounterDec} className="text-darkGrey text-2xl font-bold cursor-pointer">
+                                                            -
+                                                        </Paragraph>
+                                                        <Paragraph size="md" className="text-darkGrey">
+                                                            {personCounter}
+                                                        </Paragraph>
+                                                        <Paragraph size="md" onClick={handlepersonCounterInc} className="text-Secondary text-2xl font-bold cursor-pointer group-hover:text-White">
+                                                            +
+                                                        </Paragraph>
+
                                                     </Button>
                                                 </div>
                                             </td>
@@ -98,12 +112,19 @@ function Cart() {
                                 <Button variant='lightSecondary' size='lg' className='font-bold'>Update Cart</Button>
                             </div>
                         </div>
-
+                        
+                        {/* Coupon */}
                         <div className='p-4 bg-white shadow-lg border border-strokeLight rounded-2xl flex flex-col gap-4'>
-                            <p className='text-Secondary font-semibold'>If you have a coupon code, please apply it below.</p>
+                            <Paragraph size='md' className="text-Secondary font-semibold">
+                                If you have a coupon code, please apply it below.
+                            </Paragraph>
+
                             <Input type='text' placeholder="Write" />
                             <div>
-                                <Button variant='lightPrimary' className='w-full font-semibold text-[16px]'>Apply Coupon</Button>
+                                <Button variant='lightPrimary' className='w-full font-semibold'><Paragraph className="font-semibold">
+                                    Apply Coupon
+                                </Paragraph>
+                                </Button>
                             </div>
                         </div>
                     </div>
@@ -127,7 +148,7 @@ function Cart() {
                                     <Paragraph size='sm' className="font-[600] text-Black">
                                         Due Today
                                     </Paragraph>
-                                    <Paragraph  className="font-[600] text-Secondary">
+                                    <Paragraph className="font-[600] text-Secondary">
                                         $1,000
                                     </Paragraph>
                                 </div>

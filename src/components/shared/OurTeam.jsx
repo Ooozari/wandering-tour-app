@@ -4,26 +4,30 @@ import { Heading, Paragraph } from "@/components/ui/typography";
 function OurTeam({ imgUrl, p1, p2, p3, p4, name, position, Direction }) {
     return (
         <>
-            <div className={`flex flex-col items-center justify-between mb-14 gap-5 md:gap-10 lg:gap-15 ${Direction ? `lg:${Direction}` : ''}`}>
+            <div className={`flex flex-col items-center justify-between mb-[16px] md:mb-[40px] lg:mb-[60px] xl:mb-[80px] 2xl:mb-[100px] gap-[16px] md:gap-[40px] lg:gap-[64px] xl:gap-[80px] 2xl:gap-[120px] ${Direction ? `lg:${Direction}` : ''}`}>
                 {/* Default Img */}
-                <div className='w-full lg:w-1/2 flex justify-center'>
-                <div className='max-w-[622px] max-h-[622px]'>
-                    <Image
-                        src={imgUrl}
-                        alt='Team member'
-                        className='rounded-3xl' />
-                        </div>
+                <div className='flex'>
+                    <div className='w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[470px] lg:h-[470px] xl:w-[500px] xl:h-[500px] 2xl:w-[622px] 2xl:h-[622px]'>
+                        <Image
+                            src={imgUrl}
+                            alt='Team member'
+                            className='w-full h-full object-cover rounded-3xl'
+                        />
+                    </div>
                 </div>
+
                 {/* Text Content */}
-                <div className='w-full lg:w-1/2 flex flex-col gap-3'>
-                    {/* text */}
-                    <Paragraph size="sm" className="text-Black">{p1}</Paragraph>
-                    <Paragraph size="sm" className="text-Black">{p2}</Paragraph>
-                    {p3 && <Paragraph size="sm" className="text-Black">{p3}</Paragraph>}
-                    {p4 && <Paragraph size="sm" className="text-Black">{p4}</Paragraph>}
+                <div className='flex flex-col'>
 
+                    {/* Paragraph */}
+                    <div className='flex flex-col gap-[8px] md:gap-[16px] lg:gap-[24px] xl:gap-[28px] 2xl:gap-[32px]'>
+                        <Paragraph size="normal" className="text-Black">{p1}</Paragraph>
+                        <Paragraph size="normal" className="text-Black">{p2}</Paragraph>
+                        {p3 && <Paragraph size="normal" className="text-Black">{p3}</Paragraph>}
+                        {p4 && <Paragraph size="normal" className="text-Black">{p4}</Paragraph>}
+                    </div>
 
-                    <div className="flex items-center gap-1 mt-2">
+                    <div className="flex items-center gap-1 mt-[8px] md:mt-[16px] lg:mt-[24px] xl:mt-[32px] 2xl:mt-[48px]">
                         <Paragraph size="normal" className="flex gap-1">
                             <span className="text-Primary">{name}</span>
                             <span className="text-Grey">|</span>
