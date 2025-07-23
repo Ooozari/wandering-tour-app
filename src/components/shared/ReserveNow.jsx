@@ -73,7 +73,7 @@ export default function ReserveNow() {
 
           {/* Payment */}
           <div className="mt-4">
-            <Paragraph size="md" className="text-Grey text-xl mb-2 font-semibold">Payment:</Paragraph>
+            <Paragraph size="md" className="text-Grey mb-2 font-semibold">Payment:</Paragraph>
             <div className="flex flex-col lg:flex-row gap-2.5">
               <div className="flex justify-between items-center px-[10px] py-[16px] border rounded-2xl border-lightGrey gap-3 w-full">
                 <label><Paragraph size="xs" className='font-medium'>Pay Deposit</Paragraph></label>
