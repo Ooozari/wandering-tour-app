@@ -41,21 +41,22 @@ function Details() {
                     </Paragraph>
 
                     {/* details */}
-                    <div className='flex flex-col md:flex-row gap-5 text-lightGrey mb-[20px] md:mb-[26px] lg:mb-[32px] xl:mb-[36px] 2xl:mb-[40px]'>
+                    <div className='flex flex-col md:flex-row gap-5 text-lightGrey mb-[20px] md:mb-[26px] lg:mb-[32px] xl:mb-[36px] 2xl:mb-[40px] '>
                         <span>
                             <div className='flex gap-1 items-center'>
                                 <Spot />
                                 <Paragraph size="sm" className='text-darkGrey'>2 out of 12 spots booked</Paragraph>
                             </div>
                         </span>
-                        |
+                        <span className='ml-2 md:ml-0'>|</span>
+                        
                         <span>
                             <div className='flex gap-1 items-center'>
                                 <Location />
                                 <Paragraph size="sm" className='text-darkGrey'>Romania</Paragraph>
                             </div>
                         </span>
-                        |
+                        <span className='ml-2 md:ml-0'>|</span>
                         <span>
                             <div className='flex gap-1 items-center'>
                                 <Calender />
