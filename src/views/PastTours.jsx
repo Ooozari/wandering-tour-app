@@ -64,26 +64,38 @@ function PastTours() {
                         </div>
                     ))}
                 </div>
-                
+
                 <div className='gird mt-3 pb-3'>
                     <div className='h-[150px] md:h-[230px] lg:h-[374px]'>
-                    <Image
-                        src={pastTourBanner}
-                        height={374}
-                        alt='past Tour Banner Large'
-                        className='object-cover rounded-2xl w-full h-full'
-                    />
+                        <Image
+                            src={pastTourBanner}
+                            height={374}
+                            alt='past Tour Banner Large'
+                            className='object-cover rounded-2xl w-full h-full'
+                        />
                     </div>
                 </div>
-
-                <div className="relative w-full mt-4 ">
+</div>
+                <div className="relative w-full ">
+                    <div className='py-[80px] md:py-[96px] lg:py-[112px] xl:py-[120px] 2xl:py-[140px] container mx-auto px-4'>
                     {/* Review Section */}
-                    <div className='px-5 md:px-10 lg:px-20'>
+                    <div className="px-5 md:px-10 lg:px-20 relative z-10">
                         <Reviews />
                     </div>
+                    </div>
 
+                    {/* Gradient Overlay from Bottom */}
+                    <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none z-0"
+                        style={{
+                            background: "linear-gradient(0deg, #1E365C 0%, rgba(30, 54, 92, 0) 100%)",
+                        }}
+                    />
                 </div>
-            </div>
+
+            
+
+
+            
 
             <div className='bg-Primary'>
                 <div className='container mx-auto px-4'>

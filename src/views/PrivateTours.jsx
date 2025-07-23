@@ -169,7 +169,7 @@ function PrivateTours() {
                 </div>
 
                 {/* Niches */}
-                <div className='pt-[40px] md:pt-[80px] lg:pt-[160px] xl:pt-[200px] 2xl:pt-[280px]'>
+                <div className='pt-[120px] md:pt-[160px] lg:pt-[200px] xl:pt-[240px] 2xl:pt-[280px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
                         <Heading level="lgSubText" className="text-Black font-bold mb-[4px] md:mb-[8px] lg:mb-[12px] xl:mb-[16px] 2xl:mb-[20px]">
                             NICHES
@@ -190,7 +190,7 @@ function PrivateTours() {
                 </div>
 
                 {/* Countries */}
-                <div className='py-[24px] md:py-[48px] lg:py-[80px] xl:py-[112px] 2xl:py-[140px]'>
+                <div className='py-[80px] md:py-[96px] lg:py-[112px] xl:py-[126px] 2xl:py-[140px]'>
                     <div className='flex justify-center items-center flex-col mb-5'>
                         <Heading level="lgSubText" className="text-Black font-bold mb-[4px] md:mb-[8px] lg:mb-[12px] xl:mb-[16px] 2xl:mb-[20px]">
                             COUNTRIES
@@ -214,13 +214,13 @@ function PrivateTours() {
                 </div>
 
                 {/* Get in touch */}
-                <div className='p-5' >
+                <div className='p-5'>
                     <GetInTouch />
                 </div>
 
                 {/* Testimonials */}
-                <div className='py-[24px] md:py-[48px] lg:py-[80px] xl:py-[112px] 2xl:py-[140px]'>
-                    <div className='px-[16px] md:px-[32px] lg:px-[64px] xl:px-[96px] 2xl:px-[120px]'>
+                <div className='py-[80px] md:py-[96px] lg:py-[112px] xl:py-[126px] 2xl:py-[140px]'>
+                    <div className='px-5 md:px-10 lg:px-20'>
                         <Reviews />
                     </div>
                 </div>

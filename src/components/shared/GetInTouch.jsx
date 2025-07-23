@@ -28,7 +28,7 @@ function GetInTouch() {
 
                     </div>
                     {/* img */}
-                    <div className='absolute z-10 right-0 -top-12 w-[550px] h-[500px] invisible lg:visible'>
+                    <div className='absolute z-10 right-0 -top-8 w-[550px] h-[500px] invisible lg:visible'>
                         <Image
                             src={getInTouch}
                             alt='Get in touch Img'

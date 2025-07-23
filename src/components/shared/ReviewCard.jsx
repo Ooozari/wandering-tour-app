@@ -4,16 +4,17 @@ import { Review, Location } from '@/svgs/Icons'
 import { Heading, Paragraph } from "@/components/ui/typography";
 function ReviewCard({ msg, name, location }) {
     return (
-        <div className="flex flex-col shadow-md border-1 border-lightGrey rounded-3xl px-10 py-12 min-h-[300px] md:h-[360px] lg:h-[420px] xl:h-[460px] 2xl:h-[499px]"
->
+        <div className="h-[360px] md:h-[420px] lg:h-[460px] xl:h-[420px] 2xl:h-[499px] flex flex-col justify-between shadow-md border border-lightGrey rounded-3xl px-[20px] md:px-[25px] lg:px-[30px] xl:px-[35px] 2xl:px-[40px] py-[24px] md:py-[30px] lg:py-[36px] xl:py-[42px] 2xl:py-[48px] bg-White">
+
             {/* Icon */}
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-[8px] md:mb-[10px] lg:mb-[12px] xl:mb-[14px] 2xl:mb-[16px]"
+>
                 <Review />
             </div>
 
             {/* Spacer + Message */}
-            <div className="flex-1 flex flex-col ">
-                <Paragraph size="sm" className="text-Black text-center mb-6">
+            <div className="flex-1 flex flex-col justify-cente">
+                <Paragraph size="sm" className="text-Black text-center mb-[12px] md:mb-[15px] lg:mb-[18px] xl:mb-[21px] 2xl:mb-[24px]">
                     {msg}
                 </Paragraph>
             </div>

@@ -42,7 +42,7 @@ const paragraphVariants = cva("", {
       normal: "text-sm lg:text-base xl:text-lg 2xl:text-xl",
       md: "text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[20px]",
       sm: "text-sm lg:text-base xl:text-base 2xl:text-lg",
-      xs: "text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base",
+      xs: "text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base",
       xxs: "text-[11px] lg:text-[12px] xl:text-[13px] 2xl:text-[14px]"
     },
   },

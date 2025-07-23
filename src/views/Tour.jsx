@@ -186,7 +186,7 @@ function Tour() {
 
     return (
         <>
-            <div className='flex flex-col mb-[24px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[144px]'>
+            <div className='flex flex-col mb-[80px] md:mb-[96px] lg:mb-[112px] xl:mb-[128px] 2xl:mb-[144px]'>
 
                 {/* Hero Section */}
                 <div className='relative w-full'>
@@ -221,7 +221,7 @@ function Tour() {
 
                     {/* Past Tour 2024*/}
                     <div className=''>
-                        <Heading level="h1" className="font-[900] text-center mb-[12px] md:mb-[24px] lg:mb-[40px] xl:mb-[56px] 2xl:mb-[70px] uppercase">
+                        <Heading level="h1" className="font-[900] text-center mb-[30px] md:mb-[40px] lg:mb-[50px] xl:mb-[60px] 2xl:mb-[70px] uppercase">
                             <span className="text-Secondary">2024 </span>TOURS
                         </Heading>
 
@@ -244,7 +244,7 @@ function Tour() {
 
                     {/* Past Tour 2025*/}
                     <div className=''>
-                        <Heading level="h1" className="font-[900] text-center mb-[12px] md:mb-[24px] lg:mb-[40px] xl:mb-[56px] 2xl:mb-[70px] mt-[16px] md:mt-[32px] lg:mt-[56px] xl:mt-[72px] 2xl:mt-[94px] uppercase">
+                        <Heading level="h1" className="font-[900] text-center mb-[32px] md:mb-[44px] lg:mb-[54px] xl:mb-[62px] 2xl:mb-[70px] mt-[94px] uppercase">
                             <span className='text-Secondary'>2025 </span>TOURS
                         </Heading>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[6px] md:gap-[10px] lg:gap-[14px] xl:gap-[16px] 2xl:gap-[20px]'>

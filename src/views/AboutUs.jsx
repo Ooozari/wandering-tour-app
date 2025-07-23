@@ -79,7 +79,7 @@ function AboutUs() {
     return (
         <>
             {/* Hero Section */}
-            <div className='bg-Primary px-10  relative z-10'>
+            <div className='bg-Primary relative z-10'>
                 <HeroSection
                     title={HeroSectionDetails.title}
                     paraText={HeroSectionDetails.paraText}
@@ -181,10 +181,10 @@ function AboutUs() {
 
                 </div>
             </div>
-            <div className='container mx-auto flex flex-col gap-[16px] md:gap-[48px] lg:gap-[80px] xl:gap-[112px] 2xl:gap-[150px] pt-[24px] md:pt-[48px] lg:pt-[80px] xl:pt-[112px] 2xl:pt-[140px] pb-[32px] md:pb-[64px] lg:pb-[96px] xl:pb-[120px] 2xl:pb-[150px] px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px]'>
+            <div className='container mx-auto flex flex-col gap-[90px] md:gap-[100px] lg:gap-[120px] xl:gap-[135px] 2xl:gap-[150px] pt-[80px] md:pt-[100px] lg:pt-[115px] xl:pt-[125px] 2xl:pt-[140px] pb-[90px] md:pb-[110px] lg:pb-[125px] xl:pb-[140px] 2xl:pb-[150px] px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px]'>
                 {/* Our Team */}
                 <div className='flex flex-col'>
-                    <div className='text-Black font-[900] text-center mb-[16px] md:mb-[40px] lg:mb-[60px] xl:mb-[80px] 2xl:mb-[100px]'>
+                    <div className='text-Black font-[900] text-center mb-[40px] md:mb-[60px] lg:mb-[75px] xl:mb-[90px] 2xl:mb-[100px]'>
                         <Heading level="h1" className="text-center">
                             Our <span className="text-Secondary">Team</span>
                         </Heading>
@@ -208,7 +208,7 @@ function AboutUs() {
                 </div>
 
                 {/* TOURS LARGE */}
-                <div className='mb-3'>
+                <div>
                     <AllToursLarge title="Tours" />
                 </div>
 

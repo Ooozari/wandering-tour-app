@@ -84,7 +84,7 @@ function Reviews() {
                 </div>
 
                 {/* Cards */}
-                <div>
+                <div className=''>
                     <Swiper
                         modules={[Navigation]}
                         spaceBetween={20}

@@ -26,33 +26,46 @@ export default function ReserveNow() {
           </div>
 
           {/* Rectangle Header (full width) */}
-          <div className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-4 text-center text-lg font-bold">
+          <Heading level="h6" className="w-full bg-Secondary text-White rounded-tl-3xl rounded-tr-3xl rounded-b-lg px-6 py-4 text-center text-lg font-[900]">
             RESERVE NOW
-          </div>
+          </Heading>
+
         </div>
 
         {/* Card Body */}
         <div className="bg-White w-full p-6 rounded-b-3xl shadow-md">
           {/* Choose option */}
           <div>
-            <h5 className="text-Grey text-xl mb-2">Choose an Option:</h5>
-
+            <Paragraph size="md" className="text-Grey font-semibold mb-2">
+              Choose an Option:
+            </Paragraph>
             <div className='flex flex-col lg:flex-row gap-2.5 w-full'>
               <div className="flex items-center border border-Secondary rounded-2xl px-3 py-2 w-full justify-between">
                 <div>
-                  <p className="text-xs">Shared Room</p>
-                  <p className="text-xl text-Secondary font-bold">$3,789</p>
+                  <Paragraph size="xs">
+                    Shared Room
+                  </Paragraph>
+
+                  <Paragraph size="subText" className="text-Secondary font-bold">
+                    $3,789
+                  </Paragraph>
+
                 </div>
-                <div className="text-Negative font-semibold text-lg">Sold</div>
+                <Paragraph size="md" className="text-Negative font-bold">
+                  Sold
+                </Paragraph>
+
               </div>
 
-              <div className="flex items-center justify-between px-3 py-2 border rounded-2xl border-lightGrey gap-3 w-full">
+              <div className="flex items-center justify-between px-3 py-2
+                border rounded-2xl border-lightGrey w-full">
                 <div>
-                  <p className="text-xs">Single Supplement</p>
-                  <p className="text-lg text-Primary font-bold">$4,449</p>
+                  <Paragraph size="xs">Single Supplement</Paragraph>
+                  <Paragraph size="subText" className="text-Primary font-bold">$4,449</Paragraph>
                 </div>
                 <div className="text-Negative font-semibold text-lg">
-                  <input type="radio" name="option" className="accent-Primary w-6 h-6" />
+                  <input type="radio" name="option" className="accent-Primary w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px] lg:w-[22px] lg:h-[22px] xl:w-[22px] xl:h-[22px] 2xl:w-[24px] 2xl:h-[24px]
+"/>
                 </div>
               </div>
             </div>
@@ -60,27 +73,27 @@ export default function ReserveNow() {
 
           {/* Payment */}
           <div className="mt-4">
-            <h5 className="text-Grey text-xl mb-2">Payment:</h5>
+            <Paragraph size="md" className="text-Grey text-xl mb-2 font-semibold">Payment:</Paragraph>
             <div className="flex flex-col lg:flex-row gap-2.5">
               <div className="flex justify-between items-center px-[10px] py-[16px] border rounded-2xl border-lightGrey gap-3 w-full">
-                <label>Pay Deposit</label>
-                <input type="radio" name="payment" className="accent-Primary w-6 h-6" />
+                <label><Paragraph size="xs" className='font-medium'>Pay Deposit</Paragraph></label>
+                <input type="radio" name="payment" className="accent-Primary w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px] lg:w-[22px] lg:h-[22px] xl:w-[22px] xl:h-[22px] 2xl:w-[24px] 2xl:h-[24px]" />
               </div>
               <div className="flex justify-between items-center px-[10px] py-[16px] border rounded-2xl border-lightGrey gap-3 w-full">
-                <label>Pay in Full</label>
-                <input type="radio" name="payment" className="accent-Primary w-6 h-6" />
+                <label><Paragraph size="xs" className='font-medium'>Pay in Full</Paragraph></label>
+                <input type="radio" name="payment" className="accent-Primary w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px] lg:w-[22px] lg:h-[22px] xl:w-[22px] xl:h-[22px] 2xl:w-[24px] 2xl:h-[24px]" />
               </div>
             </div>
           </div>
 
           {/* Person Count */}
           <div className="my-6">
-            <Paragraph className="text-Grey text-xl">
-              Pay a Deposit of <span className="text-Primary font-bold">$500 per person</span>:
+            <Paragraph size='md' className="text-Grey text-xl font-semibold">
+              Pay a Deposit of <span className="text-Primary">$500 per person</span>:
             </Paragraph>
 
             {/* Buttons */}
-            <div className='flex gap-2.5 items-center mt-2'>
+            <div className='flex gap-2.5 items-center mt-[24px] md:mt-[32px] lg:mt-[36px] xl:mt-[40px]'>
               {/* ButtonsIncDec */}
               <div className="flex-1 flex">
                 <Button variant="outline" className="w-full flex justify-between items-center hover:text-White group">
@@ -100,7 +113,7 @@ export default function ReserveNow() {
               <div className='flex-1'>
                 <Button className="w-full group">
                   <Paragraph size="normal" className='text-White group-hover:text-Primary'>Checkout</Paragraph>
-                  </Button>
+                </Button>
               </div>
             </div>
           </div>

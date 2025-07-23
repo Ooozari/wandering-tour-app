@@ -58,13 +58,14 @@ function LandingPage() {
                 <div className='container mx-auto absolute inset-0 z-20 flex flex-col justify-center items-center text-center'>
                     <Heading
                         level="h1Large"
-                        className="text-White text-center font-[900] uppercase mb-[6px] md:mb-[12px] lg:mb-[18px] xl:mb-[22px] 2xl:mb-[25px]"
+                        className="text-White text-center font-[900] uppercase mb-[12px] md:mb-[16px] lg:mb-[20px] xl:mb-[22px] 2xl:mb-[25px]
+"
                     >
                         Unique, Local, Small <span className="text-Secondary">Groups</span>
                     </Heading>
                     <Paragraph
                         size="subText"
-                        className="text-White mb-[12px] md:mb-[24px] lg:mb-[40px] xl:mb-[50px] 2xl:mb-[60px]"
+                        className="text-White mb-[30px] md:mb-[40px] lg:mb-[48px] xl:mb-[54px] 2xl:mb-[60px]"
                     >
                         Tours that show you something new.
                     </Paragraph>
@@ -168,24 +169,26 @@ function LandingPage() {
                 </div>
 
                 {/* 2024 Tour */}
-                <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mt-[24px] md:mt-[32px] lg:-mt-[48px] xl:-mt-[64px] 2xl:-mt-[80px]'>
+                <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mt-[40px] md:mt-[32px] lg:-mt-[48px] xl:-mt-[64px] 2xl:-mt-[80px]'>
                     <AllToursLarge year="2024" title="Tours" />
                 </div>
 
                 {/* Tour Group */}
-                <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] flex flex-col mt-[80px] md:mt-[98px] lg:mt-[140px] xl:mt-[160px] 2xl:mt-[197px] text-center'>
-                        <div className=''>
-                            <Heading level="h1" className="text-Black uppercase leading-[100%] font-[900]">
-                                Our trips are not standard
-                            </Heading>
+                <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] flex flex-col mt-[120px] md:mt-[140px] lg:mt-[160px] xl:mt-[180px] 2xl:mt-[197px]
+                text-center'>
+                    <div className=''>
+                        <Heading level="h1" className="text-Black uppercase leading-[100%] font-[900]">
+                            Our trips are not standard
+                        </Heading>
 
-                            <Heading level="h1" className="text-Secondary uppercase leading-[100%] font-[900]">
-                                group tours
-                            </Heading>
-                        </div>
-                        <Paragraph size="subText" className="text-Black mt-[4px] md:mt-[8px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] mb-[16px] md:mb-[32px] lg:mb-[48px] xl:mb-[64px] 2xl:mb-[80px]">
-                            Experience culture, wonder and fun like never before.
-                        </Paragraph>
+                        <Heading level="h1" className="text-Secondary uppercase leading-[100%] font-[900]">
+                            group tours
+                        </Heading>
+                    </div>
+                    <Paragraph size="subText" className="text-Black mt-[4px] md:mt-[8px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] mb-[40px] md:mb-[50px] lg:mb-[60px] xl:mb-[70px] 2xl:mb-[80px]
+                    ">
+                        Experience culture, wonder and fun like never before.
+                    </Paragraph>
 
                     {/* Tour Group Card */}
                     <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
@@ -260,7 +263,7 @@ function LandingPage() {
 
 
                 {/* Testimonials */}
-                <div className='container mx-auto  px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mt-[40px] md:mt-[70px] lg:mt-[100px] xl:mt-[120px] 2xl:mt-[140px] '>
+                <div className='container mx-auto  px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mt-[80px] md:mt-[100px] lg:mt-[110px] xl:mt-[125px] 2xl:mt-[140px]'>
                     <Reviews />
                 </div>
 

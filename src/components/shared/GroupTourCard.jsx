@@ -17,7 +17,8 @@ function GroupTourCard({ iconSvg, title, text }) {
                 </div>
 
                 {/* Title */}
-                <Heading level="h3" className="text-Black text-center uppercase font-bold my-[8px] md:my-[10px] lg:my-[12px] xl:my-[14px] 2xl:my-[16px]">
+                <Heading level="h3" className="text-Black text-center uppercase font-bold my-[12px] md:my-[13px] lg:my-[14px] xl:my-[15px] 2xl:my-[16px]
+                ">
                     {title}
                 </Heading>
 
@@ -26,7 +27,7 @@ function GroupTourCard({ iconSvg, title, text }) {
                     {text}
                 </Paragraph>
 
-                <div className='mt-[14px] md:mt-[20px] lg:mt-[28px] xl:mt-[34px] 2xl:mt-[40px] mb-10'>
+                <div className='mt-[24px] md:mt-[28px] lg:mt-[32px] xl:mt-[36px] 2xl:mt-[40px] mb-10'>
                     <Button variant='primaryOutline' size='sm' className=''>
                         <Paragraph size="sm" className="font-semibold">Learn More</Paragraph>
                     </Button>

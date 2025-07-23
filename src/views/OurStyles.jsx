@@ -28,7 +28,7 @@ function OurStyles() {
     return (
         <>
             {/* Hero Section */}
-            <div className='bg-Primary px-10'>
+            <div className='bg-Primary'>
                 <HeroSection
                     title={HeroSectionDetails.title}
                     paraText={HeroSectionDetails.paraText}
@@ -45,7 +45,7 @@ function OurStyles() {
                 }}
             ></div>
 
-            <div className='container mx-auto flex flex-col gap-[30px] md:gap-[60px] lg:gap-[80px] xl:gap-[100px] 2xl:gap-[120px] pt-[16px] md:pt-[32px] lg:pt-[56px] xl:pt-[72px] 2xl:pt-[95px] px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mb-[32px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[140px]'>
+            <div className='container mx-auto flex flex-col gap-[80px] md:gap-[90px] lg:gap-[100px] xl:gap-[110px] 2xl:gap-[120px] pt-[36px] md:pt-[50px] lg:pt-[65px] xl:pt-[80px] 2xl:pt-[95px] px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mb-[80px] md:mb-[96px] lg:mb-[112px] xl:mb-[126px] 2xl:mb-[140px]'>
 
                 {/* After Hero Section */}
                 <div className='flex flex-col items-center lg:flex-row gap-10'>
@@ -247,9 +247,9 @@ function OurStyles() {
                 </div>
             </div>
 
-            <div className='container mx-auto mb-[32px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[140px]'>
+            <div className='container mx-auto mb-[80px] md:mb-[100px] lg:mb-[120px] xl:mb-[130px] 2xl:mb-[140px]'>
                 {/* Get in Touch */}
-                <div className='px-[20px] py-10 md:py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]'>
+                <div className='px-[20px] py-[80px] md:py-[90px] lg:py-[100px] xl:py-[110px] 2xl:py-[120px]'>
                     <GetInTouch />
                 </div>
 

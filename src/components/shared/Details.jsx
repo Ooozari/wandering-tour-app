@@ -68,8 +68,13 @@ function Details() {
                 {/* Book with confidence */}
                 <div className='border-1 border-lightGrey shadow-md p-4 
                 rounded-2xl mb-[20px] md:mb-[26px] lg:mb-[32px] xl:mb-[36px] 2xl:mb-[40px]'>
-                    <h4 className='text-Secondary font-semibold text-lg'>BOOK WITH CONFIDENCE</h4>
-                    <p className='text-darkGrey'>To reserve your spot on a tour, a $500 deposit will be required. However, you can book with complete peace of mind as this deposit will be refundable - minus a 3% transaction fee - for 30 days. [Deposits are non-refundable within 90 days of the tour start date, even if 30 days have not yet passed since the payment date.]</p>
+                    <Paragraph size="md" className="text-Secondary font-semibold">
+                        BOOK WITH CONFIDENCE
+                    </Paragraph>
+                    <Paragraph size="md" className="text-darkGrey">
+                        To reserve your spot on a tour, a $500 deposit will be required. However, you can book with complete peace of mind as this deposit will be refundable - minus a 3% transaction fee - for 30 days. [Deposits are non-refundable within 90 days of the tour start date, even if 30 days have not yet passed since the payment date.]
+                    </Paragraph>
+
                 </div>
 
                 {/* Highlight Cards*/}
@@ -84,9 +89,18 @@ function Details() {
                 </div>
                 {/* text paragraph */}
                 <div className='flex flex-col gap-2.5 text-Black  mt-[20px] md:mt-[26px] lg:mt-[32px] xl:mt-[36px] 2xl:mt-[40px]'>
-                    <p>Calling all foodies and travel enthusiasts! This trip is a chance to embark on a culinary adventure through Southeast Asia, where you’ll be immersed in the traditional food culture of each location, while also exploring some of the wonderful sights.</p>
-                    <p>Our journey will take us through Bangkok, Ayutthaya, Kuala Lumpur, the Cameron Highlands and Singapore. You’ll discover the secrets of traditional tea plantations and meet local chefs who serve up dishes that will remain etched in your memory forever. You’ll indulge in the explosion of flavors and spices at sprawling markets and enjoy the absolute best street food on the planet. There will be a variety of excellent restaurant experiences, a cooking class and trips to famous local eateries that few visitors ever reach.</p>
-                    <p>Throughout the tour, you’ll be in the company of like-minded travelers who share your passion for adventure and culinary exploration. This food tour is an exclusive opportunity to experience Southeast Asia through food, leaving you with a newfound appreciation for the rich culture and gastronomy of this captivating region of the world!</p>
+                    <Paragraph size="md">
+                        Calling all foodies and travel enthusiasts! This trip is a chance to embark on a culinary adventure through Southeast Asia, where you’ll be immersed in the traditional food culture of each location, while also exploring some of the wonderful sights.
+                    </Paragraph>
+
+                    <Paragraph size="md">
+                        Our journey will take us through Bangkok, Ayutthaya, Kuala Lumpur, the Cameron Highlands and Singapore. You’ll discover the secrets of traditional tea plantations and meet local chefs who serve up dishes that will remain etched in your memory forever. You’ll indulge in the explosion of flavors and spices at sprawling markets and enjoy the absolute best street food on the planet. There will be a variety of excellent restaurant experiences, a cooking class and trips to famous local eateries that few visitors ever reach.
+                    </Paragraph>
+
+                    <Paragraph size="md">
+                        Throughout the tour, you’ll be in the company of like-minded travelers who share your passion for adventure and culinary exploration. This food tour is an exclusive opportunity to experience Southeast Asia through food, leaving you with a newfound appreciation for the rich culture and gastronomy of this captivating region of the world!
+                    </Paragraph>
+
                 </div>
             </div>
         </>
