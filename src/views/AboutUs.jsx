@@ -97,8 +97,6 @@ function AboutUs() {
                 }}
             ></div>
 
-
-
             <div className='container mx-auto px-[32px] md:px-[48px] lg:px-[64px] xl:px-[80px] 2xl:px-[100px] mb-[32px] md:mb-[48px] lg:mb-[80px] xl:mb-[112px] 2xl:mb-[140px] relative flex flex-col gap-10 md:gap-15 lg:gap-20 pt-[16px] md:pt-[32px] lg:pt-[56px] xl:pt-[72px] 2xl:pt-[95px]'>
 
                 {/* After hero section */}
