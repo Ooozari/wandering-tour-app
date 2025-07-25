@@ -63,7 +63,7 @@ function PaymentInfo() {
                     </div>
 
                     <div className='flex justify-between p-4  shadow-lg border border-strokeLight rounded-2xl'>
-                        <Paragraph size="subText" className="text-Black font-[900] text-lg uppercase">
+                        <Paragraph size="subText" className="text-Black font-[900] uppercase">
                             Check payments
                         </Paragraph>
 

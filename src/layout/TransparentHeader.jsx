@@ -20,7 +20,7 @@ export default function TransparentHeader() {
             : '';
 
     return (
-        <header className='absolute top-0 left-0 z-50 w-full px-4 md:px-[60px] py-4 md:py-[20px]  flex justify-between items-center'>
+        <header className='absolute top-0 left-0 z-50 w-full px-4 md:px-[60px] py-4 md:py-[20px] flex justify-between items-center '>
             {/* Logo */}
             <div className="relative flex items-center z-50">
                 <Link href="/">
