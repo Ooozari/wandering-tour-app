@@ -52,29 +52,29 @@ export default function Footer() {
                     {/* Right */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full text-White p-4">
                         <div>
-                            <h3 className="font-bold mb-2">OUR PAGES</h3>
-                            <ul className="space-y-1 text-sm list-none">
+                            <h3 className="font-[900] text-lg md:text-xl mb-2">OUR PAGES</h3>
+                            <ul className="space-y-1 text-base list-none">
                                 <li className="hover:cursor-pointer"><Link href="/tours">Tours</Link></li>
                                 <li className="hover:cursor-pointer"><Link href="/about-us">About Us</Link></li>
                                 <li className="hover:cursor-pointer"><Link href="/our-style">Our Style</Link></li>
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-bold mb-2">TOUR PAGES</h3>
-                            <ul className="space-y-1 text-sm list-none">
+                            <h3 className="font-[900] text-lg md:text-xl mb-2">TOUR PAGES</h3>
+                            <ul className="space-y-1 text-base list-none">
                                 <li className="hover:cursor-pointer"><Link href="/private-tours">Private Tours</Link></li>
                                 <li className="hover:cursor-pointer"><Link href="/past-tours">Past Tours</Link></li>
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-bold mb-2">CONTACT</h3>
-                            <ul className="space-y-1 text-sm list-none">
+                            <h3 className="font-[900] text-lg md:text-xl mb-2">CONTACT</h3>
+                            <ul className="space-y-1 text-base list-none">
                                 <li className="hover:cursor-pointer"><Link href="/contact-us">Contact Us</Link></li>
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-bold mb-2">COMPANY</h3>
-                            <ul className="space-y-1 text-sm list-none">
+                            <h3 className="font-[900] text-lg md:text-xl mb-2">COMPANY</h3>
+                            <ul className="space-y-1 text-base list-none">
                                 <li className="hover:cursor-pointer"><Link href="/">Privacy Policy</Link></li>
                                 <li className="hover:cursor-pointer"><Link href="/">Terms of Services</Link></li>
                                 <li className="hover:cursor-pointer"><Link href="/">Refund / Cancelation Policy</Link></li>

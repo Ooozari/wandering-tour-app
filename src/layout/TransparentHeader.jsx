@@ -44,22 +44,22 @@ export default function TransparentHeader() {
             {/* Desktop Navbar */}
             <nav className="hidden md:flex justify-center items-center gap-4 text-White text-[14px] md:text-md">
                 <Link className={getLinkClasses('/tours')} href="/tours">
-                    <Paragraph size="xs">TOURS</Paragraph>
+                    <Paragraph size="sm" className='font-medium'>TOURS</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/about-us')} href="/about-us">
-                    <Paragraph size="xs">ABOUT US</Paragraph>
+                    <Paragraph size="sm" className='font-medium'>ABOUT US</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/our-style')} href="/our-style">
-                    <Paragraph size="xs">OUR STYLE</Paragraph>
+                    <Paragraph size="sm" className='font-medium'>OUR STYLE</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/private-tours')} href="/private-tours">
-                    <Paragraph size="xs">PRIVATE TOURS</Paragraph>
+                    <Paragraph size="sm" className='font-medium'>PRIVATE TOURS</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/past-tours')} href="/past-tours">
-                    <Paragraph size="xs">PAST TOURS</Paragraph>
+                    <Paragraph size="sm" className='font-medium'>PAST TOURS</Paragraph>
                 </Link>
                 <Link className={getLinkClasses('/contact-us')} href="/contact-us">
-                    <Paragraph size="xs">CONTACT US</Paragraph>
+                    <Paragraph size="sm" className='font-medium'>CONTACT US</Paragraph>
                 </Link>
             </nav>
 
@@ -76,7 +76,7 @@ export default function TransparentHeader() {
                     </Link>
                 </Button>
                 <Button variant='default' size='xs' className='group'>
-                    <Paragraph size="xs" className='group-hover:text-Primary'>Login</Paragraph>
+                    <Paragraph size="xs" className='group-hover:text-Primary font-medium'>Login</Paragraph>
                 </Button>
             </div>
 

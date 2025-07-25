@@ -45,32 +45,32 @@ export default function HeaderPrimary() {
             <ul className='hidden md:flex flex-wrap justify-center items-center gap-4 text-Grey text-[14px] md:text-md'>
                 <li className={getLinkClasses('/tours')}>
                     <Link href="/tours" className='hover:text-White'>
-                        <Paragraph size="xs">TOURS</Paragraph>
+                        <Paragraph size="sm" className='font-medium'>TOURS</Paragraph>
                     </Link>
                 </li>
                 <li className={getLinkClasses('/about-us')}>
                     <Link href="/about-us" className='hover:text-White'>
-                        <Paragraph size="xs">ABOUT US</Paragraph>
+                        <Paragraph size="sm" className='font-medium'>ABOUT US</Paragraph>
                     </Link>
                 </li>
                 <li className={getLinkClasses('/our-style')}>
                     <Link href="/our-style" className='hover:text-White'>
-                        <Paragraph size="xs">OUR STYLE</Paragraph>
+                        <Paragraph size="sm" className='font-medium'>OUR STYLE</Paragraph>
                     </Link>
                 </li>
                 <li className={getLinkClasses('/private-tours')}>
                     <Link href="/private-tours" className='hover:text-White'>
-                        <Paragraph size="xs">PRIVATE TOURS</Paragraph>
+                        <Paragraph size="sm" className='font-medium'>PRIVATE TOURS</Paragraph>
                     </Link>
                 </li>
                 <li className={getLinkClasses('/past-tours')}>
                     <Link href="/past-tours" className='hover:text-White'>
-                        <Paragraph size="xs">PAST TOURS</Paragraph>
+                        <Paragraph size="sm" className='font-medium'>PAST TOURS</Paragraph>
                     </Link>
                 </li>
                 <li className={getLinkClasses('/contact-us')}>
                     <Link href="/contact-us" className='hover:text-White'>
-                        <Paragraph size="xs">CONTACT US</Paragraph>
+                        <Paragraph size="sm" className='font-medium'>CONTACT US</Paragraph>
                     </Link>
                 </li>
             </ul>
@@ -88,7 +88,7 @@ export default function HeaderPrimary() {
                     </Link>
                 </Button>
                 <Button variant='whitePrimary' className=''>
-                    <Paragraph size="xs">Login</Paragraph>
+                    <Paragraph size="xxs" className='font-medium'>Login</Paragraph>
                 </Button>
             </div>
 
