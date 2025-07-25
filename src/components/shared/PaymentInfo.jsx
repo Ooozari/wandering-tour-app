@@ -88,8 +88,14 @@ function PaymentInfo() {
                     <Paragraph size="sm">
                         Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span className='text-Primary underline hover:cursor-pointer'>privacy policy</span>.
                     </Paragraph>
-                    <Paragraph size="sm" className='flex items-center'>
-                        <span className='mr-1 lg:mr-1.5 xl:mr-2 2xl:mr-2.5'><Checkbox /></span>I have read and agree to the payment and website<span className='text-Primary underline ml-1 hover:cursor-pointer'>terms and conditions</span>.
+                    <Paragraph size="sm" className='flex'>
+                        <span className='mr-1 lg:mr-1.5 xl:mr-2 2xl:mr-2.5'><Checkbox /></span>
+                        <div>
+                            I have read and agree to the payment and website
+                            <span className='text-Primary underline ml-1 hover:cursor-pointer'>terms and conditions
+                            </span>.
+                        </div>
+
                     </Paragraph>
 
                 </div>
