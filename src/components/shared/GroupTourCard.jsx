@@ -12,8 +12,11 @@ function GroupTourCard({ iconSvg, title, text }) {
                 px-[20px] pt-[15px] sm:px-[24px] sm:pt-[17px] md:px-[28px] md:pt-[19px] lg:px-[32px] lg:pt-[22px] xl:px-[36px] xl:pt-[26px] 2xl:px-[40px] 2xl:pt-[30px]`
             }>
                 {/* icon */}
-                <div className='w-25 h-25 xl:w-[80px] xl:h-[80px] lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 bg-[#1E365C0D] rounded-2xl flex items-center justify-center'>
-                    {iconSvg}
+                <div className='2xl:w-25 2xl:h-25 xl:w-[80px] xl:h-[80px] lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]  bg-[#1E365C0D] rounded-2xl flex items-center justify-center'>
+                    <div className='w-[30px] h-[30px] sm:w-[33px] sm:h-[30px] md:w-[39px] md:h-[32px] lg:w-[45px] lg:h-[39px] xl:w-[48px] xl:h-[42px] 2xl:w-[51px] 2xl:h-[45px]'>
+                        {iconSvg}
+                    </div>
+
                 </div>
 
                 {/* Title */}
@@ -27,7 +30,7 @@ function GroupTourCard({ iconSvg, title, text }) {
                     {text}
                 </Paragraph>
 
-                <div className='mt-[24px] md:mt-[28px] lg:mt-[32px] xl:mt-[36px] 2xl:mt-[40px] mb-[20px] sm:mb-[24px] md:mb-[28px] lg:mb-[32px] xl:mb-[36px] 2xl:mb-[40px]
+                <div className='mt-[20px] md:mt-[24px] lg:mt-[28px] xl:mt-[22px] 2xl:mt-[40px] mb-[20px] sm:mb-[24px] md:mb-[28px] lg:mb-[32px] xl:mb-[36px] 2xl:mb-[40px]
 '>
                     <Button variant='primaryOutline' size='sm' className=''>
                         <Paragraph size="sm" className="font-semibold">Learn More</Paragraph>
