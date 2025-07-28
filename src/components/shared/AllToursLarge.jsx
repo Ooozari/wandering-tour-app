@@ -68,7 +68,7 @@ function AllToursLarge({ year, title }) {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-[repeat(auto-fit,_minmax(0,1fr))] justify-center gap-5 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 w-full">
                     {largeTourCardDetail.map((tour, index) => (
                         <TourCardLarge
                             key={index}

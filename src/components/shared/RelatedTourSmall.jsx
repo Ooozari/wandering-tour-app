@@ -70,7 +70,8 @@ function RelatedTourSmall({ year, title }) {
                 </div>
 
                 {/* Cards */}
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
+                <div className="grid 2xl:grid-cols-[repeat(auto-fit,_minmax(355px,1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(290px,1fr))]
+                grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] justify-center gap-[10px] xl:gap-[15px] 2xl:gap-[20px] w-full">
                     {largeTourCardDetail.map((tour, index) => (
                         <TourCardSmall
                             key={index}

@@ -7,7 +7,7 @@ import { Heading, Paragraph } from "@/components/ui/typography";
 function TourCardSmall({ imgUrl, Status, title, content, bookSpot, location, days, btnText }) {
     return (
 
-        <div className='flex flex-col w-full mx-auto'>
+        <div className='flex flex-col mx-auto'>
             {/* Img */}
             <div className='relative'>
                 <Image

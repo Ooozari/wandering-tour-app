@@ -75,7 +75,7 @@ function TourDetails() {
                             background: "linear-gradient(180deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",
                         }}
                     />
-                    <div className='absolute inset-0 z-10 flex justify-center items-center text-center px-4'>
+                    <div className='absolute inset-0 z-10 flex justify-center items-center text-center px-5'>
                         <Heading level="h1Large" className="text-White font-[900] leading-tight">
                             SE Asia Culinary Journey (2024)
                         </Heading>
@@ -160,11 +160,10 @@ function TourDetails() {
 
                     </div>
 
-
                     {/* related tours */}
-                    <div className='pt-[40px] md:pt-[70px] lg:pt-[100px] xl:pt-[120px] 2xl:pt-[140px] px-5'>
+                    <div className='pt-[40px] md:pt-[70px] lg:pt-[100px] xl:pt-[120px] 2xl:pt-[140px]'>
                         <RelatedTourSmall
-                            title='Related Tours' />
+                            title='Related Tours'/>
                     </div>
                 </div>
             </div>
