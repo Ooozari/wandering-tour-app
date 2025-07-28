@@ -217,7 +217,7 @@ function Tour() {
                 ></div>
 
                 {/* Other Sections with gap */}
-                <div className='container mx-auto px-[16px] md:px-[32px] lg:px-[48px] xl:px-[64px] 2xl:px-[80px] flex flex-col -mt-[48px] md:-mt-[68px] lg:-mt-[88px] xl:-mt-[105px] 2xl:-mt-[120px]'>
+                <div className='container mx-auto px-[20px]  flex flex-col -mt-[48px] md:-mt-[68px] lg:-mt-[88px] xl:-mt-[105px] 2xl:-mt-[120px]'>
 
                     {/* Past Tour 2024*/}
                     <div className=''>
@@ -225,7 +225,8 @@ function Tour() {
                             <span className="text-Secondary">2024 </span>TOURS
                         </Heading>
 
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+                        <div className='grid 2xl:grid-cols-[repeat(auto-fit,_minmax(355px,1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(290px,1fr))]
+                grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] justify-center gap-[10px] xl:gap-[15px] 2xl:gap-[20px] w-full'>
                             {Year2024.map((tour, index) => (
                                 <TourCardSmall
                                     key={index}
@@ -247,7 +248,8 @@ function Tour() {
                         <Heading level="h1" className="font-[900] text-center mb-[32px] md:mb-[44px] lg:mb-[54px] xl:mb-[62px] 2xl:mb-[70px] mt-[94px] uppercase">
                             <span className='text-Secondary'>2025 </span>TOURS
                         </Heading>
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[6px] md:gap-[10px] lg:gap-[14px] xl:gap-[16px] 2xl:gap-[20px]'>
+                        <div className='grid 2xl:grid-cols-[repeat(auto-fit,_minmax(355px,1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(290px,1fr))]
+                grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] justify-center gap-[10px] xl:gap-[15px] 2xl:gap-[20px] w-full'>
                             {Year2025.map((tour, index) => (
                                 <TourCardSmall
                                     key={index}

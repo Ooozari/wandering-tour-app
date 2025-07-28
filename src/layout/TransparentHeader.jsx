@@ -66,19 +66,27 @@ export default function TransparentHeader() {
 
             {/* Buttons */}
             <div className='hidden md:flex gap-2 items-center z-50'>
-                <Button variant='outlineCircle' size='circle' className='border-1'>
+                <Button
+                    variant='outlineCircle'
+                    size='circle'
+                    className='border-1'
+                >
                     <Link href="/cart">
                         <div className='relative'>
                             <Cart color='White' />
-                            <div className="absolute right-0 top-0 translate-x-1/2  w-2 h-2 rounded-full bg-Secondary">
-                            </div>
+                            <div className="absolute right-0 top-0 translate-x-1/2 w-2 h-2 rounded-full bg-Secondary"></div>
                         </div>
                     </Link>
                 </Button>
-                <Button variant='default' size='xs' className='group'>
-                    <Paragraph size="xs" className='group-hover:text-Primary font-medium'>Login</Paragraph>
+
+                <Button
+                    variant='headerBtn'
+                    className='h-10'
+                >
+                    <Paragraph size="xs" className='font-medium'>Login</Paragraph>
                 </Button>
             </div>
+
 
             {/* Mobile Menu Button */}
             <button

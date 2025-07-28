@@ -87,8 +87,11 @@ export default function HeaderPrimary() {
                         </div>
                     </Link>
                 </Button>
-                <Button variant='whitePrimary' className=''>
-                    <Paragraph size="xxs" className='font-medium'>Login</Paragraph>
+                <Button
+                    variant='headerBtn'
+                    className='h-10 bg-White text-Primary hover:bg-White/85'
+                >
+                    <Paragraph size="xs" className='font-medium'>Login</Paragraph>
                 </Button>
             </div>
 

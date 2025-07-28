@@ -13,6 +13,8 @@ const buttonVariants = cva(
           "bg-Primary text-White shadow-xs h-[10px] md:h-11 lg:h-12 2xl:h-[53px] hover:bg-Primary/85 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
         primaryOutline:
           "text-Primary bg-White shadow-xs border border-Primary hover:bg-Primary hover:text-White h-10 md:h-11 lg:h-12 2xl:h-[53px] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
+        headerBtn: 
+        "bg-Primary text-White shadow-xs h-[10px] md:h-11 lg:h-12 2xl:h-[53px] hover:bg-Primary/85 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         lightPrimary:
@@ -35,6 +37,7 @@ const buttonVariants = cva(
         sm: "h-9 rounded-4xl gap-1.5 py-4 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-4xl px-6 has-[>svg]:px-4",
         xl: "h-10 rounded-4xl px-6 py-4",
+        xs: "py-1",
         icon: "size-9",
         circle: "w-10 h-10 p-0",
 
