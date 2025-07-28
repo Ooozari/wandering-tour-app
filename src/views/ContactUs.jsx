@@ -61,7 +61,7 @@ function ContactUs() {
                     <ContactForm inputBorder='border-lightGrey' labelText='text-Black' />
                 </div>
                 <div className='text-center mb-20'>
-                    <Button variant='secondary' size='lg' className='group'><Paragraph size="normal" className='group-hover:text-Secondary'>Submit</Paragraph>
+                    <Button variant='secondary' size='lg'><Paragraph size="normal">Submit</Paragraph>
                     </Button>
                 </div>
 

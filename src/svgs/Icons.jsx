@@ -532,7 +532,8 @@ export const ArrowRight = () => (
 )
 
 export const CrossDelete = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+    className="cursor-pointer">
         <circle cx="12" cy="12" r="12" fill="#C60F13" />
         <path d="M8.19816 16L11.9995 12.0006M11.9995 12.0006L15.8019 8M11.9995 12.0006L8 8.19912M11.9995 12.0006L16 15.8029" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
     </svg>

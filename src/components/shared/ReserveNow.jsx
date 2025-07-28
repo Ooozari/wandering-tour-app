@@ -111,8 +111,8 @@ export default function ReserveNow() {
 
               {/* CheckOutButton */}
               <div className='flex-1'>
-                <Button className="w-full group">
-                  <Paragraph size="normal" className='text-White group-hover:text-Primary'>Checkout</Paragraph>
+                <Button className="w-full">
+                  <Paragraph size="normal" className='text-White'>Checkout</Paragraph>
                 </Button>
               </div>
             </div>

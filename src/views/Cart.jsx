@@ -101,7 +101,7 @@ function Cart() {
                                                 <p className="text-sm">$3,975 payable in total</p>
                                             </td>
                                             <td className="p-2 sticky right-0 bg-White">
-                                                <CrossDelete className='cursor-pointer' />
+                                               <CrossDelete />
                                             </td>
                                         </tr>
                                     </tbody>
@@ -171,7 +171,7 @@ function Cart() {
                             <div>
                                 <Link href="/checkout">
 
-                                    <Button className='text-[16px] w-full text-White font-semibold group'><Paragraph size="sm" className='group-hover:text-Primary'>
+                                    <Button className='text-[16px] w-full text-White font-semibold'><Paragraph size="sm" >
                                         Proceed to Checkout
                                     </Paragraph>
                                     </Button></Link>

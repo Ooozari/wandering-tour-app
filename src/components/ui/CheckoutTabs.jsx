@@ -110,7 +110,7 @@ export default function CheckoutTabs({ children }) {
                             : () => setCurrentStep((s) => s + 1)
                     }
                     variant="default"
-                    className="px-10 md:px-16 lg:px-20 2xl:px-25 hover:text-Primary font-bold"
+                    className="px-10 md:px-16 lg:px-20 2xl:px-25 font-bold"
                     size="lg"
                 >
                     {currentStep === 1 && "Next Step"}

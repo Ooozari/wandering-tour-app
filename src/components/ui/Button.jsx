@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-Primary text-White shadow-xs h-[10px] md:h-11 lg:h-12 2xl:h-[53px] hover:bg-transparent hover:outline-2 hover:outline-solid hover:outline-Primary px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
+          "bg-Primary text-White shadow-xs h-[10px] md:h-11 lg:h-12 2xl:h-[53px] hover:bg-Primary/85 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
         primaryOutline:
           "text-Primary bg-White shadow-xs border border-Primary hover:bg-Primary hover:text-White h-10 md:h-11 lg:h-12 2xl:h-[53px] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
         destructive:
@@ -19,9 +19,9 @@ const buttonVariants = cva(
           "bg-[#1E365C1A] text-Primary shadow-xs hover:bg-[#1E365C1A]/90 h-10 md:h-11 lg:h-12 2xl:h-[53px] hover:bg-Primary hover:text-White",
         outline: "border bg-White shadow-xs hover:bg-Secondary hover:text-White dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 md:h-11 lg:h-12 2xl:h-[50px] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
         secondary:
-          "bg-Secondary text-White shadow-xs h-10 md:h-11 lg:h-12 2xl:h-[53px] hover:bg-transparent hover:outline-2 hover:outline-solid hover:outline-Secondary px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
+          "bg-Secondary text-White shadow-xs h-10 md:h-11 lg:h-12 2xl:h-[53px] hover:bg-Secondary/85 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 2xl:px-[30px] 2xl:py-[16px]",
         lightSecondary:
-          "bg-[#E9482B1A] shadow-xs hover:bg-[#E9482B1A]/80 text-Secondary h-10 md:h-11 lg:h-12 2xl:h-[53px] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 2xl:px-[48px] 2xl:py-[20px]",
+          "bg-[#E9482B1A] shadow-xs hover:bg-Secondary/80 text-Secondary hover:text-White h-10 md:h-11 lg:h-12 2xl:h-[53px] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 2xl:px-[48px] 2xl:py-[20px]",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-Primary underline-offset-4 hover:underline",
