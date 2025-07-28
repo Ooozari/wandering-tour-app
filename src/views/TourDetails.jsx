@@ -84,7 +84,7 @@ function TourDetails() {
 
                 {/* Gradient continuation after hero image */}
                 <div
-                    className="w-full h-[70px] md:h-[100px]" // Adjust height as needed
+                    className="w-full h-[70px] md:h-[100px]"
                     style={{
                         background:
                             "linear-gradient(1800deg, rgba(30, 54, 92, 0) 0%, #1E365C 100%)",

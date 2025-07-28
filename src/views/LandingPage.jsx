@@ -12,12 +12,12 @@ function LandingPage() {
 
     const tourGroup = [
         {
-            svg: <TourGroup1 />,
+            svg: <TourGroup1 className="w-24 h-24 md:w-20 md:h-20 sm:w-16 sm:h-16 xl:w-[51px] xl:h-[45px] 2xl:w-[51px] 2xl:h-[45px]" />,
             title: "Small Groups",
             text: "12 people or fewer, so you can go where big groups can’t. Forget about big buses, that’s not our style.",
         },
         {
-            svg: <TourGroup2 />,
+            svg: <TourGroup2  />,
             title: "Unique",
             text: "No two tours are alike. Every itinerary is carefully crafted to offer the most rewarding experience.",
         },
@@ -45,7 +45,6 @@ function LandingPage() {
 
     return (
         <>
-
             {/* hero section */}
             < div className='relative w-full h-screen' >
                 <Image
