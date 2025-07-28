@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import IconCard from '@/components/shared/IconCard'
+
 import { Heading, Paragraph } from "@/components/ui/typography";
 
 // Niches
@@ -49,7 +50,7 @@ import {
     Flag27,
 } from '@/svgs/Icons';
 
-import { Reviews, HeroSection, GetInTouch } from '@/components/shared'
+import { Reviews, HeroSection, GetInTouch,CountryCard } from '@/components/shared'
 
 // Images
 import {
@@ -206,7 +207,7 @@ function PrivateTours() {
                         {country.map((item, index) => {
                             const Icon = item.icon;
                             return (
-                                <IconCard className='grid justify-center' key={index} svgImg={<Icon />} title={item.title} />
+                                <CountryCard className='grid justify-center' key={index} svgImg={<Icon />} title={item.title} />
                             );
                         })}
                     </div>

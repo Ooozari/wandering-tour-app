@@ -24,6 +24,7 @@ export {default as BookingDetails} from './BookingDetails'
 export {default as CustomerDetails} from './CustomerDetails'
 export {default as PaymentInfo} from './PaymentInfo'
 export {default as PaymentDone} from './PaymentDone'
+export {default as CountryCard} from './CountryCard'
 
 
 
